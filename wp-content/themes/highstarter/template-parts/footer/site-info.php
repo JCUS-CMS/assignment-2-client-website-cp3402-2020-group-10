@@ -18,8 +18,8 @@
 	}
 	?>
     <div class="footer-credits">
-        <a href="<?php echo esc_url( 'https://yonkov.github.io/' ); ?>" class="imprint">
-            <?php printf( __( 'Designed by %s', 'highstarter' ), 'Atanas Yonkov' );?>
+        <a href="<?php echo esc_url( 'https://github.com/MartinlLee' ); ?>" class="imprint">
+            <?php printf( __( 'Designed by %s', 'highstarter' ), 'YanZhou Li' );?>
         </a>
         <span> || </span>
         <a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>" class="imprint">
