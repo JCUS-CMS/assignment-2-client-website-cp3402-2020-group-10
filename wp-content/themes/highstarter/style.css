@@ -145,7 +145,7 @@ a img.aligncenter {
 }
 
 html {
-  font-family: Arial Black;
+  font-family: Arial;
   line-height: 1.5;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -160,8 +160,8 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 body {
   margin: 0;
   text-align: left;
-  font-family: Arial Black;
-  font-weight: 400;
+  font-family: Arial;
+  font-weight: 300;
   font-size: 17px;
   line-height: 1.8;
   color: #333333;
