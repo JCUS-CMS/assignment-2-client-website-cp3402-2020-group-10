@@ -4,11 +4,11 @@
 # Any changes to the directives between these markers will be overwritten.
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /ass2/
+RewriteBase /A2/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /ass2/index.php [L]
+RewriteRule . /A2/index.php [L]
 </IfModule>
 
 # END WordPress
