@@ -13,3 +13,5 @@ Seventh change, I change some content and added some picture to blogs.
 Eighth change, I change the header part of blog, as my teammates think another one is better.
 
 Nineth change, I change one of the blog's content, because i pasted wrong content.
+
+Tenth change, I added pictures and change tags for all blogs.
