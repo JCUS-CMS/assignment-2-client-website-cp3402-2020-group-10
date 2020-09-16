@@ -12,7 +12,11 @@ class Filesystem {
 	/**
 	 * @var
 	 */
+<<<<<<< HEAD
 	public $wp_filesystem;
+=======
+	private $wp_filesystem;
+>>>>>>> origin/KyungYul-Noh
 	/**
 	 * @var
 	 */
@@ -153,7 +157,10 @@ class Filesystem {
 			$atime = time();
 		}
 
+<<<<<<< HEAD
 		// @TODO revisit usage of error supression opearator
+=======
+>>>>>>> origin/KyungYul-Noh
 		$return = @touch( $abs_path, $time, $atime );
 
 		if ( ! $return && $this->use_filesystem ) {
@@ -173,7 +180,10 @@ class Filesystem {
 	 * @return bool
 	 */
 	public function put_contents( $abs_path, $contents ) {
+<<<<<<< HEAD
 		// @TODO revisit usage of error supression opearator
+=======
+>>>>>>> origin/KyungYul-Noh
 		$return = @file_put_contents( $abs_path, $contents );
 		$this->chmod( $abs_path );
 
@@ -229,7 +239,10 @@ class Filesystem {
 	 * @return string
 	 */
 	public function get_contents( $abs_path ) {
+<<<<<<< HEAD
 		// @TODO revisit usage of error supression opearator
+=======
+>>>>>>> origin/KyungYul-Noh
 		$return = @file_get_contents( $abs_path );
 
 		if ( ! $return && $this->use_filesystem ) {
@@ -248,7 +261,10 @@ class Filesystem {
 	 * @return bool
 	 */
 	public function unlink( $abs_path ) {
+<<<<<<< HEAD
 		// @TODO revisit usage of error supression opearator
+=======
+>>>>>>> origin/KyungYul-Noh
 		$return = @unlink( $abs_path );
 
 		if ( ! $return && $this->use_filesystem ) {
@@ -274,7 +290,11 @@ class Filesystem {
 			$perms = $this->is_file( $abs_path ) ? $this->chmod_file : $this->chmod_dir;
 		}
 
+<<<<<<< HEAD
 		$return = chmod( $abs_path, $perms );
+=======
+		$return = @chmod( $abs_path, $perms );
+>>>>>>> origin/KyungYul-Noh
 
 		if ( ! $return && $this->use_filesystem ) {
 			$abs_path = $this->get_sanitized_path( $abs_path );
@@ -370,22 +390,42 @@ class Filesystem {
 		}
 
 		if ( $this->is_dir( $abs_path ) ) {
+<<<<<<< HEAD
 			$this->chmod( $abs_path, $perms );
+=======
+			$this->chmod( $perms );
+>>>>>>> origin/KyungYul-Noh
 
 			return true;
 		}
 
+<<<<<<< HEAD
 		$mkdirp = wp_mkdir_p( $abs_path );
 
 		if ( $mkdirp ) {
 			$this->chmod( $abs_path, $perms );
+=======
+		try {
+			$mkdirp = wp_mkdir_p( $abs_path );
+		} catch ( \Exception $e ) {
+			$mkdirp = false;
+		}
+
+		if ( $mkdirp ) {
+			$this->chmod( $perms );
+>>>>>>> origin/KyungYul-Noh
 
 			return true;
 		}
 
+<<<<<<< HEAD
 		$return = mkdir( $abs_path, $perms, true );
 
 		//WP_Filesystem fallback
+=======
+		$return = @mkdir( $abs_path, $perms, true );
+
+>>>>>>> origin/KyungYul-Noh
 		if ( ! $return && $this->use_filesystem ) {
 			$abs_path = $this->get_sanitized_path( $abs_path );
 
@@ -393,6 +433,7 @@ class Filesystem {
 				return true;
 			}
 
+<<<<<<< HEAD
 			$return = $this->wp_filesystem_mkdir( $abs_path, $perms );
 		}
 
@@ -427,6 +468,29 @@ class Filesystem {
 		}
 
 		return $this->is_dir( $abs_path );
+=======
+			// WP_Filesystem doesn't offer a recursive mkdir()
+			$abs_path = str_replace( '//', '/', $abs_path );
+			$abs_path = rtrim( $abs_path, '/' );
+			if ( empty( $abs_path ) ) {
+				$abs_path = '/';
+			}
+
+			$dirs        = explode( '/', ltrim( $abs_path, '/' ) );
+			$current_dir = '';
+
+			foreach ( $dirs as $dir ) {
+				$current_dir .= '/' . $dir;
+				if ( ! $this->is_dir( $current_dir ) ) {
+					$this->wp_filesystem->mkdir( $current_dir, $perms );
+				}
+			}
+
+			$return = $this->is_dir( $abs_path );
+		}
+
+		return $return;
+>>>>>>> origin/KyungYul-Noh
 	}
 
 	/**
@@ -586,7 +650,11 @@ class Filesystem {
 	 * TODO: look into replicating more functionality from wp_handle_upload()
 	 */
 	public function move_uploaded_file( $file, $destination, $perms = null ) {
+<<<<<<< HEAD
 		$return = move_uploaded_file( $file, $destination );
+=======
+		$return = @move_uploaded_file( $file, $destination );
+>>>>>>> origin/KyungYul-Noh
 
 		if ( $return ) {
 			$this->chmod( $destination, $perms );
@@ -618,7 +686,10 @@ class Filesystem {
 			return false;
 		}
 
+<<<<<<< HEAD
 		// @TODO revisit usage of error supression opearator
+=======
+>>>>>>> origin/KyungYul-Noh
 		$return = @copy( $source_abs_path, $destination_abs_path );
 		if ( $perms && $return ) {
 			$this->chmod( $destination_abs_path, $perms );

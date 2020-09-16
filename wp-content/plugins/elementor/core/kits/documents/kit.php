@@ -13,6 +13,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 class Kit extends PageBase {
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/KyungYul-Noh
 	/**
 	 * @var Tabs\Tab_Base[]
 	 */
@@ -77,6 +81,7 @@ class Kit extends PageBase {
 		$saved = parent::save( $data );
 
 		if ( $saved ) {
+<<<<<<< HEAD
 			// Should set is_saving to true, to avoid infinite loop when updating
 			// settings like: 'site_name" or "site_description".
 			$this->set_is_saving( true );
@@ -86,6 +91,11 @@ class Kit extends PageBase {
 			}
 
 			$this->set_is_saving( false );
+=======
+			foreach ( $this->tabs as $tab ) {
+				$tab->on_save( $data );
+			}
+>>>>>>> origin/KyungYul-Noh
 		}
 
 		return $saved;

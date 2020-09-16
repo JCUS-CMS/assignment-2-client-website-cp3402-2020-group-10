@@ -41,6 +41,7 @@
 .eael-dual-header-content-align-right {
   text-align: right;
 }
+<<<<<<< HEAD
 
 @media screen and (max-width: 1024px) and (min-width: 768px) {
   .eael-dual-header-content-tablet-align-center {
@@ -93,3 +94,5 @@
 .eael-dch-separator-wrap .separator-two {
   background: #4f6592;
 }
+=======
+>>>>>>> origin/KyungYul-Noh

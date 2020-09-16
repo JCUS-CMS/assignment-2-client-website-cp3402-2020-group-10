@@ -143,10 +143,14 @@ trait Generator
 
                 if ($element['widgetType'] === 'global') {
                     $document = Plugin::$instance->documents->get($element['templateID']);
+<<<<<<< HEAD
 
                     if (is_object($document)) {
                         $collections = array_merge($collections, $this->collect_recursive_elements($document->get_elements_data()));
                     }
+=======
+                    $collections = array_merge($collections, $this->collect_recursive_elements($document->get_elements_data()));
+>>>>>>> origin/KyungYul-Noh
                 } else {
                     $collections[] = $element['widgetType'];
                 }

@@ -1245,7 +1245,11 @@ ul.elementor-icon-list-items.elementor-inline-items {
     font-weight: normal;
     font-style: normal;
     vertical-align: middle;
+<<<<<<< HEAD
     margin-left: 5px; }
+=======
+    margin-right: 5px; }
+>>>>>>> origin/KyungYul-Noh
   .elementor-message.elementor-message-danger {
     color: #d9534f; }
     .elementor-message.elementor-message-danger:before {

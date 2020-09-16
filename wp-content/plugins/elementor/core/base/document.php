@@ -35,11 +35,14 @@ abstract class Document extends Controls_Stack {
 
 	private $main_id;
 
+<<<<<<< HEAD
 	/**
 	 * @var bool
 	 */
 	private $is_saving = false;
 
+=======
+>>>>>>> origin/KyungYul-Noh
 	private static $properties = [];
 
 	/**
@@ -524,8 +527,11 @@ abstract class Document extends Controls_Stack {
 			return false;
 		}
 
+<<<<<<< HEAD
 		$this->set_is_saving( true );
 
+=======
+>>>>>>> origin/KyungYul-Noh
 		/**
 		 * Before document save.
 		 *
@@ -581,8 +587,11 @@ abstract class Document extends Controls_Stack {
 		 */
 		do_action( 'elementor/document/after_save', $this, $data );
 
+<<<<<<< HEAD
 		$this->set_is_saving( false );
 
+=======
+>>>>>>> origin/KyungYul-Noh
 		return true;
 	}
 
@@ -1111,6 +1120,7 @@ abstract class Document extends Controls_Stack {
 		return $last_edited;
 	}
 
+<<<<<<< HEAD
 
 	/**
 	 * @return bool
@@ -1130,6 +1140,8 @@ abstract class Document extends Controls_Stack {
 		return $this;
 	}
 
+=======
+>>>>>>> origin/KyungYul-Noh
 	/**
 	 * @since 2.0.0
 	 * @access public

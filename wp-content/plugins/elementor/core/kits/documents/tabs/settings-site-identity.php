@@ -93,6 +93,7 @@ class Settings_Site_Identity extends Tab_Base {
 	}
 
 	public function on_save( $data ) {
+<<<<<<< HEAD
 		if (
 			! isset( $data['settings'] ) ||
 			DB::STATUS_PUBLISH !== $data['settings']['post_status'] ||
@@ -103,6 +104,11 @@ class Settings_Site_Identity extends Tab_Base {
 			return;
 		}
 
+=======
+		if ( ! isset( $data['settings'] ) || DB::STATUS_PUBLISH !== $data['settings']['post_status'] ) {
+			return;
+		}
+>>>>>>> origin/KyungYul-Noh
 		if ( isset( $data['settings']['site_name'] ) ) {
 			update_option( 'blogname', $data['settings']['site_name'] );
 		}

@@ -645,7 +645,10 @@
   -ms-flex-flow: wrap;
       flex-flow: wrap;
   margin: 0;
+<<<<<<< HEAD
   padding-left: 0;
+=======
+>>>>>>> origin/KyungYul-Noh
 }
 .eael-post-grid-style-two .eael-entry-meta .post-meta-categories li {
   font-size: 12px;

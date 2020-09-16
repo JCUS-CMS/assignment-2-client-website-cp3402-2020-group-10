@@ -359,7 +359,10 @@ a.eael-gallery-load-more, a.eael-gallery-load-more:hover {
   margin-right: calc(20px/2);
   margin-bottom: 20px;
   position: relative;
+<<<<<<< HEAD
   overflow: hidden;
+=======
+>>>>>>> origin/KyungYul-Noh
 }
 
 .gallery-item-caption-wrap,
