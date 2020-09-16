@@ -208,6 +208,11 @@ Our plugin uses a cookie in order to function properly. It does not store person
 
 == Changelog ==
 
+= Version 5.6.6 =
+* Improved JS Combination exclude list
+* Bumped JS Combination stop limit
+* Fixed typos
+
 = Version 5.6.5 =
 * Improved Elementor Pro 3.0 support
 

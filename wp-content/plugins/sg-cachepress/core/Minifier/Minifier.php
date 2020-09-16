@@ -73,6 +73,7 @@ class Minifier {
 		'elementor-preview',
 		'preview',
 		'wc-api',
+		'method',
 	);
 
 	/**

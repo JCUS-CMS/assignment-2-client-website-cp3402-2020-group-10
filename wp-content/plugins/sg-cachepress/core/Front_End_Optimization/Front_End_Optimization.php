@@ -31,7 +31,7 @@ class Front_End_Optimization {
 	 *
 	 * @var int Bytes.
 	 */
-	const LIMIT = 100000000;
+	const LIMIT = 200000000;
 
 	/**
 	 * Script handles that shouldn't be loaded async.
