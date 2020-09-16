@@ -3,14 +3,7 @@ namespace Elementor\Core\Editor\Data\Globals\Endpoints;
 
 use Elementor\Data\Base\Endpoint;
 use Elementor\Plugin;
-<<<<<<< HEAD
 use Elementor\Core\Utils\Exceptions;
-=======
-<<<<<<< HEAD
-use Elementor\Core\Utils\Exceptions;
-=======
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
 
 abstract class Base extends Endpoint {
 	public static function get_format() {
@@ -32,32 +25,15 @@ abstract class Base extends Endpoint {
 	public function get_item( $id, $request ) {
 		$items = $this->get_kit_items();
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> yanzhou-li
 		if ( ! isset( $items[ $id ] ) ) {
 			return new \WP_Error(
 				'global_not_found',
 				__( 'Global value was not found.', 'elementor' ),
 				[ 'status' => Exceptions::NOT_FOUND ]
 			);
-<<<<<<< HEAD
 		}
 
 		return $items[ $id ];
-=======
-		}
-
-		return $items[ $id ];
-=======
-		if ( isset( $items[ $id ] ) ) {
-			return $items[ $id ];
-		}
-
-		return false;
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
 	}
 
 	public function create_item( $id, $request ) {

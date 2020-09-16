@@ -140,15 +140,7 @@ class Analysis {
 			'uses-optimized-images'      => array(
 				'enabled' => array(),
 				'messages' => array(
-<<<<<<< HEAD
 					'default' => __( 'Enable <strong>New Images Optimization</strong> and <strong>Existing Image Optimization</strong> options under the <a class="sg-link sg-with-color sg-typography sg-typography--break-all" href="#images">Image Optimization tab</a>.', 'sg-cachepress' ),
-=======
-<<<<<<< HEAD
-					'default' => __( 'Enable <strong>New Images Optimization</strong> and <strong>Existing Image Optimization</strong> options under the <a class="sg-link sg-with-color sg-typography sg-typography--break-all" href="#images">Image Optimization tab</a>.', 'sg-cachepress' ),
-=======
-					'default' => __( 'Enable <strong>New Imags Optimization</strong> and <strong>Existing Image Optimization</strong> options under the <a class="sg-link sg-with-color sg-typography sg-typography--break-all" href="#images">Image Optimization tab</a>.', 'sg-cachepress' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
 				),
 			),
 			'uses-webp-images'           => array(

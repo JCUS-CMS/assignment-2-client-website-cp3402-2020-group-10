@@ -1,25 +1,10 @@
 <?php
-<<<<<<< HEAD
 
 namespace Essential_Addons_Elementor\Elements;
 
 if (!defined('ABSPATH')) {
     exit;
 }
-=======
-<<<<<<< HEAD
-
-namespace Essential_Addons_Elementor\Elements;
-
-if (!defined('ABSPATH')) {
-    exit;
-}
-=======
-namespace Essential_Addons_Elementor\Elements;
-
-if (!defined('ABSPATH')) {exit;}
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
 
 use \Elementor\Modules\DynamicTags\Module as TagsModule;
 use \Elementor\Controls_Manager;
@@ -51,15 +36,7 @@ class Sticky_Video extends Widget_Base
     {
         return ['essential-addons-elementor'];
     }
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
     public function get_keywords()
     {
         return [
@@ -453,15 +430,7 @@ class Sticky_Video extends Widget_Base
             ]
         );
 
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
-        
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
         $this->add_control(
             'eaelsv_sticky_width',
             [
@@ -493,28 +462,12 @@ class Sticky_Video extends Widget_Base
                     'eaelsv_is_sticky' => 'yes',
                 ],
                 'selectors' => [
-<<<<<<< HEAD
                     '{{WRAPPER}} .eael-sticky-video-player2.out' => 'height: {{VALUE}}px!important;',
-=======
-<<<<<<< HEAD
-                    '{{WRAPPER}} .eael-sticky-video-player2.out' => 'height: {{VALUE}}px!important;',
-=======
-                   '{{WRAPPER}} .eael-sticky-video-player2.out' => 'height: {{VALUE}}px!important;',
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 ],
             ]
         );
 
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
-        
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
 
         $this->add_control(
             'eaelsv_scroll_height_display_sticky',
@@ -758,10 +711,6 @@ class Sticky_Video extends Widget_Base
         }
 
         echo '<div class="eael-sticky-video-wrapper">';
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> yanzhou-li
         if ('yes' === $settings['eaelsv_overlay_options']) {
             // $autoplay = 'yes';
             $icon = '';
@@ -769,8 +718,6 @@ class Sticky_Video extends Widget_Base
                 if ($iconNew['value'] != '') {
                     if (is_array($iconNew['value'])) {
                         $icon = '<img src="' . $iconNew['value']['url'] .  '" width="100">';
-<<<<<<< HEAD
-=======
                     } else {
                         echo $icon = '<i class="' . $iconNew['value'] . '"></i>';
                     }
@@ -807,75 +754,6 @@ class Sticky_Video extends Widget_Base
         );
 
         echo '<div ' . $this->get_render_attribute_string('esvp_overlay_wrapper2') . '>
-=======
-			if ('yes' === $settings['eaelsv_overlay_options']) {
-				$autoplay = 'yes';
-                $icon = '';
-				if ('yes' === $settings['eaelsv_overlay_play_icon']) {
-					if ($iconNew['value'] != '') {
-                        if (  is_array($iconNew['value']) ) {
-                            $icon = '<img src="' . $iconNew['value']['url'] .  '" width="100">';
-                        } else {
-                            echo $icon = '<i class="' . $iconNew['value'] . '"></i>';
-                        }
->>>>>>> yanzhou-li
-                    } else {
-                        echo $icon = '<i class="' . $iconNew['value'] . '"></i>';
-                    }
-                } else {
-                    $icon = '<i class="eicon-play"></i>';
-                }
-            }
-
-            $this->add_render_attribute(
-                'esvp_overlay_wrapper',
-                [
-                    'class' => 'eaelsv-overlay',
-                    'style' => "background-image:url('" . $settings['eaelsv_overlay_image']['url'] . "');",
-                ]
-            );
-
-            echo '<div ' . $this->get_render_attribute_string('esvp_overlay_wrapper') . '>
-					<div class="eaelsv-overlay-icon">' . $icon . '</div>
-				</div>';
-<<<<<<< HEAD
-        }
-
-        $this->add_render_attribute(
-            'esvp_overlay_wrapper2',
-            [
-                'class' => 'eael-sticky-video-player2',
-                'data-sticky' => $sticky,
-                'data-position' => $settings['eaelsv_sticky_position'],
-                'data-sheight' => $settings['eaelsv_sticky_height'],
-                'data-swidth' => $settings['eaelsv_sticky_width'],
-                'data-scroll_height' => $settings['eaelsv_scroll_height_display_sticky']['size'],
-                'data-autoplay' => $autoplay,
-                'data-overlay' => ($settings['eaelsv_overlay_options'] == 'yes') ? $settings['eaelsv_overlay_options'] : 'no',
-            ]
-        );
-
-        echo '<div ' . $this->get_render_attribute_string('esvp_overlay_wrapper2') . '>
-=======
-			}
-
-			$this->add_render_attribute(
-				'esvp_overlay_wrapper2',
-				[
-					'class' => 'eael-sticky-video-player2',
-					'data-sticky' => $sticky,
-					'data-position' => $settings['eaelsv_sticky_position'],
-					'data-sheight' => $settings['eaelsv_sticky_height'],
-                    'data-swidth' => $settings['eaelsv_sticky_width'],
-                    'data-scroll_height' => $settings['eaelsv_scroll_height_display_sticky']['size'],
-					'data-autoplay' => $autoplay,
-					'data-overlay' => ($settings['eaelsv_overlay_options'] == 'yes') ? $settings['eaelsv_overlay_options'] : 'no',
-				]
-			);
-
-        	echo '<div ' . $this->get_render_attribute_string('esvp_overlay_wrapper2') . '>
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
 				' . $eaelsvPlayer . '
 				<span class="eaelsv-sticky-player-close"><i class="fas fa-times-circle"></i></span>
 			</div>
@@ -890,43 +768,14 @@ class Sticky_Video extends Widget_Base
         $mute = $settings['eaelsv_mute'];
         $loop = $settings['eaelsv_loop'];
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> yanzhou-li
         $am = '';
         $am .= ($autoplay == 'yes' ? '"autoplay":1' : '"autoplay":0');
         $am .= ($mute == 'yes' ? ', "muted":1' : ', "muted":0');
 
-<<<<<<< HEAD
-=======
         if ('yes' == $loop) {
             $lp = '"loop": {"active": true}';
         } else {
             $lp = '"loop": {"active": false}';
-=======
-        if ($autoplay == 'yes') {
-            $am = '"autoplay":1, "muted":1';
-        }
-        if (('yes' == $mute) && ($autoplay == 'yes')) {
-            $am = '"autoplay":1, "muted":1';
-        }
-        if (('yes' != $mute) && ($autoplay != 'yes')) {
-            $am = '"autoplay":0, "muted":0';
-        }
-        if (('yes' == $mute) && ($autoplay != 'yes')) {
-            $am = '"autoplay":0, "muted":1';
-        }
->>>>>>> yanzhou-li
-        if ('yes' == $loop) {
-            $lp = '"loop": {"active": true}';
-        } else {
-<<<<<<< HEAD
-            $lp = '"loop": {"active": false}';
-=======
-			$lp = '"loop": {"active": false}';
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
         }
 
         return '<div
@@ -945,43 +794,14 @@ class Sticky_Video extends Widget_Base
         $mute = $settings['eaelsv_mute'];
         $loop = $settings['eaelsv_loop'];
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> yanzhou-li
         $am = '';
         $am .= ($autoplay == 'yes' ? '"autoplay":1' : '"autoplay":0');
         $am .= ($mute == 'yes' ? ', "muted":1' : ', "muted":0');
 
-<<<<<<< HEAD
-=======
         if ('yes' == $loop) {
             $lp = '"loop": {"active": true}';
         } else {
             $lp = '"loop": {"active": false}';
-=======
-        if ($autoplay == 'yes') {
-            $am = '"autoplay":1, "muted":1';
-        }
-        if (('yes' == $mute) && ($autoplay == 'yes')) {
-            $am = '"autoplay":1, "muted":1';
-        }
-        if (('yes' != $mute) && ($autoplay != 'yes')) {
-            $am = '"autoplay":0, "muted":0';
-        }
-        if (('yes' == $mute) && ($autoplay != 'yes')) {
-            $am = '"autoplay":0, "muted":1';
-        }
->>>>>>> yanzhou-li
-        if ('yes' == $loop) {
-            $lp = '"loop": {"active": true}';
-        } else {
-<<<<<<< HEAD
-            $lp = '"loop": {"active": false}';
-=======
-			$lp = '"loop": {"active": false}';
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
         }
 
         return '<div
@@ -995,15 +815,7 @@ class Sticky_Video extends Widget_Base
     protected function eaelsv_load_player_self_hosted()
     {
         $settings = $this->get_settings_for_display();
-<<<<<<< HEAD
         $video = ($settings['eaelsv_external_url'] != '') ? $settings['eaelsv_external_url'] : $settings['eaelsv_hosted_url']['url'];
-=======
-<<<<<<< HEAD
-        $video = ($settings['eaelsv_external_url'] != '') ? $settings['eaelsv_external_url'] : $settings['eaelsv_hosted_url']['url'];
-=======
-		$video = ($settings['eaelsv_external_url'] != '') ? $settings['eaelsv_external_url'] : $settings['eaelsv_hosted_url']['url'];
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
         $controlBars = $settings['eaelsv_sh_show_bar'];
         $autoplay = $settings['eaelsv_autopaly'];
         $mute = $settings['eaelsv_mute'];
@@ -1012,43 +824,14 @@ class Sticky_Video extends Widget_Base
         $startTime = $settings['eaelsv_start_time'];
         $endTime = $settings['eaelsv_end_time'];
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> yanzhou-li
         $am = '';
         $am .= ($autoplay == 'yes' ? '"autoplay":1' : '"autoplay":0');
         $am .= ($mute == 'yes' ? ', "muted":1' : ', "muted":0');
 
-<<<<<<< HEAD
-=======
         if ('yes' == $loop) {
             $lp = '"loop": {"active": true}';
         } else {
             $lp = '"loop": {"active": false}';
-=======
-        if ($autoplay == 'yes') {
-            $am = '"autoplay":1, "muted":1';
-        }
-        if (('yes' == $mute) && ($autoplay == 'yes')) {
-            $am = '"autoplay":1, "muted":1';
-        }
-        if (('yes' != $mute) && ($autoplay != 'yes')) {
-            $am = '"autoplay":0, "muted":0';
-        }
-        if (('yes' == $mute) && ($autoplay != 'yes')) {
-            $am = '"autoplay":0, "muted":1';
-        }
->>>>>>> yanzhou-li
-        if ('yes' == $loop) {
-            $lp = '"loop": {"active": true}';
-        } else {
-<<<<<<< HEAD
-            $lp = '"loop": {"active": false}';
-=======
-			$lp = '"loop": {"active": false}';
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
         }
 
         return '<video class="eaelsv-player" id="eaelsv-player-' . $this->get_id() . '" playsinline controls data-plyr-config="{' . esc_attr($am) . ', ' . esc_attr($lp) . '}">
@@ -1077,24 +860,8 @@ class Sticky_Video extends Widget_Base
             } else {
                 $id = $settings['eaelsv_hosted_url']['url'];
             }
-<<<<<<< HEAD
         }
 
         return $id;
     }
 }
-=======
-<<<<<<< HEAD
-        }
-
-        return $id;
-    }
-}
-=======
-		}
-		
-        return $id;
-    }
-}
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li

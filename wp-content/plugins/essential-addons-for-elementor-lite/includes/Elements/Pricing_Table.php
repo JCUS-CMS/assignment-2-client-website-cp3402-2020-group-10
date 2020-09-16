@@ -3,15 +3,7 @@
 namespace Essential_Addons_Elementor\Elements;
 
 // If this file is called directly, abort.
-<<<<<<< HEAD
 if (!defined('ABSPATH')) {
-=======
-<<<<<<< HEAD
-if (!defined('ABSPATH')) {
-=======
-if ( !defined( 'ABSPATH' ) ) {
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
     exit;
 }
 
@@ -22,11 +14,6 @@ use \Elementor\Group_Control_Box_Shadow;
 use \Elementor\Group_Control_Typography;
 use \Elementor\Widget_Base;
 
-<<<<<<< HEAD
-class Pricing_Table extends Widget_Base
-{
-=======
-<<<<<<< HEAD
 class Pricing_Table extends Widget_Base
 {
 
@@ -59,43 +46,6 @@ class Pricing_Table extends Widget_Base
             'pricing',
             'price',
             'price table',
-=======
-class Pricing_Table extends Widget_Base {
->>>>>>> yanzhou-li
-
-    use \Essential_Addons_Elementor\Traits\Helper;
-
-    public function get_name()
-    {
-        return 'eael-pricing-table';
-    }
-
-    public function get_title()
-    {
-        return esc_html__('Pricing Table', 'essential-addons-for-elementor-lite');
-    }
-
-    public function get_icon()
-    {
-        return 'eaicon-pricing-table';
-    }
-
-    public function get_categories()
-    {
-        return ['essential-addons-elementor'];
-    }
-
-    public function get_keywords()
-    {
-        return [
-            'price menu',
-            'pricing',
-<<<<<<< HEAD
-            'price',
-            'price table',
-=======
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
             'table',
             'ea table',
             'ea pricing table',
@@ -108,7 +58,6 @@ class Pricing_Table extends Widget_Base {
         ];
     }
 
-<<<<<<< HEAD
     public function get_custom_help_url()
     {
         return 'https://essential-addons.com/elementor/docs/pricing-table/';
@@ -116,23 +65,6 @@ class Pricing_Table extends Widget_Base {
 
     protected function _register_controls()
     {
-=======
-<<<<<<< HEAD
-    public function get_custom_help_url()
-    {
-        return 'https://essential-addons.com/elementor/docs/pricing-table/';
-    }
-
-    protected function _register_controls()
-    {
-=======
-    public function get_custom_help_url() {
-        return 'https://essential-addons.com/elementor/docs/pricing-table/';
-    }
-
-    protected function _register_controls() {
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
 
         /**
          * Pricing Table Settings
@@ -140,15 +72,7 @@ class Pricing_Table extends Widget_Base {
         $this->start_controls_section(
             'eael_section_pricing_table_settings',
             [
-<<<<<<< HEAD
                 'label' => esc_html__('Settings', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label' => esc_html__('Settings', 'essential-addons-for-elementor-lite'),
-=======
-                'label' => esc_html__( 'Settings', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
             ]
         );
 
@@ -156,25 +80,11 @@ class Pricing_Table extends Widget_Base {
             'eael_pricing_table_styles',
             [
                 'styles'     => [
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> yanzhou-li
                     'style-1' => esc_html__('Default', 'essential-addons-for-elementor-lite'),
                     'style-2' => esc_html__('Pricing Style 2', 'essential-addons-for-elementor-lite'),
                     'style-3' => esc_html__('Pricing Style 3 (Pro)', 'essential-addons-for-elementor-lite'),
                     'style-4' => esc_html__('Pricing Style 4 (Pro)', 'essential-addons-for-elementor-lite'),
                     'style-5' => esc_html__('Pricing Style 5 (Pro)', 'essential-addons-for-elementor-lite'),
-<<<<<<< HEAD
-=======
-=======
-                    'style-1' => esc_html__( 'Default', 'essential-addons-for-elementor-lite' ),
-                    'style-2' => esc_html__( 'Pricing Style 2', 'essential-addons-for-elementor-lite' ),
-                    'style-3' => esc_html__( 'Pricing Style 3 (Pro)', 'essential-addons-for-elementor-lite' ),
-                    'style-4' => esc_html__( 'Pricing Style 4 (Pro)', 'essential-addons-for-elementor-lite' ),
-                    'style-5' => esc_html__( 'Pricing Style 5 (Pro)', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 ],
                 'conditions' => ['style-3', 'style-4', 'style-5'],
             ]
@@ -183,15 +93,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_style',
             [
-<<<<<<< HEAD
                 'label'       => esc_html__('Pricing Style', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'       => esc_html__('Pricing Style', 'essential-addons-for-elementor-lite'),
-=======
-                'label'       => esc_html__( 'Pricing Style', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'        => Controls_Manager::SELECT,
                 'default'     => 'style-1',
                 'label_block' => false,
@@ -202,15 +104,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_style_pro_alert',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Only available in pro version!', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Only available in pro version!', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Only available in pro version!', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::HEADING,
                 'condition' => [
                     'eael_pricing_table_style' => $pricing_style['conditions'],
@@ -218,15 +112,7 @@ class Pricing_Table extends Widget_Base {
             ]
         );
 
-<<<<<<< HEAD
         do_action('eael_pricing_table_after_pricing_style', $this);
-=======
-<<<<<<< HEAD
-        do_action('eael_pricing_table_after_pricing_style', $this);
-=======
-        do_action( 'eael_pricing_table_after_pricing_style', $this );
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
 
         /**
          * Condition: 'eael_pricing_table_featured' => 'yes'
@@ -234,15 +120,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_icon_enabled',
             [
-<<<<<<< HEAD
                 'label'        => esc_html__('List Icon', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'        => esc_html__('List Icon', 'essential-addons-for-elementor-lite'),
-=======
-                'label'        => esc_html__( 'List Icon', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'         => Controls_Manager::SWITCHER,
                 'return_value' => 'show',
                 'default'      => 'show',
@@ -252,34 +130,16 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_title',
             [
-<<<<<<< HEAD
                 'label'       => esc_html__('Title', 'essential-addons-for-elementor-lite'),
                 'type'        => Controls_Manager::TEXT,
                 'label_block' => false,
                 'default'     => esc_html__('Startup', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'       => esc_html__('Title', 'essential-addons-for-elementor-lite'),
-                'type'        => Controls_Manager::TEXT,
-                'label_block' => false,
-                'default'     => esc_html__('Startup', 'essential-addons-for-elementor-lite'),
-=======
-                'label'       => esc_html__( 'Title', 'essential-addons-for-elementor-lite' ),
-                'type'        => Controls_Manager::TEXT,
-                'label_block' => false,
-                'default'     => esc_html__( 'Startup', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
             ]
         );
 
         /**
          * Condition: 'eael_pricing_table_style' => 'style-2'
          */
-<<<<<<< HEAD
-        $subtitles_fields = apply_filters('pricing_table_subtitle_field_for', ['style-2']);
-=======
-<<<<<<< HEAD
         $subtitles_fields = apply_filters('pricing_table_subtitle_field_for', ['style-2']);
         $this->add_control(
             'eael_pricing_table_sub_title',
@@ -288,21 +148,6 @@ class Pricing_Table extends Widget_Base {
                 'type'        => Controls_Manager::TEXT,
                 'label_block' => false,
                 'default'     => esc_html__('A tagline here.', 'essential-addons-for-elementor-lite'),
-=======
-        $subtitles_fields = apply_filters( 'pricing_table_subtitle_field_for', ['style-2'] );
->>>>>>> yanzhou-li
-        $this->add_control(
-            'eael_pricing_table_sub_title',
-            [
-                'label'       => esc_html__('Sub Title', 'essential-addons-for-elementor-lite'),
-                'type'        => Controls_Manager::TEXT,
-                'label_block' => false,
-<<<<<<< HEAD
-                'default'     => esc_html__('A tagline here.', 'essential-addons-for-elementor-lite'),
-=======
-                'default'     => esc_html__( 'A tagline here.', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'condition'   => [
                     'eael_pricing_table_style' => $subtitles_fields,
                 ],
@@ -315,15 +160,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_style_2_icon_new',
             [
-<<<<<<< HEAD
                 'label'            => esc_html__('Icon', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'            => esc_html__('Icon', 'essential-addons-for-elementor-lite'),
-=======
-                'label'            => esc_html__( 'Icon', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'             => Controls_Manager::ICONS,
                 'fa4compatibility' => 'eael_pricing_table_style_2_icon',
                 'default'          => [
@@ -331,28 +168,12 @@ class Pricing_Table extends Widget_Base {
                     'library' => 'fa-solid',
                 ],
                 'condition'        => [
-<<<<<<< HEAD
                     'eael_pricing_table_style' => apply_filters('eael_pricing_table_icon_supported_style', ['style-2']),
-=======
-<<<<<<< HEAD
-                    'eael_pricing_table_style' => apply_filters('eael_pricing_table_icon_supported_style', ['style-2']),
-=======
-                    'eael_pricing_table_style' => apply_filters( 'eael_pricing_table_icon_supported_style', ['style-2'] ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 ],
             ]
         );
 
-<<<<<<< HEAD
         do_action('add_pricing_table_settings_control', $this);
-=======
-<<<<<<< HEAD
-        do_action('add_pricing_table_settings_control', $this);
-=======
-        do_action( 'add_pricing_table_settings_control', $this );
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
 
         $this->end_controls_section();
 
@@ -362,89 +183,37 @@ class Pricing_Table extends Widget_Base {
         $this->start_controls_section(
             'eael_section_pricing_table_price',
             [
-<<<<<<< HEAD
                 'label' => esc_html__('Price', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label' => esc_html__('Price', 'essential-addons-for-elementor-lite'),
-=======
-                'label' => esc_html__( 'Price', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
             ]
         );
 
         $this->add_control(
             'eael_pricing_table_price',
             [
-<<<<<<< HEAD
                 'label'       => esc_html__('Price', 'essential-addons-for-elementor-lite'),
                 'type'        => Controls_Manager::TEXT,
                 'label_block' => false,
                 'default'     => esc_html__('99', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'       => esc_html__('Price', 'essential-addons-for-elementor-lite'),
-                'type'        => Controls_Manager::TEXT,
-                'label_block' => false,
-                'default'     => esc_html__('99', 'essential-addons-for-elementor-lite'),
-=======
-                'label'       => esc_html__( 'Price', 'essential-addons-for-elementor-lite' ),
-                'type'        => Controls_Manager::TEXT,
-                'label_block' => false,
-                'default'     => esc_html__( '99', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
             ]
         );
         $this->add_control(
             'eael_pricing_table_onsale',
             [
-<<<<<<< HEAD
                 'label'        => __('On Sale?', 'essential-addons-for-elementor-lite'),
                 'type'         => Controls_Manager::SWITCHER,
                 'default'      => 'no',
                 'label_on'     => __('Yes', 'essential-addons-for-elementor-lite'),
                 'label_off'    => __('No', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'        => __('On Sale?', 'essential-addons-for-elementor-lite'),
-                'type'         => Controls_Manager::SWITCHER,
-                'default'      => 'no',
-                'label_on'     => __('Yes', 'essential-addons-for-elementor-lite'),
-                'label_off'    => __('No', 'essential-addons-for-elementor-lite'),
-=======
-                'label'        => __( 'On Sale?', 'essential-addons-for-elementor-lite' ),
-                'type'         => Controls_Manager::SWITCHER,
-                'default'      => 'no',
-                'label_on'     => __( 'Yes', 'essential-addons-for-elementor-lite' ),
-                'label_off'    => __( 'No', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'return_value' => 'yes',
             ]
         );
         $this->add_control(
             'eael_pricing_table_onsale_price',
             [
-<<<<<<< HEAD
                 'label'       => esc_html__('Sale Price', 'essential-addons-for-elementor-lite'),
                 'type'        => Controls_Manager::TEXT,
                 'label_block' => false,
                 'default'     => esc_html__('89', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'       => esc_html__('Sale Price', 'essential-addons-for-elementor-lite'),
-                'type'        => Controls_Manager::TEXT,
-                'label_block' => false,
-                'default'     => esc_html__('89', 'essential-addons-for-elementor-lite'),
-=======
-                'label'       => esc_html__( 'Sale Price', 'essential-addons-for-elementor-lite' ),
-                'type'        => Controls_Manager::TEXT,
-                'label_block' => false,
-                'default'     => esc_html__( '89', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'condition'   => [
                     'eael_pricing_table_onsale' => 'yes',
                 ],
@@ -453,114 +222,46 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_price_cur',
             [
-<<<<<<< HEAD
                 'label'       => esc_html__('Price Currency', 'essential-addons-for-elementor-lite'),
                 'type'        => Controls_Manager::TEXT,
                 'label_block' => false,
                 'default'     => esc_html__('$', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'       => esc_html__('Price Currency', 'essential-addons-for-elementor-lite'),
-                'type'        => Controls_Manager::TEXT,
-                'label_block' => false,
-                'default'     => esc_html__('$', 'essential-addons-for-elementor-lite'),
-=======
-                'label'       => esc_html__( 'Price Currency', 'essential-addons-for-elementor-lite' ),
-                'type'        => Controls_Manager::TEXT,
-                'label_block' => false,
-                'default'     => esc_html__( '$', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
             ]
         );
 
         $this->add_control(
             'eael_pricing_table_price_cur_placement',
             [
-<<<<<<< HEAD
                 'label'       => esc_html__('Currency Placement', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'       => esc_html__('Currency Placement', 'essential-addons-for-elementor-lite'),
-=======
-                'label'       => esc_html__( 'Currency Placement', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'        => Controls_Manager::SELECT,
                 'default'     => 'left',
                 'label_block' => false,
                 'options'     => [
-<<<<<<< HEAD
                     'left'  => esc_html__('Left', 'essential-addons-for-elementor-lite'),
                     'right' => esc_html__('Right', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                    'left'  => esc_html__('Left', 'essential-addons-for-elementor-lite'),
-                    'right' => esc_html__('Right', 'essential-addons-for-elementor-lite'),
-=======
-                    'left'  => esc_html__( 'Left', 'essential-addons-for-elementor-lite' ),
-                    'right' => esc_html__( 'Right', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 ],
             ]
         );
 
-<<<<<<< HEAD
         do_action('pricing_table_currency_position', $this);
-=======
-<<<<<<< HEAD
-        do_action('pricing_table_currency_position', $this);
-=======
-        do_action( 'pricing_table_currency_position', $this );
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
 
         $this->add_control(
             'eael_pricing_table_price_period',
             [
-<<<<<<< HEAD
                 'label'       => esc_html__('Price Period (per)', 'essential-addons-for-elementor-lite'),
                 'type'        => Controls_Manager::TEXT,
                 'label_block' => false,
                 'default'     => esc_html__('month', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'       => esc_html__('Price Period (per)', 'essential-addons-for-elementor-lite'),
-                'type'        => Controls_Manager::TEXT,
-                'label_block' => false,
-                'default'     => esc_html__('month', 'essential-addons-for-elementor-lite'),
-=======
-                'label'       => esc_html__( 'Price Period (per)', 'essential-addons-for-elementor-lite' ),
-                'type'        => Controls_Manager::TEXT,
-                'label_block' => false,
-                'default'     => esc_html__( 'month', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
             ]
         );
 
         $this->add_control(
             'eael_pricing_table_period_separator',
             [
-<<<<<<< HEAD
                 'label'       => esc_html__('Period Separator', 'essential-addons-for-elementor-lite'),
                 'type'        => Controls_Manager::TEXT,
                 'label_block' => false,
                 'default'     => esc_html__('/', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'       => esc_html__('Period Separator', 'essential-addons-for-elementor-lite'),
-                'type'        => Controls_Manager::TEXT,
-                'label_block' => false,
-                'default'     => esc_html__('/', 'essential-addons-for-elementor-lite'),
-=======
-                'label'       => esc_html__( 'Period Separator', 'essential-addons-for-elementor-lite' ),
-                'type'        => Controls_Manager::TEXT,
-                'label_block' => false,
-                'default'     => esc_html__( '/', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
             ]
         );
 
@@ -572,15 +273,7 @@ class Pricing_Table extends Widget_Base {
         $this->start_controls_section(
             'eael_section_pricing_table_feature',
             [
-<<<<<<< HEAD
                 'label' => esc_html__('Feature', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label' => esc_html__('Feature', 'essential-addons-for-elementor-lite'),
-=======
-                'label' => esc_html__( 'Feature', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
             ]
         );
 
@@ -599,10 +292,6 @@ class Pricing_Table extends Widget_Base {
                 'fields'      => [
                     [
                         'name'        => 'eael_pricing_table_item',
-<<<<<<< HEAD
-                        'label'       => esc_html__('List Item', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
                         'label'       => esc_html__('List Item', 'essential-addons-for-elementor-lite'),
                         'type'        => Controls_Manager::TEXT,
                         'label_block' => true,
@@ -611,21 +300,6 @@ class Pricing_Table extends Widget_Base {
                     [
                         'name'             => 'eael_pricing_table_list_icon_new',
                         'label'            => esc_html__('List Icon', 'essential-addons-for-elementor-lite'),
-=======
-                        'label'       => esc_html__( 'List Item', 'essential-addons-for-elementor-lite' ),
->>>>>>> yanzhou-li
-                        'type'        => Controls_Manager::TEXT,
-                        'label_block' => true,
-                        'default'     => esc_html__('Pricing table list item', 'essential-addons-for-elementor-lite'),
-                    ],
-                    [
-                        'name'             => 'eael_pricing_table_list_icon_new',
-<<<<<<< HEAD
-                        'label'            => esc_html__('List Icon', 'essential-addons-for-elementor-lite'),
-=======
-                        'label'            => esc_html__( 'List Icon', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                         'type'             => Controls_Manager::ICONS,
                         'fa4compatibility' => 'eael_pricing_table_list_icon',
                         'default'          => [
@@ -635,75 +309,35 @@ class Pricing_Table extends Widget_Base {
                     ],
                     [
                         'name'         => 'eael_pricing_table_icon_mood',
-<<<<<<< HEAD
                         'label'        => esc_html__('Item Active?', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                        'label'        => esc_html__('Item Active?', 'essential-addons-for-elementor-lite'),
-=======
-                        'label'        => esc_html__( 'Item Active?', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                         'type'         => Controls_Manager::SWITCHER,
                         'return_value' => 'yes',
                         'default'      => 'yes',
                     ],
                     [
                         'name'    => 'eael_pricing_table_list_icon_color',
-<<<<<<< HEAD
                         'label'   => esc_html__('Icon Color', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                        'label'   => esc_html__('Icon Color', 'essential-addons-for-elementor-lite'),
-=======
-                        'label'   => esc_html__( 'Icon Color', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                         'type'    => Controls_Manager::COLOR,
                         'default' => '#00C853',
                     ],
                     [
                         'name'         => 'eael_pricing_item_tooltip',
-<<<<<<< HEAD
                         'label'        => esc_html__('Enable Tooltip?', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                        'label'        => esc_html__('Enable Tooltip?', 'essential-addons-for-elementor-lite'),
-=======
-                        'label'        => esc_html__( 'Enable Tooltip?', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                         'type'         => Controls_Manager::SWITCHER,
                         'return_value' => 'yes',
                         'default'      => false,
                     ],
                     [
                         'name'      => 'eael_pricing_item_tooltip_content',
-<<<<<<< HEAD
                         'label'     => esc_html__('Tooltip Content', 'essential-addons-for-elementor-lite'),
                         'type'      => Controls_Manager::TEXTAREA,
                         'default'   => __("I'm a awesome tooltip!!", 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                        'label'     => esc_html__('Tooltip Content', 'essential-addons-for-elementor-lite'),
-                        'type'      => Controls_Manager::TEXTAREA,
-                        'default'   => __("I'm a awesome tooltip!!", 'essential-addons-for-elementor-lite'),
-=======
-                        'label'     => esc_html__( 'Tooltip Content', 'essential-addons-for-elementor-lite' ),
-                        'type'      => Controls_Manager::TEXTAREA,
-                        'default'   => __( "I'm a awesome tooltip!!", 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                         'condition' => [
                             'eael_pricing_item_tooltip' => 'yes',
                         ],
                     ],
                     [
                         'name'      => 'eael_pricing_item_tooltip_side',
-<<<<<<< HEAD
-                        'label'     => esc_html__('Tooltip Side', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
                         'label'     => esc_html__('Tooltip Side', 'essential-addons-for-elementor-lite'),
                         'type'      => Controls_Manager::CHOOSE,
                         'options'   => [
@@ -721,30 +355,6 @@ class Pricing_Table extends Widget_Base {
                             ],
                             'bottom' => [
                                 'title' => __('Bottom', 'essential-addons-for-elementor-lite'),
-=======
-                        'label'     => esc_html__( 'Tooltip Side', 'essential-addons-for-elementor-lite' ),
->>>>>>> yanzhou-li
-                        'type'      => Controls_Manager::CHOOSE,
-                        'options'   => [
-                            'left'   => [
-                                'title' => __('Left', 'essential-addons-for-elementor-lite'),
-                                'icon'  => 'eicon-h-align-left',
-                            ],
-                            'top'    => [
-                                'title' => __('Top', 'essential-addons-for-elementor-lite'),
-                                'icon'  => 'eicon-v-align-top',
-                            ],
-                            'right'  => [
-                                'title' => __('Right', 'essential-addons-for-elementor-lite'),
-                                'icon'  => 'eicon-h-align-right',
-                            ],
-                            'bottom' => [
-<<<<<<< HEAD
-                                'title' => __('Bottom', 'essential-addons-for-elementor-lite'),
-=======
-                                'title' => __( 'Bottom', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                                 'icon'  => 'eicon-v-align-bottom',
                             ],
                         ],
@@ -755,27 +365,11 @@ class Pricing_Table extends Widget_Base {
                     ],
                     [
                         'name'      => 'eael_pricing_item_tooltip_trigger',
-<<<<<<< HEAD
                         'label'     => esc_html__('Tooltip Trigger', 'essential-addons-for-elementor-lite'),
                         'type'      => Controls_Manager::SELECT2,
                         'options'   => [
                             'hover' => __('Hover', 'essential-addons-for-elementor-lite'),
                             'click' => __('Click', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                        'label'     => esc_html__('Tooltip Trigger', 'essential-addons-for-elementor-lite'),
-                        'type'      => Controls_Manager::SELECT2,
-                        'options'   => [
-                            'hover' => __('Hover', 'essential-addons-for-elementor-lite'),
-                            'click' => __('Click', 'essential-addons-for-elementor-lite'),
-=======
-                        'label'     => esc_html__( 'Tooltip Trigger', 'essential-addons-for-elementor-lite' ),
-                        'type'      => Controls_Manager::SELECT2,
-                        'options'   => [
-                            'hover' => __( 'Hover', 'essential-addons-for-elementor-lite' ),
-                            'click' => __( 'Click', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                         ],
                         'default'   => 'hover',
                         'condition' => [
@@ -784,7 +378,6 @@ class Pricing_Table extends Widget_Base {
                     ],
                     [
                         'name'      => 'eael_pricing_item_tooltip_animation',
-<<<<<<< HEAD
                         'label'     => esc_html__('Tooltip Animation', 'essential-addons-for-elementor-lite'),
                         'type'      => Controls_Manager::SELECT2,
                         'options'   => [
@@ -793,27 +386,6 @@ class Pricing_Table extends Widget_Base {
                             'swing' => __('Swing', 'essential-addons-for-elementor-lite'),
                             'slide' => __('Slide', 'essential-addons-for-elementor-lite'),
                             'fall'  => __('Fall', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                        'label'     => esc_html__('Tooltip Animation', 'essential-addons-for-elementor-lite'),
-                        'type'      => Controls_Manager::SELECT2,
-                        'options'   => [
-                            'fade'  => __('Fade', 'essential-addons-for-elementor-lite'),
-                            'grow'  => __('Grow', 'essential-addons-for-elementor-lite'),
-                            'swing' => __('Swing', 'essential-addons-for-elementor-lite'),
-                            'slide' => __('Slide', 'essential-addons-for-elementor-lite'),
-                            'fall'  => __('Fall', 'essential-addons-for-elementor-lite'),
-=======
-                        'label'     => esc_html__( 'Tooltip Animation', 'essential-addons-for-elementor-lite' ),
-                        'type'      => Controls_Manager::SELECT2,
-                        'options'   => [
-                            'fade'  => __( 'Fade', 'essential-addons-for-elementor-lite' ),
-                            'grow'  => __( 'Grow', 'essential-addons-for-elementor-lite' ),
-                            'swing' => __( 'Swing', 'essential-addons-for-elementor-lite' ),
-                            'slide' => __( 'Slide', 'essential-addons-for-elementor-lite' ),
-                            'fall'  => __( 'Fall', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                         ],
                         'default'   => 'fade',
                         'condition' => [
@@ -822,15 +394,7 @@ class Pricing_Table extends Widget_Base {
                     ],
                     [
                         'name'      => 'pricing_item_tooltip_animation_duration',
-<<<<<<< HEAD
                         'label'     => esc_html__('Animation Duration', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                        'label'     => esc_html__('Animation Duration', 'essential-addons-for-elementor-lite'),
-=======
-                        'label'     => esc_html__( 'Animation Duration', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                         'type'      => Controls_Manager::TEXT,
                         'default'   => 300,
                         'condition' => [
@@ -839,15 +403,7 @@ class Pricing_Table extends Widget_Base {
                     ],
                     [
                         'name'         => 'eael_pricing_table_toolip_arrow',
-<<<<<<< HEAD
                         'label'        => esc_html__('Tooltip Arrow', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                        'label'        => esc_html__('Tooltip Arrow', 'essential-addons-for-elementor-lite'),
-=======
-                        'label'        => esc_html__( 'Tooltip Arrow', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                         'type'         => Controls_Manager::SWITCHER,
                         'return_value' => 'yes',
                         'default'      => 'yes',
@@ -857,7 +413,6 @@ class Pricing_Table extends Widget_Base {
                     ],
                     [
                         'name'      => 'eael_pricing_item_tooltip_theme',
-<<<<<<< HEAD
                         'label'     => esc_html__('Tooltip Theme', 'essential-addons-for-elementor-lite'),
                         'type'      => Controls_Manager::SELECT2,
                         'options'   => [
@@ -867,29 +422,6 @@ class Pricing_Table extends Widget_Base {
                             'punk'       => __('Punk', 'essential-addons-for-elementor-lite'),
                             'shadow'     => __('Shadow', 'essential-addons-for-elementor-lite'),
                             'borderless' => __('Borderless', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                        'label'     => esc_html__('Tooltip Theme', 'essential-addons-for-elementor-lite'),
-                        'type'      => Controls_Manager::SELECT2,
-                        'options'   => [
-                            'default'    => __('Default', 'essential-addons-for-elementor-lite'),
-                            'noir'       => __('Noir', 'essential-addons-for-elementor-lite'),
-                            'light'      => __('Light', 'essential-addons-for-elementor-lite'),
-                            'punk'       => __('Punk', 'essential-addons-for-elementor-lite'),
-                            'shadow'     => __('Shadow', 'essential-addons-for-elementor-lite'),
-                            'borderless' => __('Borderless', 'essential-addons-for-elementor-lite'),
-=======
-                        'label'     => esc_html__( 'Tooltip Theme', 'essential-addons-for-elementor-lite' ),
-                        'type'      => Controls_Manager::SELECT2,
-                        'options'   => [
-                            'default'    => __( 'Default', 'essential-addons-for-elementor-lite' ),
-                            'noir'       => __( 'Noir', 'essential-addons-for-elementor-lite' ),
-                            'light'      => __( 'Light', 'essential-addons-for-elementor-lite' ),
-                            'punk'       => __( 'Punk', 'essential-addons-for-elementor-lite' ),
-                            'shadow'     => __( 'Shadow', 'essential-addons-for-elementor-lite' ),
-                            'borderless' => __( 'Borderless', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                         ],
                         'default'   => 'noir',
                         'condition' => [
@@ -909,39 +441,17 @@ class Pricing_Table extends Widget_Base {
         $this->start_controls_section(
             'eael_section_pricing_table_footerr',
             [
-<<<<<<< HEAD
                 'label' => esc_html__('Button', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label' => esc_html__('Button', 'essential-addons-for-elementor-lite'),
-=======
-                'label' => esc_html__( 'Button', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
             ]
         );
 
         $this->add_control(
             'eael_pricing_table_button_show',
             [
-<<<<<<< HEAD
                 'label'        => __('Display Button', 'essential-addons-for-elementor-lite'),
                 'type'         => Controls_Manager::SWITCHER,
                 'label_on'     => __('Show', 'essential-addons-for-elementor-lite'),
                 'label_off'    => __('Hide', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'        => __('Display Button', 'essential-addons-for-elementor-lite'),
-                'type'         => Controls_Manager::SWITCHER,
-                'label_on'     => __('Show', 'essential-addons-for-elementor-lite'),
-                'label_off'    => __('Hide', 'essential-addons-for-elementor-lite'),
-=======
-                'label'        => __( 'Display Button', 'essential-addons-for-elementor-lite' ),
-                'type'         => Controls_Manager::SWITCHER,
-                'label_on'     => __( 'Show', 'essential-addons-for-elementor-lite' ),
-                'label_off'    => __( 'Hide', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'return_value' => 'yes',
                 'default'      => 'yes',
                 'selectors'    => [
@@ -953,15 +463,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_button_icon_new',
             [
-<<<<<<< HEAD
                 'label'            => esc_html__('Button Icon', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'            => esc_html__('Button Icon', 'essential-addons-for-elementor-lite'),
-=======
-                'label'            => esc_html__( 'Button Icon', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'             => Controls_Manager::ICONS,
                 'fa4compatibility' => 'eael_pricing_table_button_icon',
                 'condition'        => [
@@ -973,30 +475,12 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_button_icon_alignment',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Icon Position', 'essential-addons-for-elementor-lite'),
                 'type'      => Controls_Manager::SELECT,
                 'default'   => 'left',
                 'options'   => [
                     'left'  => esc_html__('Before', 'essential-addons-for-elementor-lite'),
                     'right' => esc_html__('After', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Icon Position', 'essential-addons-for-elementor-lite'),
-                'type'      => Controls_Manager::SELECT,
-                'default'   => 'left',
-                'options'   => [
-                    'left'  => esc_html__('Before', 'essential-addons-for-elementor-lite'),
-                    'right' => esc_html__('After', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Icon Position', 'essential-addons-for-elementor-lite' ),
-                'type'      => Controls_Manager::SELECT,
-                'default'   => 'left',
-                'options'   => [
-                    'left'  => esc_html__( 'Before', 'essential-addons-for-elementor-lite' ),
-                    'right' => esc_html__( 'After', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 ],
                 'condition' => [
                     'eael_pricing_table_button_icon_new!' => '',
@@ -1008,15 +492,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_button_icon_indent',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Icon Spacing', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Icon Spacing', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Icon Spacing', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::SLIDER,
                 'range'     => [
                     'px' => [
@@ -1037,24 +513,10 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_btn',
             [
-<<<<<<< HEAD
                 'label'       => esc_html__('Button Text', 'essential-addons-for-elementor-lite'),
                 'type'        => Controls_Manager::TEXT,
                 'label_block' => true,
                 'default'     => esc_html__('Choose Plan', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'       => esc_html__('Button Text', 'essential-addons-for-elementor-lite'),
-                'type'        => Controls_Manager::TEXT,
-                'label_block' => true,
-                'default'     => esc_html__('Choose Plan', 'essential-addons-for-elementor-lite'),
-=======
-                'label'       => esc_html__( 'Button Text', 'essential-addons-for-elementor-lite' ),
-                'type'        => Controls_Manager::TEXT,
-                'label_block' => true,
-                'default'     => esc_html__( 'Choose Plan', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'condition'   => [
                     'eael_pricing_table_button_show' => 'yes',
                 ],
@@ -1064,15 +526,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_btn_link',
             [
-<<<<<<< HEAD
                 'label'         => esc_html__('Button Link', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'         => esc_html__('Button Link', 'essential-addons-for-elementor-lite'),
-=======
-                'label'         => esc_html__( 'Button Link', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'          => Controls_Manager::URL,
                 'label_block'   => true,
                 'default'       => [
@@ -1094,30 +548,14 @@ class Pricing_Table extends Widget_Base {
         $this->start_controls_section(
             'eael_section_pricing_table_featured',
             [
-<<<<<<< HEAD
                 'label' => esc_html__('Ribbon', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label' => esc_html__('Ribbon', 'essential-addons-for-elementor-lite'),
-=======
-                'label' => esc_html__( 'Ribbon', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
             ]
         );
 
         $this->add_control(
             'eael_pricing_table_featured',
             [
-<<<<<<< HEAD
                 'label'        => esc_html__('Featured?', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'        => esc_html__('Featured?', 'essential-addons-for-elementor-lite'),
-=======
-                'label'        => esc_html__( 'Featured?', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'         => Controls_Manager::SWITCHER,
                 'return_value' => 'yes',
                 'default'      => 'no',
@@ -1127,7 +565,6 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_featured_styles',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Ribbon Style', 'essential-addons-for-elementor-lite'),
                 'type'      => Controls_Manager::SELECT,
                 'default'   => 'ribbon-1',
@@ -1136,27 +573,6 @@ class Pricing_Table extends Widget_Base {
                     'ribbon-2' => esc_html__('Style 2', 'essential-addons-for-elementor-lite'),
                     'ribbon-3' => esc_html__('Style 3', 'essential-addons-for-elementor-lite'),
                     'ribbon-4' => esc_html__('Style 4', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Ribbon Style', 'essential-addons-for-elementor-lite'),
-                'type'      => Controls_Manager::SELECT,
-                'default'   => 'ribbon-1',
-                'options'   => [
-                    'ribbon-1' => esc_html__('Style 1', 'essential-addons-for-elementor-lite'),
-                    'ribbon-2' => esc_html__('Style 2', 'essential-addons-for-elementor-lite'),
-                    'ribbon-3' => esc_html__('Style 3', 'essential-addons-for-elementor-lite'),
-                    'ribbon-4' => esc_html__('Style 4', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Ribbon Style', 'essential-addons-for-elementor-lite' ),
-                'type'      => Controls_Manager::SELECT,
-                'default'   => 'ribbon-1',
-                'options'   => [
-                    'ribbon-1' => esc_html__( 'Style 1', 'essential-addons-for-elementor-lite' ),
-                    'ribbon-2' => esc_html__( 'Style 2', 'essential-addons-for-elementor-lite' ),
-                    'ribbon-3' => esc_html__( 'Style 3', 'essential-addons-for-elementor-lite' ),
-                    'ribbon-4' => esc_html__( 'Style 4', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 ],
                 'condition' => [
                     'eael_pricing_table_featured' => 'yes',
@@ -1170,24 +586,10 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_featured_tag_text',
             [
-<<<<<<< HEAD
                 'label'       => esc_html__('Featured Tag Text', 'essential-addons-for-elementor-lite'),
                 'type'        => Controls_Manager::TEXT,
                 'label_block' => false,
                 'default'     => esc_html__('Featured', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'       => esc_html__('Featured Tag Text', 'essential-addons-for-elementor-lite'),
-                'type'        => Controls_Manager::TEXT,
-                'label_block' => false,
-                'default'     => esc_html__('Featured', 'essential-addons-for-elementor-lite'),
-=======
-                'label'       => esc_html__( 'Featured Tag Text', 'essential-addons-for-elementor-lite' ),
-                'type'        => Controls_Manager::TEXT,
-                'label_block' => false,
-                'default'     => esc_html__( 'Featured', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'selectors'   => [
                     '{{WRAPPER}} .eael-pricing.style-1 .eael-pricing-item.featured:before' => 'content: "{{VALUE}}";',
                     '{{WRAPPER}} .eael-pricing.style-2 .eael-pricing-item.featured:before' => 'content: "{{VALUE}}";',
@@ -1204,10 +606,6 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_ribbon_alignment',
             [
-<<<<<<< HEAD
-                'label'     => __('Ribbon Alignment', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
                 'label'     => __('Ribbon Alignment', 'essential-addons-for-elementor-lite'),
                 'type'      => \Elementor\Controls_Manager::CHOOSE,
                 'options'   => [
@@ -1217,22 +615,6 @@ class Pricing_Table extends Widget_Base {
                     ],
                     'right' => [
                         'title' => __('Right', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => __( 'Ribbon Alignment', 'essential-addons-for-elementor-lite' ),
->>>>>>> yanzhou-li
-                'type'      => \Elementor\Controls_Manager::CHOOSE,
-                'options'   => [
-                    'left'  => [
-                        'title' => __('Left', 'essential-addons-for-elementor-lite'),
-                        'icon'  => 'fa fa-align-left',
-                    ],
-                    'right' => [
-<<<<<<< HEAD
-                        'title' => __('Right', 'essential-addons-for-elementor-lite'),
-=======
-                        'title' => __( 'Right', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                         'icon'  => 'fa fa-align-right',
                     ],
                 ],
@@ -1246,42 +628,18 @@ class Pricing_Table extends Widget_Base {
 
         $this->end_controls_section();
 
-<<<<<<< HEAD
         if (!apply_filters('eael/pro_enabled', false)) {
             $this->start_controls_section(
                 'eael_section_pro',
                 [
                     'label' => __('Go Premium for More Features', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-        if (!apply_filters('eael/pro_enabled', false)) {
-            $this->start_controls_section(
-                'eael_section_pro',
-                [
-                    'label' => __('Go Premium for More Features', 'essential-addons-for-elementor-lite'),
-=======
-        if ( !apply_filters( 'eael/pro_enabled', false ) ) {
-            $this->start_controls_section(
-                'eael_section_pro',
-                [
-                    'label' => __( 'Go Premium for More Features', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 ]
             );
 
             $this->add_control(
                 'eael_control_get_pro',
                 [
-<<<<<<< HEAD
                     'label'       => __('Unlock more possibilities', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                    'label'       => __('Unlock more possibilities', 'essential-addons-for-elementor-lite'),
-=======
-                    'label'       => __( 'Unlock more possibilities', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                     'type'        => Controls_Manager::CHOOSE,
                     'options'     => [
                         '1' => [
@@ -1305,15 +663,7 @@ class Pricing_Table extends Widget_Base {
         $this->start_controls_section(
             'eael_section_pricing_table_style_settings',
             [
-<<<<<<< HEAD
                 'label' => esc_html__('Pricing Table Style', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label' => esc_html__('Pricing Table Style', 'essential-addons-for-elementor-lite'),
-=======
-                'label' => esc_html__( 'Pricing Table Style', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -1321,15 +671,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_bg_color',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Background Color', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Background Color', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Background Color', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -1341,15 +683,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_responsive_control(
             'eael_pricing_table_container_padding',
             [
-<<<<<<< HEAD
                 'label'      => esc_html__('Padding', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'      => esc_html__('Padding', 'essential-addons-for-elementor-lite'),
-=======
-                'label'      => esc_html__( 'Padding', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors'  => [
@@ -1361,15 +695,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_responsive_control(
             'eael_pricing_table_container_margin',
             [
-<<<<<<< HEAD
                 'label'      => esc_html__('Margin', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'      => esc_html__('Margin', 'essential-addons-for-elementor-lite'),
-=======
-                'label'      => esc_html__( 'Margin', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors'  => [
@@ -1382,15 +708,7 @@ class Pricing_Table extends Widget_Base {
             Group_Control_Border::get_type(),
             [
                 'name'     => 'eael_pricing_table_border',
-<<<<<<< HEAD
                 'label'    => esc_html__('Border Type', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'    => esc_html__('Border Type', 'essential-addons-for-elementor-lite'),
-=======
-                'label'    => esc_html__( 'Border Type', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'selector' => '{{WRAPPER}} .eael-pricing .eael-pricing-item',
             ]
         );
@@ -1398,15 +716,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_border_radius',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Border Radius', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Border Radius', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Border Radius', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::SLIDER,
                 'default'   => [
                     'size' => 4,
@@ -1435,23 +745,11 @@ class Pricing_Table extends Widget_Base {
         $this->add_responsive_control(
             'eael_pricing_table_content_alignment',
             [
-<<<<<<< HEAD
                 'label'        => esc_html__('Content Alignment', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'        => esc_html__('Content Alignment', 'essential-addons-for-elementor-lite'),
-=======
-                'label'        => esc_html__( 'Content Alignment', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'         => Controls_Manager::CHOOSE,
                 'label_block'  => true,
                 'options'      => [
                     'left'   => [
-<<<<<<< HEAD
-                        'title' => esc_html__('Left', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
                         'title' => esc_html__('Left', 'essential-addons-for-elementor-lite'),
                         'icon'  => 'fa fa-align-left',
                     ],
@@ -1461,22 +759,6 @@ class Pricing_Table extends Widget_Base {
                     ],
                     'right'  => [
                         'title' => esc_html__('Right', 'essential-addons-for-elementor-lite'),
-=======
-                        'title' => esc_html__( 'Left', 'essential-addons-for-elementor-lite' ),
->>>>>>> yanzhou-li
-                        'icon'  => 'fa fa-align-left',
-                    ],
-                    'center' => [
-                        'title' => esc_html__('Center', 'essential-addons-for-elementor-lite'),
-                        'icon'  => 'fa fa-align-center',
-                    ],
-                    'right'  => [
-<<<<<<< HEAD
-                        'title' => esc_html__('Right', 'essential-addons-for-elementor-lite'),
-=======
-                        'title' => esc_html__( 'Right', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                         'icon'  => 'fa fa-align-right',
                     ],
                 ],
@@ -1488,23 +770,11 @@ class Pricing_Table extends Widget_Base {
         $this->add_responsive_control(
             'eael_pricing_table_content_button_alignment',
             [
-<<<<<<< HEAD
                 'label'        => esc_html__('Button Alignment', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'        => esc_html__('Button Alignment', 'essential-addons-for-elementor-lite'),
-=======
-                'label'        => esc_html__( 'Button Alignment', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'         => Controls_Manager::CHOOSE,
                 'label_block'  => true,
                 'options'      => [
                     'left'   => [
-<<<<<<< HEAD
-                        'title' => esc_html__('Left', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
                         'title' => esc_html__('Left', 'essential-addons-for-elementor-lite'),
                         'icon'  => 'fa fa-align-left',
                     ],
@@ -1514,22 +784,6 @@ class Pricing_Table extends Widget_Base {
                     ],
                     'right'  => [
                         'title' => esc_html__('Right', 'essential-addons-for-elementor-lite'),
-=======
-                        'title' => esc_html__( 'Left', 'essential-addons-for-elementor-lite' ),
->>>>>>> yanzhou-li
-                        'icon'  => 'fa fa-align-left',
-                    ],
-                    'center' => [
-                        'title' => esc_html__('Center', 'essential-addons-for-elementor-lite'),
-                        'icon'  => 'fa fa-align-center',
-                    ],
-                    'right'  => [
-<<<<<<< HEAD
-                        'title' => esc_html__('Right', 'essential-addons-for-elementor-lite'),
-=======
-                        'title' => esc_html__( 'Right', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                         'icon'  => 'fa fa-align-right',
                     ],
                 ],
@@ -1548,15 +802,7 @@ class Pricing_Table extends Widget_Base {
         $this->start_controls_section(
             'eael_section_pricing_table_header_style_settings',
             [
-<<<<<<< HEAD
                 'label' => esc_html__('Header', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label' => esc_html__('Header', 'essential-addons-for-elementor-lite'),
-=======
-                'label' => esc_html__( 'Header', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -1564,15 +810,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_title_heading',
             [
-<<<<<<< HEAD
                 'label' => esc_html__('Title Style', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label' => esc_html__('Title Style', 'essential-addons-for-elementor-lite'),
-=======
-                'label' => esc_html__( 'Title Style', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'  => Controls_Manager::HEADING,
             ]
         );
@@ -1580,15 +818,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_title_color',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Color', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Color', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Color', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -1601,15 +831,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_style_2_title_bg_color',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Background Color', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Background Color', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Background Color', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#C8E6C9',
                 'selectors' => [
@@ -1625,10 +847,6 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_style_1_title_line_color',
             [
-<<<<<<< HEAD
-                'label'     => esc_html__('Line Color', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
                 'label'     => esc_html__('Line Color', 'essential-addons-for-elementor-lite'),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#dbdbdb',
@@ -1637,21 +855,6 @@ class Pricing_Table extends Widget_Base {
                 ],
                 'condition' => [
                     'eael_pricing_table_style' => ['style-1', 'style-3'],
-=======
-                'label'     => esc_html__( 'Line Color', 'essential-addons-for-elementor-lite' ),
->>>>>>> yanzhou-li
-                'type'      => Controls_Manager::COLOR,
-                'default'   => '#dbdbdb',
-                'selectors' => [
-                    '{{WRAPPER}} .eael-pricing.style-1 .eael-pricing-item .header:after, {{WRAPPER}} .eael-pricing.style-3 .eael-pricing-item .header:after' => 'background: {{VALUE}};',
-                ],
-                'condition' => [
-<<<<<<< HEAD
-                    'eael_pricing_table_style' => ['style-1', 'style-3'],
-=======
-                    'eael_pricing_table_style' => ['style-1'],
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 ],
             ]
         );
@@ -1667,15 +870,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_subtitle_heading',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Subtitle Style', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Subtitle Style', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Subtitle Style', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::HEADING,
                 'separator' => 'before',
                 'condition' => [
@@ -1687,15 +882,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_subtitle_color',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Color', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Color', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Color', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -1722,57 +909,25 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_header_bg_heading',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Background', 'essential-addons-elementor'),
                 'type'      => Controls_Manager::HEADING,
                 'separator' => 'before',
                 'condition' => [
                     'eael_pricing_table_style!' => apply_filters('eael_pricing_table_header_bg_supported_style', ['style-1', 'style-2']),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Background', 'essential-addons-elementor'),
-                'type'      => Controls_Manager::HEADING,
-                'separator' => 'before',
-                'condition' => [
-                    'eael_pricing_table_style!' => apply_filters('eael_pricing_table_header_bg_supported_style', ['style-1', 'style-2']),
-=======
-                'label'     => esc_html__( 'Background', 'essential-addons-elementor' ),
-                'type'      => Controls_Manager::HEADING,
-                'separator' => 'before',
-                'condition' => [
-                    'eael_pricing_table_style!' => apply_filters( 'eael_pricing_table_header_bg_supported_style', ['style-1', 'style-2'] ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 ],
             ]
         );
         $this->add_control(
             'eael_pricing_table_header_radius',
             [
-<<<<<<< HEAD
                 'label'      => __('Radius', 'essential-addons-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'      => __('Radius', 'essential-addons-elementor-lite'),
-=======
-                'label'      => __( 'Radius', 'essential-addons-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%', 'em'],
                 'selectors'  => [
                     '{{WRAPPER}} .eael-pricing.style-5 .eael-pricing-item .header' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
                 'condition'  => [
-<<<<<<< HEAD
                     'eael_pricing_table_style' => apply_filters('eael_pricing_table_header_radius_supported_style', []),
-=======
-<<<<<<< HEAD
-                    'eael_pricing_table_style' => apply_filters('eael_pricing_table_header_radius_supported_style', []),
-=======
-                    'eael_pricing_table_style' => apply_filters( 'eael_pricing_table_header_radius_supported_style', [] ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 ],
             ]
         );
@@ -1780,42 +935,18 @@ class Pricing_Table extends Widget_Base {
             Group_Control_Background::get_type(),
             [
                 'name'      => 'eael_pricing_table_header_bg',
-<<<<<<< HEAD
                 'label'     => __('Background', 'essential-addons-elementor-lite'),
                 'types'     => ['classic', 'gradient'],
                 'selector'  => '{{WRAPPER}} .eael-pricing.style-4 .eael-pricing-item .header, {{WRAPPER}} .eael-pricing.style-5 .eael-pricing-item .header',
                 'condition' => [
                     'eael_pricing_table_style' => apply_filters('eael_pricing_table_header_bg_supported_style', ['style-4']),
-=======
-<<<<<<< HEAD
-                'label'     => __('Background', 'essential-addons-elementor-lite'),
-                'types'     => ['classic', 'gradient'],
-                'selector'  => '{{WRAPPER}} .eael-pricing.style-4 .eael-pricing-item .header, {{WRAPPER}} .eael-pricing.style-5 .eael-pricing-item .header',
-                'condition' => [
-                    'eael_pricing_table_style' => apply_filters('eael_pricing_table_header_bg_supported_style', ['style-4']),
-=======
-                'label'     => __( 'Background', 'essential-addons-elementor-lite' ),
-                'types'     => ['classic', 'gradient'],
-                'selector'  => '{{WRAPPER}} .eael-pricing.style-4 .eael-pricing-item .header, {{WRAPPER}} .eael-pricing.style-5 .eael-pricing-item .header',
-                'condition' => [
-                    'eael_pricing_table_style' => apply_filters( 'eael_pricing_table_header_bg_supported_style', ['style-4'] ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 ],
             ]
         );
 
         $this->end_controls_section();
 
-<<<<<<< HEAD
         do_action('eael_pricing_table_control_header_extra_layout', $this);
-=======
-<<<<<<< HEAD
-        do_action('eael_pricing_table_control_header_extra_layout', $this);
-=======
-        do_action( 'eael_pricing_table_control_header_extra_layout', $this );
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
 
         /**
          * -------------------------------------------
@@ -1825,15 +956,7 @@ class Pricing_Table extends Widget_Base {
         $this->start_controls_section(
             'eael_section_pricing_table_title_style_settings',
             [
-<<<<<<< HEAD
                 'label' => esc_html__('Pricing', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label' => esc_html__('Pricing', 'essential-addons-for-elementor-lite'),
-=======
-                'label' => esc_html__( 'Pricing', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -1841,15 +964,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_price_tag_onsale_heading',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Original Price', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Original Price', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Original Price', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -1858,15 +973,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_pricing_onsale_color',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Color', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Color', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Color', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#999',
                 'selectors' => [
@@ -1886,15 +993,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_original_price_currency_heading',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Original Price Currency', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Original Price Currency', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Original Price Currency', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -1903,15 +1002,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_original_price_currency_color',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Color', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Color', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Color', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .eael-pricing-item .eael-pricing-tag .price-tag .original-price .price-currency' => 'color: {{VALUE}};',
@@ -1930,15 +1021,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_responsive_control(
             'eael_pricing_table_original_price_currency_margin',
             [
-<<<<<<< HEAD
                 'label'      => esc_html__('Margin', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'      => esc_html__('Margin', 'essential-addons-for-elementor-lite'),
-=======
-                'label'      => esc_html__( 'Margin', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors'  => [
@@ -1951,15 +1034,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_price_tag_heading',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Sale Price', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Sale Price', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Sale Price', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -1968,15 +1043,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_pricing_color',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Color', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Color', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Color', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#00C853',
                 'selectors' => [
@@ -1996,15 +1063,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_price_currency_heading',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Sale Price Currency', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Sale Price Currency', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Sale Price Currency', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -2013,15 +1072,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_pricing_curr_color',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Color', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Color', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Color', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .eael-pricing-item .eael-pricing-tag .price-tag .sale-price .price-currency' => 'color: {{VALUE}};',
@@ -2040,15 +1091,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_responsive_control(
             'eael_pricing_table_price_cur_margin',
             [
-<<<<<<< HEAD
                 'label'      => esc_html__('Margin', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'      => esc_html__('Margin', 'essential-addons-for-elementor-lite'),
-=======
-                'label'      => esc_html__( 'Margin', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors'  => [
@@ -2060,15 +1103,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_pricing_period_heading',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Pricing Period', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Pricing Period', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Pricing Period', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -2077,15 +1112,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_pricing_period_color',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Color', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Color', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Color', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -2112,15 +1139,7 @@ class Pricing_Table extends Widget_Base {
         $this->start_controls_section(
             'eael_section_pricing_table_style_featured_list_settings',
             [
-<<<<<<< HEAD
                 'label' => esc_html__('Feature List', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label' => esc_html__('Feature List', 'essential-addons-for-elementor-lite'),
-=======
-                'label' => esc_html__( 'Feature List', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -2128,15 +1147,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_list_item_color',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Color', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Color', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Color', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -2148,15 +1159,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_list_disable_item_color',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Disable item color', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Disable item color', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Disable item color', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -2168,15 +1171,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_list_item_icon_size',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Icon Size', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Icon Size', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Icon Size', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::SLIDER,
                 'default'   => [
                     'size' => 20,
@@ -2212,15 +1207,7 @@ class Pricing_Table extends Widget_Base {
         $this->start_controls_section(
             'eael_section_pricing_table_style_3_featured_tag_settings',
             [
-<<<<<<< HEAD
                 'label' => esc_html__('Ribbon', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label' => esc_html__('Ribbon', 'essential-addons-for-elementor-lite'),
-=======
-                'label' => esc_html__( 'Ribbon', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -2228,15 +1215,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_style_1_featured_bar_color',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Line Color', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Line Color', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Line Color', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#00C853',
                 'selectors' => [
@@ -2255,15 +1234,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_style_1_featured_bar_height',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Line Height', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Line Height', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Line Height', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::SLIDER,
                 'default'   => [
                     'size' => 3,
@@ -2289,15 +1260,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_featured_tag_font_size',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Font Size', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Font Size', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Font Size', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::SLIDER,
                 'default'   => [
                     'size' => 10,
@@ -2330,15 +1293,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_featured_tag_text_color',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Color', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Color', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Color', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -2364,15 +1319,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_featured_tag_bg_color',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Background Color', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Background Color', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Background Color', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -2404,15 +1351,7 @@ class Pricing_Table extends Widget_Base {
             \Elementor\Group_Control_Box_Shadow::get_type(),
             [
                 'name'      => 'eael_pricing_table_featured_tag_bg_shadow',
-<<<<<<< HEAD
                 'label'     => __('Shadow', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => __('Shadow', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => __( 'Shadow', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'selector'  => '{{WRAPPER}} .eael-pricing .eael-pricing-item.ribbon-4:before',
                 'condition' => [
                     'eael_pricing_table_featured'        => 'yes',
@@ -2431,15 +1370,7 @@ class Pricing_Table extends Widget_Base {
         $this->start_controls_section(
             'eael_section_pricing_table_tooltip_style',
             [
-<<<<<<< HEAD
                 'label' => esc_html__('Tooltip', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label' => esc_html__('Tooltip', 'essential-addons-for-elementor-lite'),
-=======
-                'label' => esc_html__( 'Tooltip', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -2447,15 +1378,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_tooltip_bg_color',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Background Color', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Background Color', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Background Color', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -2467,15 +1390,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_tooltip_arrow_bg',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Arrow Background', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Arrow Background', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Arrow Background', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#3d3d3d',
                 'selectors' => [
@@ -2493,15 +1408,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_tooltip_color',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Color', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Color', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Color', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -2513,24 +1420,10 @@ class Pricing_Table extends Widget_Base {
         $this->add_responsive_control(
             'eael_pricing_table_tooltip_padding',
             [
-<<<<<<< HEAD
                 'label'       => esc_html__('Padding', 'essential-addons-for-elementor-lite'),
                 'type'        => Controls_Manager::DIMENSIONS,
                 'size_units'  => 'px',
                 'description' => __('Refresh your browser after saving the padding value for see changes.', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'       => esc_html__('Padding', 'essential-addons-for-elementor-lite'),
-                'type'        => Controls_Manager::DIMENSIONS,
-                'size_units'  => 'px',
-                'description' => __('Refresh your browser after saving the padding value for see changes.', 'essential-addons-for-elementor-lite'),
-=======
-                'label'       => esc_html__( 'Padding', 'essential-addons-for-elementor-lite' ),
-                'type'        => Controls_Manager::DIMENSIONS,
-                'size_units'  => 'px',
-                'description' => __( 'Refresh your browser after saving the padding value for see changes.', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'selectors'   => [
                     'div.tooltipster-base.tooltipster-sidetip .tooltipster-content' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
@@ -2541,15 +1434,7 @@ class Pricing_Table extends Widget_Base {
             Group_Control_Border::get_type(),
             [
                 'name'     => 'eael_pricing_table_tooltip_border',
-<<<<<<< HEAD
                 'label'    => esc_html__('Border Type', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'    => esc_html__('Border Type', 'essential-addons-for-elementor-lite'),
-=======
-                'label'    => esc_html__( 'Border Type', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'selector' => '.tooltipster-base.tooltipster-sidetip .tooltipster-box',
             ]
         );
@@ -2557,15 +1442,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_tooltip_border_radius',
             [
-<<<<<<< HEAD
                 'label'      => esc_html__('Border Radius', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'      => esc_html__('Border Radius', 'essential-addons-for-elementor-lite'),
-=======
-                'label'      => esc_html__( 'Border Radius', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'       => Controls_Manager::SLIDER,
                 'size_units' => ['px', '%'],
                 'range'      => [
@@ -2587,15 +1464,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_tooltip_arrow_heading',
             [
-<<<<<<< HEAD
                 'label'     => __('Tooltip Arrow', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => __('Tooltip Arrow', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => __( 'Tooltip Arrow', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'separator' => 'before',
                 'type'      => Controls_Manager::HEADING,
             ]
@@ -2604,15 +1473,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_tooltip_arrow_size',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Arrow Size', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Arrow Size', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Arrow Size', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::SLIDER,
                 'range'     => [
                     'px' => [
@@ -2657,24 +1518,10 @@ class Pricing_Table extends Widget_Base {
         $this->start_controls_section(
             'eael_section_pricing_table_icon_settings',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Icon Settings', 'essential-addons-for-elementor-lite'),
                 'tab'       => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'eael_pricing_table_style' => apply_filters('eael_pricing_table_icon_supported_style', ['style-2']),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Icon Settings', 'essential-addons-for-elementor-lite'),
-                'tab'       => Controls_Manager::TAB_STYLE,
-                'condition' => [
-                    'eael_pricing_table_style' => apply_filters('eael_pricing_table_icon_supported_style', ['style-2']),
-=======
-                'label'     => esc_html__( 'Icon Settings', 'essential-addons-for-elementor-lite' ),
-                'tab'       => Controls_Manager::TAB_STYLE,
-                'condition' => [
-                    'eael_pricing_table_style' => apply_filters( 'eael_pricing_table_icon_supported_style', ['style-2'] ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 ],
             ]
         );
@@ -2682,27 +1529,11 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_icon_bg_show',
             [
-<<<<<<< HEAD
                 'label'        => __('Show Background', 'essential-addons-for-elementor-lite'),
                 'type'         => Controls_Manager::SWITCHER,
                 'default'      => 'yes',
                 'label_on'     => __('Show', 'essential-addons-for-elementor-lite'),
                 'label_off'    => __('Hide', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'        => __('Show Background', 'essential-addons-for-elementor-lite'),
-                'type'         => Controls_Manager::SWITCHER,
-                'default'      => 'yes',
-                'label_on'     => __('Show', 'essential-addons-for-elementor-lite'),
-                'label_off'    => __('Hide', 'essential-addons-for-elementor-lite'),
-=======
-                'label'        => __( 'Show Background', 'essential-addons-for-elementor-lite' ),
-                'type'         => Controls_Manager::SWITCHER,
-                'default'      => 'yes',
-                'label_on'     => __( 'Show', 'essential-addons-for-elementor-lite' ),
-                'label_off'    => __( 'Hide', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'return_value' => 'yes',
             ]
         );
@@ -2713,15 +1544,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_icon_bg_color',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Background Color', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Background Color', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Background Color', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -2739,15 +1562,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_icon_bg_hover_color',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Background Hover Color', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Background Hover Color', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Background Hover Color', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -2763,15 +1578,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_responsive_control(
             'eael_pricing_table_icon_settings',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Icon Size', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Icon Size', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Icon Size', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::SLIDER,
                 'default'   => [
                     'size' => 30,
@@ -2791,15 +1598,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_responsive_control(
             'eael_pricing_table_icon_area_width',
             [
-<<<<<<< HEAD
                 'label'      => esc_html__('Icon Area Width', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'      => esc_html__('Icon Area Width', 'essential-addons-for-elementor-lite'),
-=======
-                'label'      => esc_html__( 'Icon Area Width', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'       => Controls_Manager::SLIDER,
                 'size_units' => ['px', '%'],
                 'default'    => [
@@ -2824,15 +1623,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_responsive_control(
             'eael_pricing_table_icon_area_height',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Icon Area Height', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Icon Area Height', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Icon Area Height', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::SLIDER,
                 'default'   => [
                     'size' => 80,
@@ -2851,15 +1642,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_icon_color',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Icon Color', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Icon Color', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Icon Color', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -2871,15 +1654,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_icon_hover_color',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Icon Hover Color', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Icon Hover Color', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Icon Hover Color', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -2893,15 +1668,7 @@ class Pricing_Table extends Widget_Base {
             Group_Control_Border::get_type(),
             [
                 'name'     => 'eael_pricing_table_icon_border',
-<<<<<<< HEAD
                 'label'    => esc_html__('Border', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'    => esc_html__('Border', 'essential-addons-for-elementor-lite'),
-=======
-                'label'    => esc_html__( 'Border', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'selector' => '{{WRAPPER}} .eael-pricing.style-2 .eael-pricing-item .eael-pricing-icon .icon, {{WRAPPER}} .eael-pricing.style-5 .eael-pricing-item .eael-pricing-icon .icon',
             ]
         );
@@ -2909,15 +1676,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_icon_border_hover_color',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Hover Color', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Hover Color', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Hover Color', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -2932,15 +1691,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_icon_border_radius',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Border Radius', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Border Radius', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Border Radius', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::SLIDER,
                 'default'   => [
                     'size' => 50,
@@ -2966,15 +1717,7 @@ class Pricing_Table extends Widget_Base {
         $this->start_controls_section(
             'eael_section_pricing_table_btn_style_settings',
             [
-<<<<<<< HEAD
                 'label' => esc_html__('Button', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label' => esc_html__('Button', 'essential-addons-for-elementor-lite'),
-=======
-                'label' => esc_html__( 'Button', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -2982,15 +1725,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_responsive_control(
             'eael_pricing_table_btn_padding',
             [
-<<<<<<< HEAD
                 'label'      => esc_html__('Padding', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'      => esc_html__('Padding', 'essential-addons-for-elementor-lite'),
-=======
-                'label'      => esc_html__( 'Padding', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors'  => [
@@ -3002,15 +1737,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_responsive_control(
             'eael_pricing_table_btn_margin',
             [
-<<<<<<< HEAD
                 'label'      => esc_html__('Margin', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'      => esc_html__('Margin', 'essential-addons-for-elementor-lite'),
-=======
-                'label'      => esc_html__( 'Margin', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors'  => [
@@ -3022,15 +1749,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_btn_icon_size',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Icon Size', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Icon Size', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Icon Size', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::SLIDER,
                 'default'   => [
                     'size' => 20,
@@ -3059,59 +1778,23 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_is_button_gradient_background',
             [
-<<<<<<< HEAD
                 'label'        => __('Button Gradient Background', 'essential-addons-for-elementor-lite'),
                 'type'         => Controls_Manager::SWITCHER,
                 'label_on'     => __('Yes', 'essential-addons-for-elementor-lite'),
                 'label_off'    => __('No', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'        => __('Button Gradient Background', 'essential-addons-for-elementor-lite'),
-                'type'         => Controls_Manager::SWITCHER,
-                'label_on'     => __('Yes', 'essential-addons-for-elementor-lite'),
-                'label_off'    => __('No', 'essential-addons-for-elementor-lite'),
-=======
-                'label'        => __( 'Button Gradient Background', 'essential-addons-for-elementor-lite' ),
-                'type'         => Controls_Manager::SWITCHER,
-                'label_on'     => __( 'Yes', 'essential-addons-for-elementor-lite' ),
-                'label_off'    => __( 'No', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'return_value' => 'yes',
             ]
         );
 
-<<<<<<< HEAD
         $this->start_controls_tabs('eael_cta_button_tabs');
 
         // Normal State Tab
         $this->start_controls_tab('eael_pricing_table_btn_normal', ['label' => esc_html__('Normal', 'essential-addons-for-elementor-lite')]);
-=======
-<<<<<<< HEAD
-        $this->start_controls_tabs('eael_cta_button_tabs');
-
-        // Normal State Tab
-        $this->start_controls_tab('eael_pricing_table_btn_normal', ['label' => esc_html__('Normal', 'essential-addons-for-elementor-lite')]);
-=======
-        $this->start_controls_tabs( 'eael_cta_button_tabs' );
-
-        // Normal State Tab
-        $this->start_controls_tab( 'eael_pricing_table_btn_normal', ['label' => esc_html__( 'Normal', 'essential-addons-for-elementor-lite' )] );
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
 
         $this->add_control(
             'eael_pricing_table_btn_normal_text_color',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Text Color', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Text Color', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Text Color', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#fff',
                 'selectors' => [
@@ -3123,15 +1806,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_btn_normal_bg_color',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Background Color', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Background Color', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Background Color', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#00C853',
                 'selectors' => [
@@ -3146,15 +1821,7 @@ class Pricing_Table extends Widget_Base {
             \Elementor\Group_Control_Background::get_type(),
             [
                 'name'      => 'eael_pricing_table_btn_normal_bg_gradient',
-<<<<<<< HEAD
                 'label'     => __('Background', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => __('Background', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => __( 'Background', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'types'     => ['gradient'],
                 'selector'  => '{{WRAPPER}} .eael-pricing .eael-pricing-button',
                 'condition' => [
@@ -3167,15 +1834,7 @@ class Pricing_Table extends Widget_Base {
             Group_Control_Border::get_type(),
             [
                 'name'     => 'eael_pricing_table_btn_border',
-<<<<<<< HEAD
                 'label'    => esc_html__('Border', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'    => esc_html__('Border', 'essential-addons-for-elementor-lite'),
-=======
-                'label'    => esc_html__( 'Border', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'selector' => '{{WRAPPER}} .eael-pricing .eael-pricing-button',
             ]
         );
@@ -3183,15 +1842,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_btn_border_radius',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Border Radius', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Border Radius', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Border Radius', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::SLIDER,
                 'range'     => [
                     'px' => [
@@ -3207,28 +1858,12 @@ class Pricing_Table extends Widget_Base {
         $this->end_controls_tab();
 
         // Hover State Tab
-<<<<<<< HEAD
         $this->start_controls_tab('eael_pricing_table_btn_hover', ['label' => esc_html__('Hover', 'essential-addons-for-elementor-lite')]);
-=======
-<<<<<<< HEAD
-        $this->start_controls_tab('eael_pricing_table_btn_hover', ['label' => esc_html__('Hover', 'essential-addons-for-elementor-lite')]);
-=======
-        $this->start_controls_tab( 'eael_pricing_table_btn_hover', ['label' => esc_html__( 'Hover', 'essential-addons-for-elementor-lite' )] );
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
 
         $this->add_control(
             'eael_pricing_table_btn_hover_text_color',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Text Color', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Text Color', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Text Color', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#f9f9f9',
                 'selectors' => [
@@ -3240,15 +1875,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_btn_hover_bg_color',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Background Color', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Background Color', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Background Color', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#03b048',
                 'selectors' => [
@@ -3263,15 +1890,7 @@ class Pricing_Table extends Widget_Base {
             \Elementor\Group_Control_Background::get_type(),
             [
                 'name'      => 'eael_pricing_table_btn_hover_bg_gradient',
-<<<<<<< HEAD
                 'label'     => __('Background', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => __('Background', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => __( 'Background', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'types'     => ['gradient'],
                 'selector'  => '{{WRAPPER}} .eael-pricing .eael-pricing-button:hover',
                 'condition' => [
@@ -3283,15 +1902,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_btn_hover_border_color',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Border Color', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Border Color', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Border Color', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -3317,28 +1928,13 @@ class Pricing_Table extends Widget_Base {
         $this->end_controls_section();
     }
 
-<<<<<<< HEAD
     public function render_feature_list($settings, $obj)
     {
         if (empty($settings['eael_pricing_table_items'])) {
-=======
-<<<<<<< HEAD
-    public function render_feature_list($settings, $obj)
-    {
-        if (empty($settings['eael_pricing_table_items'])) {
-=======
-    public function render_feature_list( $settings, $obj ) {
-        if ( empty( $settings['eael_pricing_table_items'] ) ) {
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
             return;
         }
 
         $counter = 0;
-<<<<<<< HEAD
-?>
-=======
-<<<<<<< HEAD
 ?>
         <ul>
             <?php
@@ -3421,96 +2017,6 @@ class Pricing_Table extends Widget_Base {
 
         if ('yes' === $settings['eael_pricing_table_onsale']) {
             if ($settings['eael_pricing_table_price_cur_placement'] == 'left') {
-=======
-        ?>
->>>>>>> yanzhou-li
-        <ul>
-            <?php
-            foreach ($settings['eael_pricing_table_items'] as $item) :
-
-                if ('yes' !== $item['eael_pricing_table_icon_mood']) {
-                    $obj->add_render_attribute('pricing_feature_item' . $counter, 'class', 'disable-item');
-                }
-
-                if ('yes' === $item['eael_pricing_item_tooltip']) {
-                    $obj->add_render_attribute(
-                        'pricing_feature_item' . $counter,
-                        [
-                            'class' => 'tooltip',
-                            'title' => $item['eael_pricing_item_tooltip_content'],
-                            'id'    => $obj->get_id() . $counter,
-                        ]
-                    );
-                }
-
-                if ('yes' == $item['eael_pricing_item_tooltip']) {
-
-                    if ($item['eael_pricing_item_tooltip_side']) {
-                        $obj->add_render_attribute('pricing_feature_item' . $counter, 'data-side', $item['eael_pricing_item_tooltip_side']);
-                    }
-
-                    if ($item['eael_pricing_item_tooltip_trigger']) {
-                        $obj->add_render_attribute('pricing_feature_item' . $counter, 'data-trigger', $item['eael_pricing_item_tooltip_trigger']);
-                    }
-
-                    if ($item['eael_pricing_item_tooltip_animation']) {
-                        $obj->add_render_attribute('pricing_feature_item' . $counter, 'data-animation', $item['eael_pricing_item_tooltip_animation']);
-                    }
-
-                    if (!empty($item['pricing_item_tooltip_animation_duration'])) {
-                        $obj->add_render_attribute('pricing_feature_item' . $counter, 'data-animation_duration', $item['pricing_item_tooltip_animation_duration']);
-                    }
-
-                    if (!empty($item['eael_pricing_table_toolip_arrow'])) {
-                        $obj->add_render_attribute('pricing_feature_item' . $counter, 'data-arrow', $item['eael_pricing_table_toolip_arrow']);
-                    }
-
-                    if (!empty($item['eael_pricing_item_tooltip_theme'])) {
-                        $obj->add_render_attribute('pricing_feature_item' . $counter, 'data-theme', $item['eael_pricing_item_tooltip_theme']);
-                    }
-                }
-            ?>
-                <li <?php echo $obj->get_render_attribute_string('pricing_feature_item' . $counter); ?>>
-                    <?php if ('show' === $settings['eael_pricing_table_icon_enabled']) : ?>
-                        <span class="li-icon" style="color:<?php echo esc_attr($item['eael_pricing_table_list_icon_color']); ?>">
-                            <?php if (isset($item['__fa4_migrated']['eael_pricing_table_list_icon_new']) || empty($item['eael_pricing_table_list_icon'])) { ?>
-                                <?php if (isset($item['eael_pricing_table_list_icon_new']['value']['url'])) : ?>
-                                    <img src="<?php echo $item['eael_pricing_table_list_icon_new']['value']['url']; ?>" alt="<?php echo esc_attr(get_post_meta($item['eael_pricing_table_list_icon_new']['value']['id'], '_wp_attachment_image_alt', true)); ?>" />
-                                <?php else : ?>
-                                    <i class="<?php echo $item['eael_pricing_table_list_icon_new']['value']; ?>"></i>
-                                <?php endif; ?>
-                            <?php } else { ?>
-                                <i class="<?php echo $item['eael_pricing_table_list_icon']; ?>"></i>
-                            <?php } ?>
-                        </span>
-                    <?php endif; ?>
-                    <?php echo $item['eael_pricing_table_item']; ?>
-                </li>
-            <?php
-                $counter++;
-            endforeach;
-            ?>
-        </ul>
-    <?php
-    }
-
-    protected function render()
-    {
-        $settings = $this->get_settings();
-        $target = $settings['eael_pricing_table_btn_link']['is_external'] ? 'target="_blank"' : '';
-        $nofollow = $settings['eael_pricing_table_btn_link']['nofollow'] ? 'rel="nofollow"' : '';
-        $featured_class = ('yes' === $settings['eael_pricing_table_featured'] ? 'featured ' . $settings['eael_pricing_table_featured_styles'] : '');
-        $featured_class .= ($settings['eael_pricing_table_ribbon_alignment'] === 'left' ? ' ribbon-left' : '');
-        $inline_style = ($settings['eael_pricing_table_featured_styles'] === 'ribbon-4' && 'yes' === $settings['eael_pricing_table_featured'] ? ' style="overflow: hidden;"' : '');
-
-<<<<<<< HEAD
-        if ('yes' === $settings['eael_pricing_table_onsale']) {
-            if ($settings['eael_pricing_table_price_cur_placement'] == 'left') {
-=======
-        if ( 'yes' === $settings['eael_pricing_table_onsale'] ) {
-            if ( $settings['eael_pricing_table_price_cur_placement'] == 'left' ) {
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 $pricing = '<del class="original-price">
                     <span class="price-currency">'
                     . $settings['eael_pricing_table_price_cur'] .
@@ -3523,15 +2029,7 @@ class Pricing_Table extends Widget_Base {
                     '</span>' .
                     $settings['eael_pricing_table_onsale_price'] .
                     '</span>';
-<<<<<<< HEAD
             } else if ($settings['eael_pricing_table_price_cur_placement'] == 'right') {
-=======
-<<<<<<< HEAD
-            } else if ($settings['eael_pricing_table_price_cur_placement'] == 'right') {
-=======
-            } else if ( $settings['eael_pricing_table_price_cur_placement'] == 'right' ) {
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 $pricing = '<del class="original-price">' .
                     $settings['eael_pricing_table_price'] .
                     '<span class="price-currency">' .
@@ -3543,53 +2041,23 @@ class Pricing_Table extends Widget_Base {
                 </span>';
             }
         } else {
-<<<<<<< HEAD
             if ($settings['eael_pricing_table_price_cur_placement'] == 'left') {
-=======
-<<<<<<< HEAD
-            if ($settings['eael_pricing_table_price_cur_placement'] == 'left') {
-=======
-            if ( $settings['eael_pricing_table_price_cur_placement'] == 'left' ) {
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 $pricing = '<span class="original-price">' .
                     '<span class="price-currency">' .
                     $settings['eael_pricing_table_price_cur'] . '</span>' .
                     $settings['eael_pricing_table_price'] .
                     '</span>';
-<<<<<<< HEAD
             } else if ($settings['eael_pricing_table_price_cur_placement'] == 'right') {
-=======
-<<<<<<< HEAD
-            } else if ($settings['eael_pricing_table_price_cur_placement'] == 'right') {
-=======
-            } else if ( $settings['eael_pricing_table_price_cur_placement'] == 'right' ) {
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 $pricing = '<span class="original-price">' .
                     $settings['eael_pricing_table_price'] .
                     '<span class="price-currency">' . $settings['eael_pricing_table_price_cur'] . '</span>
                     </span>';
             }
         }
-<<<<<<< HEAD
     ?>
         <?php if ('style-1' === $settings['eael_pricing_table_style']) : ?>
             <div class="eael-pricing style-1" <?php echo $inline_style; ?>>
                 <div class="eael-pricing-item <?php echo esc_attr($featured_class); ?>">
-=======
-<<<<<<< HEAD
-    ?>
-        <?php if ('style-1' === $settings['eael_pricing_table_style']) : ?>
-            <div class="eael-pricing style-1" <?php echo $inline_style; ?>>
-                <div class="eael-pricing-item <?php echo esc_attr($featured_class); ?>">
-=======
-        ?>
-        <?php if ( 'style-1' === $settings['eael_pricing_table_style'] ): ?>
-            <div class="eael-pricing style-1" <?php echo $inline_style; ?>>
-                <div class="eael-pricing-item <?php echo esc_attr( $featured_class ); ?>">
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                     <div class="header">
                         <h2 class="title"><?php echo $settings['eael_pricing_table_title']; ?></h2>
                     </div>
@@ -3598,10 +2066,6 @@ class Pricing_Table extends Widget_Base {
                         <span class="price-period"><?php echo $settings['eael_pricing_table_period_separator']; ?> <?php echo $settings['eael_pricing_table_price_period']; ?></span>
                     </div>
                     <div class="body">
-<<<<<<< HEAD
-                        <?php $this->render_feature_list($settings, $this); ?>
-=======
-<<<<<<< HEAD
                         <?php $this->render_feature_list($settings, $this); ?>
                     </div>
                     <div class="footer">
@@ -3629,58 +2093,10 @@ class Pricing_Table extends Widget_Base {
                                     <i class="<?php echo esc_attr($settings['eael_pricing_table_button_icon']); ?> fa-icon-right"></i>
                                 <?php } ?>
                             <?php endif; ?>
-=======
-                        <?php $this->render_feature_list( $settings, $this );?>
->>>>>>> yanzhou-li
-                    </div>
-                    <div class="footer">
-                        <a href="<?php echo esc_url($settings['eael_pricing_table_btn_link']['url']); ?>" <?php echo $target; ?> <?php echo $nofollow; ?> class="eael-pricing-button">
-                            <?php if ('left' == $settings['eael_pricing_table_button_icon_alignment']) : ?>
-                                <?php if (empty($settings['eael_pricing_table_button_icon']) || isset($settings['__fa4_migrated']['eael_pricing_table_button_icon_new'])) { ?>
-                                    <?php if (isset($settings['eael_pricing_table_button_icon_new']['value']['url'])) : ?>
-                                        <img src="<?php echo esc_attr($settings['eael_pricing_table_button_icon_new']['value']['url']); ?>" class="fa-icon-left" alt="<?php echo esc_attr(get_post_meta($settings['eael_pricing_table_button_icon_new']['value']['id'], '_wp_attachment_image_alt', true)); ?>" />
-                                    <?php else : ?>
-                                        <i class="<?php echo esc_attr($settings['eael_pricing_table_button_icon_new']['value']); ?> fa-icon-left"></i>
-                                    <?php endif; ?>
-                                <?php } else { ?>
-                                    <i class="<?php echo esc_attr($settings['eael_pricing_table_button_icon']); ?> fa-icon-left"></i>
-                                <?php } ?>
-                                <?php echo $settings['eael_pricing_table_btn']; ?>
-                            <?php elseif ('right' == $settings['eael_pricing_table_button_icon_alignment']) : ?>
-                                <?php echo $settings['eael_pricing_table_btn']; ?>
-<<<<<<< HEAD
-                                <?php if (empty($settings['eael_pricing_table_button_icon']) || isset($settings['__fa4_migrated']['eael_pricing_table_button_icon_new'])) { ?>
-                                    <?php if (isset($settings['eael_pricing_table_button_icon_new']['value']['url'])) : ?>
-                                        <img src="<?php echo esc_attr($settings['eael_pricing_table_button_icon_new']['value']['url']); ?>" class="fa-icon-right" alt="<?php echo esc_attr(get_post_meta($settings['eael_pricing_table_button_icon_new']['value']['id'], '_wp_attachment_image_alt', true)); ?>" />
-                                    <?php else : ?>
-                                        <i class="<?php echo esc_attr($settings['eael_pricing_table_button_icon_new']['value']); ?> fa-icon-right"></i>
-                                    <?php endif; ?>
-                                <?php } else { ?>
-                                    <i class="<?php echo esc_attr($settings['eael_pricing_table_button_icon']); ?> fa-icon-right"></i>
-                                <?php } ?>
-                            <?php endif; ?>
-=======
-                                <?php if ( empty( $settings['eael_pricing_table_button_icon'] ) || isset( $settings['__fa4_migrated']['eael_pricing_table_button_icon_new'] ) ) {?>
-                                    <?php if ( isset( $settings['eael_pricing_table_button_icon_new']['value']['url'] ) ): ?>
-                                        <img src="<?php echo esc_attr( $settings['eael_pricing_table_button_icon_new']['value']['url'] ); ?>" class="fa-icon-right" alt="<?php echo esc_attr( get_post_meta( $settings['eael_pricing_table_button_icon_new']['value']['id'], '_wp_attachment_image_alt', true ) ); ?>" />
-                                    <?php else: ?>
-                                        <i class="<?php echo esc_attr( $settings['eael_pricing_table_button_icon_new']['value'] ); ?> fa-icon-right"></i>
-                                    <?php endif;?>
-                                <?php } else {?>
-                                    <i class="<?php echo esc_attr( $settings['eael_pricing_table_button_icon'] ); ?> fa-icon-right"></i>
-                                <?php }?>
-                            <?php endif;?>
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                         </a>
                     </div>
                 </div>
             </div>
-<<<<<<< HEAD
-        <?php endif; ?>
-        <?php if ('style-2' === $settings['eael_pricing_table_style']) : ?>
-=======
-<<<<<<< HEAD
         <?php endif; ?>
         <?php if ('style-2' === $settings['eael_pricing_table_style']) : ?>
             <div class="eael-pricing style-2" <?php echo $inline_style; ?>>
@@ -3697,39 +2113,6 @@ class Pricing_Table extends Widget_Base {
                             <?php } else { ?>
                                 <i class="<?php echo esc_attr($settings['eael_pricing_table_style_2_icon']); ?>"></i>
                             <?php } ?>
-=======
-        <?php endif;?>
-        <?php if ( 'style-2' === $settings['eael_pricing_table_style'] ): ?>
->>>>>>> yanzhou-li
-            <div class="eael-pricing style-2" <?php echo $inline_style; ?>>
-                <div class="eael-pricing-item <?php echo esc_attr($featured_class); ?>">
-                    <div class="eael-pricing-icon">
-<<<<<<< HEAD
-                        <span class="icon" style="background:<?php if ('yes' != $settings['eael_pricing_table_icon_bg_show']) : echo 'none';
-                                                                endif; ?>;">
-                            <?php if (empty($settings['eael_pricing_table_style_2_icon']) || isset($settings['__fa4_migrated']['eael_pricing_table_style_2_icon_new'])) { ?>
-                                <?php if (isset($settings['eael_pricing_table_style_2_icon_new']['value']['url'])) : ?>
-                                    <img src="<?php echo esc_attr($settings['eael_pricing_table_style_2_icon_new']['value']['url']); ?>" alt="<?php echo esc_attr(get_post_meta($settings['eael_pricing_table_style_2_icon_new']['value']['id'], '_wp_attachment_image_alt', true)); ?>" />
-                                <?php else : ?>
-                                    <i class="<?php echo esc_attr($settings['eael_pricing_table_style_2_icon_new']['value']); ?>"></i>
-                                <?php endif; ?>
-                            <?php } else { ?>
-                                <i class="<?php echo esc_attr($settings['eael_pricing_table_style_2_icon']); ?>"></i>
-                            <?php } ?>
-=======
-                        <span class="icon" style="background:<?php if ( 'yes' != $settings['eael_pricing_table_icon_bg_show'] ): echo 'none';
-        endif;?>;">
-                            <?php if ( empty( $settings['eael_pricing_table_style_2_icon'] ) || isset( $settings['__fa4_migrated']['eael_pricing_table_style_2_icon_new'] ) ) {?>
-                                <?php if ( isset( $settings['eael_pricing_table_style_2_icon_new']['value']['url'] ) ): ?>
-                                    <img src="<?php echo esc_attr( $settings['eael_pricing_table_style_2_icon_new']['value']['url'] ); ?>" alt="<?php echo esc_attr( get_post_meta( $settings['eael_pricing_table_style_2_icon_new']['value']['id'], '_wp_attachment_image_alt', true ) ); ?>" />
-                                <?php else: ?>
-                                    <i class="<?php echo esc_attr( $settings['eael_pricing_table_style_2_icon_new']['value'] ); ?>"></i>
-                                <?php endif;?>
-                            <?php } else {?>
-                                <i class="<?php echo esc_attr( $settings['eael_pricing_table_style_2_icon'] ); ?>"></i>
-                            <?php }?>
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                         </span>
                     </div>
                     <div class="header">
@@ -3741,10 +2124,6 @@ class Pricing_Table extends Widget_Base {
                         <span class="price-period"><?php echo $settings['eael_pricing_table_period_separator']; ?> <?php echo $settings['eael_pricing_table_price_period']; ?></span>
                     </div>
                     <div class="body">
-<<<<<<< HEAD
-                        <?php $this->render_feature_list($settings, $this); ?>
-=======
-<<<<<<< HEAD
                         <?php $this->render_feature_list($settings, $this); ?>
                     </div>
                     <div class="footer">
@@ -3771,66 +2150,12 @@ class Pricing_Table extends Widget_Base {
                                     <i class="<?php echo esc_attr($settings['eael_pricing_table_button_icon']); ?> fa-icon-right"></i>
                                 <?php } ?>
                             <?php endif; ?>
-=======
-                        <?php $this->render_feature_list( $settings, $this );?>
->>>>>>> yanzhou-li
-                    </div>
-                    <div class="footer">
-                        <a href="<?php echo esc_url($settings['eael_pricing_table_btn_link']['url']); ?>" <?php echo $target; ?> <?php echo $nofollow; ?> class="eael-pricing-button">
-                            <?php if ('left' == $settings['eael_pricing_table_button_icon_alignment']) : ?>
-                                <?php if (empty($settings['eael_pricing_table_button_icon']) || isset($settings['__fa4_migrated']['eael_pricing_table_button_icon_new'])) { ?>
-                                    <?php if (isset($settings['eael_pricing_table_button_icon_new']['value']['url'])) : ?><img src="<?php echo esc_attr($settings['eael_pricing_table_button_icon_new']['value']['url']); ?>" class="fa-icon-left" alt="<?php echo esc_attr(get_post_meta($settings['eael_pricing_table_button_icon_new']['value']['id'], '_wp_attachment_image_alt', true)); ?>"></i>
-                                    <?php else : ?>
-                                        <i class="<?php echo esc_attr($settings['eael_pricing_table_button_icon_new']['value']); ?> fa-icon-left"></i>
-                                    <?php endif; ?>
-                                <?php } else { ?>
-                                    <i class="<?php echo esc_attr($settings['eael_pricing_table_button_icon']); ?> fa-icon-left"></i>
-                                <?php } ?>
-                                <?php echo $settings['eael_pricing_table_btn']; ?>
-                            <?php elseif ('right' == $settings['eael_pricing_table_button_icon_alignment']) : ?>
-                                <?php echo $settings['eael_pricing_table_btn']; ?>
-<<<<<<< HEAD
-                                <?php if (empty($settings['eael_pricing_table_button_icon']) || isset($settings['__fa4_migrated']['eael_pricing_table_button_icon_new'])) { ?>
-                                    <?php if (isset($settings['eael_pricing_table_button_icon_new']['value']['url'])) : ?>
-                                        <img src="<?php echo esc_attr($settings['eael_pricing_table_button_icon_new']['value']['url']); ?>" class="fa-icon-right" alt="<?php echo esc_attr(get_post_meta($settings['eael_pricing_table_button_icon_new']['value']['id'], '_wp_attachment_image_alt', true)); ?>">
-                                    <?php else : ?>
-                                        <i class="<?php echo esc_attr($settings['eael_pricing_table_button_icon_new']['value']); ?> fa-icon-right"></i>
-                                    <?php endif; ?>
-                                <?php } else { ?>
-                                    <i class="<?php echo esc_attr($settings['eael_pricing_table_button_icon']); ?> fa-icon-right"></i>
-                                <?php } ?>
-                            <?php endif; ?>
-=======
-                                <?php if ( empty( $settings['eael_pricing_table_button_icon'] ) || isset( $settings['__fa4_migrated']['eael_pricing_table_button_icon_new'] ) ) {?>
-                                    <?php if ( isset( $settings['eael_pricing_table_button_icon_new']['value']['url'] ) ): ?>
-                                        <img src="<?php echo esc_attr( $settings['eael_pricing_table_button_icon_new']['value']['url'] ); ?>" class="fa-icon-right" alt="<?php echo esc_attr( get_post_meta( $settings['eael_pricing_table_button_icon_new']['value']['id'], '_wp_attachment_image_alt', true ) ); ?>">
-                                    <?php else: ?>
-                                        <i class="<?php echo esc_attr( $settings['eael_pricing_table_button_icon_new']['value'] ); ?> fa-icon-right"></i>
-                                    <?php endif;?>
-                                <?php } else {?>
-                                    <i class="<?php echo esc_attr( $settings['eael_pricing_table_button_icon'] ); ?> fa-icon-right"></i>
-                                <?php }?>
-                            <?php endif;?>
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                         </a>
                     </div>
                 </div>
             </div>
-<<<<<<< HEAD
         <?php endif; ?>
 <?php
         do_action('add_pricing_table_style_block', $settings, $this, $pricing, $target, $nofollow, $featured_class);
-=======
-<<<<<<< HEAD
-        <?php endif; ?>
-<?php
-        do_action('add_pricing_table_style_block', $settings, $this, $pricing, $target, $nofollow, $featured_class);
-=======
-        <?php endif;?>
-<?php
-do_action( 'add_pricing_table_style_block', $settings, $this, $pricing, $target, $nofollow, $featured_class );
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
     }
 }

@@ -1,12 +1,4 @@
-<<<<<<< HEAD
 /*! elementor - v3.0.8.1 - 14-09-2020 */
-=======
-<<<<<<< HEAD
-/*! elementor - v3.0.8.1 - 14-09-2020 */
-=======
-/*! elementor - v3.0.7 - 09-09-2020 */
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -90,42 +82,18 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-<<<<<<< HEAD
 /******/ 	return __webpack_require__(__webpack_require__.s = 746);
-=======
-<<<<<<< HEAD
-/******/ 	return __webpack_require__(__webpack_require__.s = 746);
-=======
-/******/ 	return __webpack_require__(__webpack_require__.s = 745);
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
 /******/ })
 /************************************************************************/
 /******/ ({
 
-<<<<<<< HEAD
 /***/ 746:
-=======
-<<<<<<< HEAD
-/***/ 746:
-=======
-/***/ 745:
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-<<<<<<< HEAD
 var NewTemplateLayout = __webpack_require__(747);
-=======
-<<<<<<< HEAD
-var NewTemplateLayout = __webpack_require__(747);
-=======
-var NewTemplateLayout = __webpack_require__(746);
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
 
 var NewTemplateModule = elementorModules.ViewModule.extend({
   getDefaultSettings: function getDefaultSettings() {
@@ -167,29 +135,13 @@ jQuery(function () {
 
 /***/ }),
 
-<<<<<<< HEAD
 /***/ 747:
-=======
-<<<<<<< HEAD
-/***/ 747:
-=======
-/***/ 746:
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-<<<<<<< HEAD
 var NewTemplateView = __webpack_require__(748);
-=======
-<<<<<<< HEAD
-var NewTemplateView = __webpack_require__(748);
-=======
-var NewTemplateView = __webpack_require__(747);
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
 
 module.exports = elementorModules.common.views.modal.Layout.extend({
   getModalOptions: function getModalOptions() {
@@ -214,15 +166,7 @@ module.exports = elementorModules.common.views.modal.Layout.extend({
 
 /***/ }),
 
-<<<<<<< HEAD
 /***/ 748:
-=======
-<<<<<<< HEAD
-/***/ 748:
-=======
-/***/ 747:
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

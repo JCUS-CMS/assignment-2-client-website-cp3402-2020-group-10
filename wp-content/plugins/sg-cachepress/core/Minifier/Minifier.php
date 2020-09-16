@@ -73,14 +73,7 @@ class Minifier {
 		'elementor-preview',
 		'preview',
 		'wc-api',
-<<<<<<< HEAD
 		'method',
-=======
-<<<<<<< HEAD
-		'method',
-=======
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
 	);
 
 	/**

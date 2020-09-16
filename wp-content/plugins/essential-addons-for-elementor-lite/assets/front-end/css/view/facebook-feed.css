@@ -93,14 +93,7 @@
 .eael-facebook-feed .eael-facebook-feed-item,
 .eael-facebook-feed .eael-facebook-feed-item-inner {
   position: relative;
-<<<<<<< HEAD
   overflow: hidden;
-=======
-<<<<<<< HEAD
-  overflow: hidden;
-=======
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
 }
 .eael-facebook-feed-overlay .eael-facebook-feed-item .eael-facebook-feed-item-overlay {
   display: -webkit-box;
@@ -144,21 +137,11 @@
   margin: 0 15px;
 }
 .eael-facebook-feed-card .eael-facebook-feed-item .eael-facebook-feed-item-inner {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> yanzhou-li
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   margin: 10px;
   overflow: hidden;
-<<<<<<< HEAD
-=======
-=======
-  margin: 10px;
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
 }
 .eael-facebook-feed-card .eael-facebook-feed-item .eael-facebook-feed-item-inner .eael-facebook-feed-item-header {
   padding: 8px 12px;
@@ -272,10 +255,6 @@
 .elementor-widget-eael-facebook-feed .eael-load-more-button-wrap.no-pagination {
   display: none;
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> yanzhou-li
 .eael-facebook-feed-card .eael-facebook-feed-item-style-two .eael-facebook-feed-item-inner .eael-facebook-feed-item-header .eael-facebook-feed-item-user {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -292,8 +271,3 @@
 .eael-facebook-feed-card .eael-facebook-feed-item-style-two .eael-facebook-feed-item-inner .eael-facebook-feed-item-header .eael-facebook-feed-item-user .eael-facebook-feed-header-content .eael-facebook-feed-post-time {
   line-height: 20px !important;
 }
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li

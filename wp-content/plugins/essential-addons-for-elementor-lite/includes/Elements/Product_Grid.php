@@ -1,24 +1,9 @@
 <?php
-<<<<<<< HEAD
 
 namespace Essential_Addons_Elementor\Elements;
 
 // If this file is called directly, abort.
 if (!defined('ABSPATH')) {
-=======
-<<<<<<< HEAD
-
-namespace Essential_Addons_Elementor\Elements;
-
-// If this file is called directly, abort.
-if (!defined('ABSPATH')) {
-=======
-namespace Essential_Addons_Elementor\Elements;
-
-// If this file is called directly, abort.
-if ( !defined( 'ABSPATH' ) ) {
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
     exit;
 }
 
@@ -27,11 +12,6 @@ use \Elementor\Group_Control_Border as Group_Control_Border;
 use \Elementor\Group_Control_Typography as Group_Control_Typography;
 use \Elementor\Widget_Base as Widget_Base;
 
-<<<<<<< HEAD
-class Product_Grid extends Widget_Base
-{
-=======
-<<<<<<< HEAD
 class Product_Grid extends Widget_Base
 {
     use \Essential_Addons_Elementor\Traits\Helper;
@@ -72,52 +52,6 @@ class Product_Grid extends Widget_Base
 
     public function get_keywords()
     {
-=======
-class Product_Grid extends Widget_Base {
->>>>>>> yanzhou-li
-    use \Essential_Addons_Elementor\Traits\Helper;
-    use \Essential_Addons_Elementor\Template\Content\Product_Grid;
-
-    private $is_show_custom_add_to_cart = false;
-    private $simple_add_to_cart_button_text;
-    private $variable_add_to_cart_button_text;
-    private $grouped_add_to_cart_button_text;
-    private $external_add_to_cart_button_text;
-    private $default_add_to_cart_button_text;
-
-    public function __construct($data = [], $args = null)
-    {
-        parent::__construct($data, $args);
-        add_filter('woocommerce_product_add_to_cart_text', [$this, 'add_to_cart_button_custom_text']);
-    }
-
-    public function get_name()
-    {
-        return 'eicon-woocommerce';
-    }
-
-    public function get_title()
-    {
-        return esc_html__('Product Grid', 'essential-addons-for-elementor-lite');
-    }
-
-    public function get_icon()
-    {
-        return 'eaicon-product-grid';
-    }
-
-    public function get_categories()
-    {
-        return ['essential-addons-elementor'];
-    }
-
-<<<<<<< HEAD
-    public function get_keywords()
-    {
-=======
-    public function get_keywords() {
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
         return [
             'woo',
             'woocommerce',
@@ -134,7 +68,6 @@ class Product_Grid extends Widget_Base {
         ];
     }
 
-<<<<<<< HEAD
     public function get_custom_help_url()
     {
         return 'https://essential-addons.com/elementor/docs/woocommerce-product-grid/';
@@ -142,49 +75,19 @@ class Product_Grid extends Widget_Base {
 
     public function get_style_depends()
     {
-=======
-<<<<<<< HEAD
-    public function get_custom_help_url()
-    {
-        return 'https://essential-addons.com/elementor/docs/woocommerce-product-grid/';
-    }
-
-    public function get_style_depends()
-    {
-=======
-    public function get_custom_help_url() {
-        return 'https://essential-addons.com/elementor/docs/woocommerce-product-grid/';
-    }
-
-    public function get_style_depends() {
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
         return [
             'font-awesome-5-all',
             'font-awesome-4-shim',
         ];
     }
 
-<<<<<<< HEAD
     public function get_script_depends()
     {
-=======
-<<<<<<< HEAD
-    public function get_script_depends()
-    {
-=======
-    public function get_script_depends() {
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
         return [
             'font-awesome-4-shim',
         ];
     }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> yanzhou-li
     public function add_to_cart_button_custom_text($default)
     {
         if ($this->is_show_custom_add_to_cart) {
@@ -212,51 +115,21 @@ class Product_Grid extends Widget_Base {
 
     protected function _register_controls()
     {
-<<<<<<< HEAD
-=======
-=======
-    protected function _register_controls() {
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
 
         // Content Controls
         $this->start_controls_section(
             'eael_section_product_grid_settings',
             [
-<<<<<<< HEAD
                 'label' => esc_html__('Product Settings', 'essential-addons-for-elementor-lite'),
             ]
         );
 
         if (!apply_filters('eael/active_plugins', 'woocommerce/woocommerce.php')) {
-=======
-<<<<<<< HEAD
-                'label' => esc_html__('Product Settings', 'essential-addons-for-elementor-lite'),
-            ]
-        );
-
-        if (!apply_filters('eael/active_plugins', 'woocommerce/woocommerce.php')) {
-=======
-                'label' => esc_html__( 'Product Settings', 'essential-addons-for-elementor-lite' ),
-            ]
-        );
-
-        if ( !apply_filters( 'eael/active_plugins', 'woocommerce/woocommerce.php' ) ) {
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
             $this->add_control(
                 'ea_product_grid_woo_required',
                 [
                     'type'            => Controls_Manager::RAW_HTML,
-<<<<<<< HEAD
                     'raw'             => __('<strong>WooCommerce</strong> is not installed/activated on your site. Please install and activate <a href="plugin-install.php?s=woocommerce&tab=search&type=term" target="_blank">WooCommerce</a> first.', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                    'raw'             => __('<strong>WooCommerce</strong> is not installed/activated on your site. Please install and activate <a href="plugin-install.php?s=woocommerce&tab=search&type=term" target="_blank">WooCommerce</a> first.', 'essential-addons-for-elementor-lite'),
-=======
-                    'raw'             => __( '<strong>WooCommerce</strong> is not installed/activated on your site. Please install and activate <a href="plugin-install.php?s=woocommerce&tab=search&type=term" target="_blank">WooCommerce</a> first.', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                     'content_classes' => 'eael-warning',
                 ]
             );
@@ -265,7 +138,6 @@ class Product_Grid extends Widget_Base {
         $this->add_control(
             'eael_product_grid_product_filter',
             [
-<<<<<<< HEAD
                 'label'   => esc_html__('Filter By', 'essential-addons-for-elementor-lite'),
                 'type'    => Controls_Manager::SELECT,
                 'default' => 'recent-products',
@@ -275,38 +147,10 @@ class Product_Grid extends Widget_Base {
                     'best-selling-products' => esc_html__('Best Selling Products', 'essential-addons-for-elementor-lite'),
                     'sale-products'         => esc_html__('Sale Products', 'essential-addons-for-elementor-lite'),
                     'top-products'          => esc_html__('Top Rated Products', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'   => esc_html__('Filter By', 'essential-addons-for-elementor-lite'),
-                'type'    => Controls_Manager::SELECT,
-                'default' => 'recent-products',
-                'options' => [
-                    'recent-products'       => esc_html__('Recent Products', 'essential-addons-for-elementor-lite'),
-                    'featured-products'     => esc_html__('Featured Products', 'essential-addons-for-elementor-lite'),
-                    'best-selling-products' => esc_html__('Best Selling Products', 'essential-addons-for-elementor-lite'),
-                    'sale-products'         => esc_html__('Sale Products', 'essential-addons-for-elementor-lite'),
-                    'top-products'          => esc_html__('Top Rated Products', 'essential-addons-for-elementor-lite'),
-=======
-                'label'   => esc_html__( 'Filter By', 'essential-addons-for-elementor-lite' ),
-                'type'    => Controls_Manager::SELECT,
-                'default' => 'recent-products',
-                'options' => [
-                    'recent-products'       => esc_html__( 'Recent Products', 'essential-addons-for-elementor-lite' ),
-                    'featured-products'     => esc_html__( 'Featured Products', 'essential-addons-for-elementor-lite' ),
-                    'best-selling-products' => esc_html__( 'Best Selling Products', 'essential-addons-for-elementor-lite' ),
-                    'sale-products'         => esc_html__( 'Sale Products', 'essential-addons-for-elementor-lite' ),
-                    'top-products'          => esc_html__( 'Top Rated Products', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 ],
             ]
         );
 
-<<<<<<< HEAD
-        $this->add_control(
-            'orderby',
-=======
-<<<<<<< HEAD
         $this->add_control(
             'orderby',
             [
@@ -329,51 +173,13 @@ class Product_Grid extends Widget_Base {
                 ],
                 'default' => 'desc',
 
-=======
-        $this->add_responsive_control(
-            'eael_product_grid_column',
->>>>>>> yanzhou-li
-            [
-                'label' => __('Order By', 'essential-addons-for-elementor-lite'),
-                'type' => Controls_Manager::SELECT,
-                'options' => $this->eael_get_product_orderby_options(),
-                'default' => 'date',
-
-            ]
-        );
-
-        $this->add_control(
-            'order',
-            [
-                'label' => __('Order', 'essential-addons-for-elementor-lite'),
-                'type' => Controls_Manager::SELECT,
-                'options' => [
-                    'asc' => 'Ascending',
-                    'desc' => 'Descending',
-                ],
-<<<<<<< HEAD
-                'default' => 'desc',
-
-=======
-                'toggle'       => true,
-                'prefix_class' => 'eael-product-grid-column%s-',
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
             ]
         );
 
         $this->add_control(
             'eael_product_grid_products_count',
             [
-<<<<<<< HEAD
                 'label'   => __('Products Count', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'   => __('Products Count', 'essential-addons-for-elementor-lite'),
-=======
-                'label'   => __( 'Products Count', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'    => Controls_Manager::NUMBER,
                 'default' => 4,
                 'min'     => 1,
@@ -385,24 +191,12 @@ class Product_Grid extends Widget_Base {
         $this->add_control(
             'product_offset',
             [
-<<<<<<< HEAD
                 'label'   => __('Offset', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'   => __('Offset', 'essential-addons-for-elementor-lite'),
-=======
-                'label'   => __( 'Offset', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'    => Controls_Manager::NUMBER,
                 'default' => 0,
             ]
         );
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> yanzhou-li
         $this->add_responsive_control(
             'eael_product_grid_column',
             [
@@ -423,23 +217,10 @@ class Product_Grid extends Widget_Base {
         );
 
 
-<<<<<<< HEAD
         $this->add_control(
             'eael_product_grid_categories',
             [
                 'label'       => esc_html__('Product Categories', 'essential-addons-for-elementor-lite'),
-=======
-        $this->add_control(
-            'eael_product_grid_categories',
-            [
-                'label'       => esc_html__('Product Categories', 'essential-addons-for-elementor-lite'),
-=======
-        $this->add_control(
-            'eael_product_grid_categories',
-            [
-                'label'       => esc_html__( 'Product Categories', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'        => Controls_Manager::SELECT2,
                 'label_block' => true,
                 'multiple'    => true,
@@ -450,7 +231,6 @@ class Product_Grid extends Widget_Base {
         $this->add_control(
             'eael_product_grid_style_preset',
             [
-<<<<<<< HEAD
                 'label'   => esc_html__('Style Preset', 'essential-addons-for-elementor-lite'),
                 'type'    => Controls_Manager::SELECT,
                 'default' => 'eael-product-simple',
@@ -459,27 +239,6 @@ class Product_Grid extends Widget_Base {
                     'eael-product-simple'  => esc_html__('Simple Style', 'essential-addons-for-elementor-lite'),
                     'eael-product-reveal'  => esc_html__('Reveal Style', 'essential-addons-for-elementor-lite'),
                     'eael-product-overlay' => esc_html__('Overlay Style', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'   => esc_html__('Style Preset', 'essential-addons-for-elementor-lite'),
-                'type'    => Controls_Manager::SELECT,
-                'default' => 'eael-product-simple',
-                'options' => [
-                    'eael-product-default' => esc_html__('Default', 'essential-addons-for-elementor-lite'),
-                    'eael-product-simple'  => esc_html__('Simple Style', 'essential-addons-for-elementor-lite'),
-                    'eael-product-reveal'  => esc_html__('Reveal Style', 'essential-addons-for-elementor-lite'),
-                    'eael-product-overlay' => esc_html__('Overlay Style', 'essential-addons-for-elementor-lite'),
-=======
-                'label'   => esc_html__( 'Style Preset', 'essential-addons-for-elementor-lite' ),
-                'type'    => Controls_Manager::SELECT,
-                'default' => 'eael-product-simple',
-                'options' => [
-                    'eael-product-default' => esc_html__( 'Default', 'essential-addons-for-elementor-lite' ),
-                    'eael-product-simple'  => esc_html__( 'Simple Style', 'essential-addons-for-elementor-lite' ),
-                    'eael-product-reveal'  => esc_html__( 'Reveal Style', 'essential-addons-for-elementor-lite' ),
-                    'eael-product-overlay' => esc_html__( 'Overlay Style', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 ],
             ]
         );
@@ -487,15 +246,7 @@ class Product_Grid extends Widget_Base {
         $this->add_control(
             'eael_product_grid_rating',
             [
-<<<<<<< HEAD
                 'label'        => esc_html__('Show Product Rating?', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'        => esc_html__('Show Product Rating?', 'essential-addons-for-elementor-lite'),
-=======
-                'label'        => esc_html__( 'Show Product Rating?', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'         => Controls_Manager::SWITCHER,
                 'return_value' => 'yes',
                 'default'      => 'yes',
@@ -506,10 +257,6 @@ class Product_Grid extends Widget_Base {
 
         /**
          * -------------------------------
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> yanzhou-li
          *  Section => Add To Cart
          * -------------------------------
          */
@@ -597,50 +344,23 @@ class Product_Grid extends Widget_Base {
 
         /**
          * -------------------------------
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
          *  Section => Load More
          * -------------------------------
          */
         $this->start_controls_section(
             'eael_product_grid_load_more_section',
             [
-<<<<<<< HEAD
                 'label' => esc_html__('Load More', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label' => esc_html__('Load More', 'essential-addons-for-elementor-lite'),
-=======
-                'label' => esc_html__( 'Load More', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
             ]
         );
 
         $this->add_control(
             'show_load_more',
             [
-<<<<<<< HEAD
                 'label'        => __('Show Load More', 'essential-addons-for-elementor-lite'),
                 'type'         => Controls_Manager::SWITCHER,
                 'label_on'     => __('Show', 'essential-addons-for-elementor-lite'),
                 'label_off'    => __('Hide', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'        => __('Show Load More', 'essential-addons-for-elementor-lite'),
-                'type'         => Controls_Manager::SWITCHER,
-                'label_on'     => __('Show', 'essential-addons-for-elementor-lite'),
-                'label_off'    => __('Hide', 'essential-addons-for-elementor-lite'),
-=======
-                'label'        => __( 'Show Load More', 'essential-addons-for-elementor-lite' ),
-                'type'         => Controls_Manager::SWITCHER,
-                'label_on'     => __( 'Show', 'essential-addons-for-elementor-lite' ),
-                'label_off'    => __( 'Hide', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'return_value' => 'true',
                 'default'      => '',
             ]
@@ -649,24 +369,10 @@ class Product_Grid extends Widget_Base {
         $this->add_control(
             'show_load_more_text',
             [
-<<<<<<< HEAD
                 'label'       => esc_html__('Label Text', 'essential-addons-for-elementor-lite'),
                 'type'        => Controls_Manager::TEXT,
                 'label_block' => false,
                 'default'     => esc_html__('Load More', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'       => esc_html__('Label Text', 'essential-addons-for-elementor-lite'),
-                'type'        => Controls_Manager::TEXT,
-                'label_block' => false,
-                'default'     => esc_html__('Load More', 'essential-addons-for-elementor-lite'),
-=======
-                'label'       => esc_html__( 'Label Text', 'essential-addons-for-elementor-lite' ),
-                'type'        => Controls_Manager::TEXT,
-                'label_block' => false,
-                'default'     => esc_html__( 'Load More', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'condition'   => [
                     'show_load_more' => 'true',
                 ],
@@ -678,24 +384,12 @@ class Product_Grid extends Widget_Base {
         $this->start_controls_section(
             'eael_product_grid_styles',
             [
-<<<<<<< HEAD
                 'label' => esc_html__('Products Styles', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label' => esc_html__('Products Styles', 'essential-addons-for-elementor-lite'),
-=======
-                'label' => esc_html__( 'Products Styles', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
 
         $this->add_control(
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> yanzhou-li
             'eael_product_grid_content_alignment',
             [
                 'label' => __('Alignment', 'essential-addons-for-elementor-lite'),
@@ -723,20 +417,9 @@ class Product_Grid extends Widget_Base {
         );
 
         $this->add_control(
-<<<<<<< HEAD
             'eael_product_grid_background_color',
             [
                 'label'     => esc_html__('Content Background Color', 'essential-addons-for-elementor-lite'),
-=======
-            'eael_product_grid_background_color',
-            [
-                'label'     => esc_html__('Content Background Color', 'essential-addons-for-elementor-lite'),
-=======
-            'eael_product_grid_background_color',
-            [
-                'label'     => esc_html__( 'Content Background Color', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#fff',
                 'selectors' => [
@@ -776,15 +459,7 @@ class Product_Grid extends Widget_Base {
         $this->add_control(
             'eael_peoduct_grid_border_radius',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Border Radius', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Border Radius', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Border Radius', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::DIMENSIONS,
                 'selectors' => [
                     '{{WRAPPER}} .eael-product-grid .woocommerce ul.products li.product' => 'border-radius: {{TOP}}px {{RIGHT}}px {{BOTTOM}}px {{LEFT}}px;',
@@ -792,10 +467,6 @@ class Product_Grid extends Widget_Base {
             ]
         );
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> yanzhou-li
         $this->add_control(
             'eael_peoduct_grid_padding',
             [
@@ -817,25 +488,12 @@ class Product_Grid extends Widget_Base {
             ]
         );
 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
         $this->end_controls_section();
 
         $this->start_controls_section(
             'eael_section_product_grid_typography',
             [
-<<<<<<< HEAD
                 'label' => esc_html__('Color &amp; Typography', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label' => esc_html__('Color &amp; Typography', 'essential-addons-for-elementor-lite'),
-=======
-                'label' => esc_html__( 'Color &amp; Typography', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -843,15 +501,7 @@ class Product_Grid extends Widget_Base {
         $this->add_control(
             'eael_product_grid_product_title_heading',
             [
-<<<<<<< HEAD
                 'label' => __('Product Title', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label' => __('Product Title', 'essential-addons-for-elementor-lite'),
-=======
-                'label' => __( 'Product Title', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'  => Controls_Manager::HEADING,
             ]
         );
@@ -859,15 +509,7 @@ class Product_Grid extends Widget_Base {
         $this->add_control(
             'eael_product_grid_product_title_color',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Product Title Color', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Product Title Color', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Product Title Color', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#272727',
                 'selectors' => [
@@ -887,15 +529,7 @@ class Product_Grid extends Widget_Base {
         $this->add_control(
             'eael_product_grid_product_price_heading',
             [
-<<<<<<< HEAD
                 'label' => __('Product Price', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label' => __('Product Price', 'essential-addons-for-elementor-lite'),
-=======
-                'label' => __( 'Product Price', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'  => Controls_Manager::HEADING,
             ]
         );
@@ -903,15 +537,7 @@ class Product_Grid extends Widget_Base {
         $this->add_control(
             'eael_product_grid_product_price_color',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Product Price Color', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Product Price Color', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Product Price Color', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#272727',
                 'selectors' => [
@@ -931,15 +557,7 @@ class Product_Grid extends Widget_Base {
         $this->add_control(
             'eael_product_grid_product_rating_heading',
             [
-<<<<<<< HEAD
                 'label' => __('Star Rating', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label' => __('Star Rating', 'essential-addons-for-elementor-lite'),
-=======
-                'label' => __( 'Star Rating', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'  => Controls_Manager::HEADING,
             ]
         );
@@ -947,15 +565,7 @@ class Product_Grid extends Widget_Base {
         $this->add_control(
             'eael_product_grid_product_rating_color',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Rating Color', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Rating Color', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Rating Color', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#f2b01e',
                 'selectors' => [
@@ -976,15 +586,7 @@ class Product_Grid extends Widget_Base {
         $this->add_control(
             'eael_product_grid_sale_badge_heading',
             [
-<<<<<<< HEAD
                 'label' => __('Sale Badge', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label' => __('Sale Badge', 'essential-addons-for-elementor-lite'),
-=======
-                'label' => __( 'Sale Badge', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'  => Controls_Manager::HEADING,
             ]
         );
@@ -992,15 +594,7 @@ class Product_Grid extends Widget_Base {
         $this->add_control(
             'eael_product_grid_sale_badge_color',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Sale Badge Color', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Sale Badge Color', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Sale Badge Color', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#fff',
                 'selectors' => [
@@ -1012,15 +606,7 @@ class Product_Grid extends Widget_Base {
         $this->add_control(
             'eael_product_grid_sale_badge_background',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Sale Badge Background', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Sale Badge Background', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Sale Badge Background', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#ff2a13',
                 'selectors' => [
@@ -1041,15 +627,7 @@ class Product_Grid extends Widget_Base {
         $this->add_control(
             'eael_product_grid_stock_out_badge_heading',
             [
-<<<<<<< HEAD
                 'label' => __('Stock Out Badge', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label' => __('Stock Out Badge', 'essential-addons-for-elementor-lite'),
-=======
-                'label' => __( 'Stock Out Badge', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'  => Controls_Manager::HEADING,
             ]
         );
@@ -1057,15 +635,7 @@ class Product_Grid extends Widget_Base {
         $this->add_control(
             'eael_product_grid_stock_out_badge_color',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Stock Out Badge Color', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Stock Out Badge Color', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Stock Out Badge Color', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#fff',
                 'selectors' => [
@@ -1077,15 +647,7 @@ class Product_Grid extends Widget_Base {
         $this->add_control(
             'eael_product_grid_stock_out_badge_background',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Stock Out Badge Background', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Stock Out Badge Background', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Stock Out Badge Background', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#ff2a13',
                 'selectors' => [
@@ -1104,34 +666,15 @@ class Product_Grid extends Widget_Base {
 
         $this->end_controls_section();
 
-<<<<<<< HEAD
         // add to cart button
         $this->start_controls_section(
             'eael_section_product_grid_add_to_cart_styles',
             [
                 'label' => esc_html__('Add to Cart Button Styles', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-        // add to cart button
-        $this->start_controls_section(
-            'eael_section_product_grid_add_to_cart_styles',
-            [
-                'label' => esc_html__('Add to Cart Button Styles', 'essential-addons-for-elementor-lite'),
-=======
-        $this->start_controls_section(
-            'eael_section_product_grid_add_to_cart_styles',
-            [
-                'label' => esc_html__( 'Add to Cart Button Styles', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> yanzhou-li
         $this->add_control(
             'eael_product_grid_add_to_cart_padding',
             [
@@ -1172,31 +715,13 @@ class Product_Grid extends Widget_Base {
 
 
         $this->start_controls_tabs('eael_product_grid_add_to_cart_style_tabs');
-<<<<<<< HEAD
 
         $this->start_controls_tab('normal', ['label' => esc_html__('Normal', 'essential-addons-for-elementor-lite')]);
-=======
-
-        $this->start_controls_tab('normal', ['label' => esc_html__('Normal', 'essential-addons-for-elementor-lite')]);
-=======
-        $this->start_controls_tabs( 'eael_product_grid_add_to_cart_style_tabs' );
-
-        $this->start_controls_tab( 'normal', ['label' => esc_html__( 'Normal', 'essential-addons-for-elementor-lite' )] );
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
 
         $this->add_control(
             'eael_product_grid_add_to_cart_color',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Button Color', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Button Color', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Button Color', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#fff',
                 'selectors' => [
@@ -1207,10 +732,6 @@ class Product_Grid extends Widget_Base {
             ]
         );
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> yanzhou-li
         $this->add_group_control(
             \Elementor\Group_Control_Background::get_type(),
             [
@@ -1226,23 +747,10 @@ class Product_Grid extends Widget_Base {
             ]
         );
 
-<<<<<<< HEAD
         $this->add_control(
             'eael_product_grid_add_to_cart_background',
             [
                 'label'     => esc_html__('Background', 'essential-addons-for-elementor-lite'),
-=======
-        $this->add_control(
-            'eael_product_grid_add_to_cart_background',
-            [
-                'label'     => esc_html__('Background', 'essential-addons-for-elementor-lite'),
-=======
-        $this->add_control(
-            'eael_product_grid_add_to_cart_background',
-            [
-                'label'     => esc_html__( 'Button Background Color', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#333',
                 'selectors' => [
@@ -1250,18 +758,9 @@ class Product_Grid extends Widget_Base {
                     '{{WRAPPER}} .eael-product-grid.eael-product-overlay .woocommerce ul.products li.product .overlay .product-link'  => 'background-color: {{VALUE}};',
                     '{{WRAPPER}} .eael-product-grid.eael-product-overlay .woocommerce ul.products li.product .overlay .added_to_cart' => 'background-color: {{VALUE}};',
                 ],
-<<<<<<< HEAD
                 'condition' => [
                     'eael_product_grid_add_to_cart_is_gradient_bg'  => ''
                 ]
-=======
-<<<<<<< HEAD
-                'condition' => [
-                    'eael_product_grid_add_to_cart_is_gradient_bg'  => ''
-                ]
-=======
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
             ]
         );
 
@@ -1286,28 +785,12 @@ class Product_Grid extends Widget_Base {
 
         $this->end_controls_tab();
 
-<<<<<<< HEAD
         $this->start_controls_tab('eael_product_grid_add_to_cart_hover_styles', ['label' => esc_html__('Hover', 'essential-addons-for-elementor-lite')]);
-=======
-<<<<<<< HEAD
-        $this->start_controls_tab('eael_product_grid_add_to_cart_hover_styles', ['label' => esc_html__('Hover', 'essential-addons-for-elementor-lite')]);
-=======
-        $this->start_controls_tab( 'eael_product_grid_add_to_cart_hover_styles', ['label' => esc_html__( 'Hover', 'essential-addons-for-elementor-lite' )] );
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
 
         $this->add_control(
             'eael_product_grid_add_to_cart_hover_color',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Button Color', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Button Color', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Button Color', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#fff',
                 'selectors' => [
@@ -1317,10 +800,6 @@ class Product_Grid extends Widget_Base {
                 ],
             ]
         );
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> yanzhou-li
         $this->add_group_control(
             \Elementor\Group_Control_Background::get_type(),
             [
@@ -1335,24 +814,10 @@ class Product_Grid extends Widget_Base {
                 ]
             ]
         );
-<<<<<<< HEAD
         $this->add_control(
             'eael_product_grid_add_to_cart_hover_background',
             [
                 'label'     => esc_html__('Background', 'essential-addons-for-elementor-lite'),
-=======
-        $this->add_control(
-            'eael_product_grid_add_to_cart_hover_background',
-            [
-                'label'     => esc_html__('Background', 'essential-addons-for-elementor-lite'),
-=======
-
-        $this->add_control(
-            'eael_product_grid_add_to_cart_hover_background',
-            [
-                'label'     => esc_html__( 'Button Background Color', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#333',
                 'selectors' => [
@@ -1366,15 +831,7 @@ class Product_Grid extends Widget_Base {
         $this->add_control(
             'eael_product_grid_add_to_cart_hover_border_color',
             [
-<<<<<<< HEAD
                 'label'     => esc_html__('Border Color', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'label'     => esc_html__('Border Color', 'essential-addons-for-elementor-lite'),
-=======
-                'label'     => esc_html__( 'Border Color', 'essential-addons-for-elementor-lite' ),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -1395,9 +852,6 @@ class Product_Grid extends Widget_Base {
          * Load More Button Style Controls!
          */
         $this->eael_load_more_button_style();
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
     }
 
     protected function render()
@@ -1405,30 +859,11 @@ class Product_Grid extends Widget_Base {
         $settings = $this->get_settings_for_display();
 
         if (!apply_filters('eael/active_plugins', 'woocommerce/woocommerce.php')) {
-=======
-
->>>>>>> yanzhou-li
-    }
-
-    protected function render()
-    {
-        $settings = $this->get_settings_for_display();
-
-<<<<<<< HEAD
-        if (!apply_filters('eael/active_plugins', 'woocommerce/woocommerce.php')) {
-=======
-        if ( !apply_filters( 'eael/active_plugins', 'woocommerce/woocommerce.php' ) ) {
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
             return;
         }
 
         $args = [
             'post_type'      => 'product',
-<<<<<<< HEAD
-            'posts_per_page' => (isset($settings['eael_product_grid_products_count']) ? $settings['eael_product_grid_products_count'] : 4),
-=======
-<<<<<<< HEAD
             'posts_per_page' => (isset($settings['eael_product_grid_products_count']) ? $settings['eael_product_grid_products_count'] : 4),
             'offset'         => $settings['product_offset'],
             'order'          => (isset($settings['order']) ? $settings['order'] : 'desc'),
@@ -1445,30 +880,6 @@ class Product_Grid extends Widget_Base {
         }
 
         if (!empty($settings['eael_product_grid_categories'])) {
-=======
-            'posts_per_page' => $settings['eael_product_grid_products_count'] ?: 4,
-            'order'          => 'DESC',
->>>>>>> yanzhou-li
-            'offset'         => $settings['product_offset'],
-            'order'          => (isset($settings['order']) ? $settings['order'] : 'desc'),
-        ];
-        // price & sku filter
-        if ($settings['orderby'] == '_price') {
-            $args['orderby']  = 'meta_value_num';
-            $args['meta_key'] = '_price';
-        } else if ($settings['orderby'] == '_sku') {
-            $args['orderby']  = 'meta_value_num';
-            $args['meta_key'] = '_sku';
-        } else {
-            $args['orderby']  = (isset($settings['orderby']) ? $settings['orderby'] : 'date');
-        }
-
-<<<<<<< HEAD
-        if (!empty($settings['eael_product_grid_categories'])) {
-=======
-        if ( !empty( $settings['eael_product_grid_categories'] ) ) {
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
             $args['tax_query'] = [
                 [
                     'taxonomy' => 'product_cat',
@@ -1479,15 +890,7 @@ class Product_Grid extends Widget_Base {
             ];
         }
 
-<<<<<<< HEAD
         if ($settings['eael_product_grid_product_filter'] == 'featured-products') {
-=======
-<<<<<<< HEAD
-        if ($settings['eael_product_grid_product_filter'] == 'featured-products') {
-=======
-        if ( $settings['eael_product_grid_product_filter'] == 'featured-products' ) {
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
             $args['tax_query'] = [
                 'relation' => 'AND',
                 [
@@ -1497,43 +900,18 @@ class Product_Grid extends Widget_Base {
                 ],
             ];
 
-<<<<<<< HEAD
             if ($settings['eael_product_grid_categories']) {
-=======
-<<<<<<< HEAD
-            if ($settings['eael_product_grid_categories']) {
-=======
-            if ( $settings['eael_product_grid_categories'] ) {
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 $args['tax_query'][] = [
                     'taxonomy' => 'product_cat',
                     'field'    => 'slug',
                     'terms'    => $settings['eael_product_grid_categories'],
                 ];
             }
-<<<<<<< HEAD
         } else if ($settings['eael_product_grid_product_filter'] == 'best-selling-products') {
             $args['meta_key'] = 'total_sales';
             $args['orderby'] = 'meta_value_num';
             $args['order'] = 'DESC';
         } else if ($settings['eael_product_grid_product_filter'] == 'sale-products') {
-=======
-<<<<<<< HEAD
-        } else if ($settings['eael_product_grid_product_filter'] == 'best-selling-products') {
-            $args['meta_key'] = 'total_sales';
-            $args['orderby'] = 'meta_value_num';
-            $args['order'] = 'DESC';
-        } else if ($settings['eael_product_grid_product_filter'] == 'sale-products') {
-=======
-
-        } else if ( $settings['eael_product_grid_product_filter'] == 'best-selling-products' ) {
-            $args['meta_key'] = 'total_sales';
-            $args['orderby'] = 'meta_value_num';
-            $args['order'] = 'DESC';
-        } else if ( $settings['eael_product_grid_product_filter'] == 'sale-products' ) {
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
             $args['meta_query'] = [
                 'relation' => 'OR',
                 [
@@ -1548,29 +926,13 @@ class Product_Grid extends Widget_Base {
                     'type'    => 'numeric',
                 ],
             ];
-<<<<<<< HEAD
         } else if ($settings['eael_product_grid_product_filter'] == 'top-products') {
-=======
-<<<<<<< HEAD
-        } else if ($settings['eael_product_grid_product_filter'] == 'top-products') {
-=======
-        } else if ( $settings['eael_product_grid_product_filter'] == 'top-products' ) {
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
             $args['meta_key'] = '_wc_average_rating';
             $args['orderby'] = 'meta_value_num';
             $args['order'] = 'DESC';
         }
 
-<<<<<<< HEAD
         $render_settings = [
-=======
-<<<<<<< HEAD
-        $render_settings = [
-=======
-        $settings = [
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
             'eael_product_grid_style_preset' => $settings['eael_product_grid_style_preset'],
             'eael_product_grid_rating'       => $settings['eael_product_grid_rating'],
             'eael_product_grid_column'       => $settings['eael_product_grid_column'],
@@ -1578,10 +940,6 @@ class Product_Grid extends Widget_Base {
             'show_load_more_text'            => $settings['show_load_more_text'],
         ];
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> yanzhou-li
         // add to custom button text
         $this->is_show_custom_add_to_cart = boolval($settings['show_add_to_cart_custom_text']);
         $this->simple_add_to_cart_button_text = $settings['add_to_cart_simple_product_button_text'];
@@ -1591,19 +949,10 @@ class Product_Grid extends Widget_Base {
         $this->default_add_to_cart_button_text = $settings['add_to_cart_default_product_button_text'];
 
         // render dom
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
         $html = '<div class="eael-product-grid ' . $settings['eael_product_grid_style_preset'] . '">';
         $html .= '<div class="woocommerce">';
 
         $html .= '<ul class="products">
-<<<<<<< HEAD
-                    ' . self::render_template_($args, $render_settings) . '
-=======
-<<<<<<< HEAD
                     ' . self::render_template_($args, $render_settings) . '
                 </ul>';
 
@@ -1613,22 +962,6 @@ class Product_Grid extends Widget_Base {
                             <button class="eael-load-more-button" id="eael-load-more-btn-' . $this->get_id() . '" data-widget="' . $this->get_id() . '" data-class="' . get_class($this) . '" data-args="' . http_build_query($args) . '" data-settings="' . http_build_query($settings) . '" data-layout="masonry" data-page="1">
                                 <div class="eael-btn-loader button__loader"></div>
                                 <span>' . esc_html__($settings['show_load_more_text'], 'essential-addons-for-elementor-lite') . '</span>
-=======
-                    ' . self::render_template_( $args, $settings ) . '
->>>>>>> yanzhou-li
-                </ul>';
-
-        if ('true' == $settings['show_load_more']) {
-            if ($args['posts_per_page'] != '-1') {
-                $html .= '<div class="eael-load-more-button-wrap">
-                            <button class="eael-load-more-button" id="eael-load-more-btn-' . $this->get_id() . '" data-widget="' . $this->get_id() . '" data-class="' . get_class($this) . '" data-args="' . http_build_query($args) . '" data-settings="' . http_build_query($settings) . '" data-layout="masonry" data-page="1">
-                                <div class="eael-btn-loader button__loader"></div>
-<<<<<<< HEAD
-                                <span>' . esc_html__($settings['show_load_more_text'], 'essential-addons-for-elementor-lite') . '</span>
-=======
-                                <span>' . esc_html__( $settings['show_load_more_text'], 'essential-addons-for-elementor-lite' ) . '</span>
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                             </button>
                         </div>';
             }
@@ -1639,11 +972,4 @@ class Product_Grid extends Widget_Base {
 
         echo $html;
     }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
 }

@@ -1,12 +1,5 @@
 <?php
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
 namespace Essential_Addons_Elementor\Elements;
 
 // If this file is called directly, abort.
@@ -15,31 +8,13 @@ if (!defined('ABSPATH')) {
 }
 
 use \Elementor\Controls_Manager;
-<<<<<<< HEAD
 use \Elementor\Group_Control_Border;
 use \Elementor\Group_Control_Typography;
 use \Elementor\Plugin;
-=======
-<<<<<<< HEAD
-use \Elementor\Group_Control_Border;
-use \Elementor\Group_Control_Typography;
-use \Elementor\Plugin;
-=======
-use \Elementor\Plugin;
-use \Elementor\Group_Control_Border;
-use \Elementor\Group_Control_Typography;
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
 use \Elementor\Utils;
 use \Elementor\Widget_Base;
 use \Elementor\Repeater;
 
-<<<<<<< HEAD
-class Data_Table extends Widget_Base
-{
-    use \Essential_Addons_Elementor\Traits\Helper;
-=======
-<<<<<<< HEAD
 class Data_Table extends Widget_Base
 {
     use \Essential_Addons_Elementor\Traits\Helper;
@@ -181,159 +156,6 @@ class Data_Table extends Widget_Base
                 'label' => esc_html__('Icon', 'essential-addons-for-elementor-lite'),
                 'type' => Controls_Manager::ICONS,
                 'fa4compatibility' => 'eael_data_table_header_col_icon',
-=======
-class Data_Table extends Widget_Base {
-	use \Essential_Addons_Elementor\Traits\Helper;
->>>>>>> yanzhou-li
-
-    public $unique_id = null;
-    public function get_name()
-    {
-        return 'eael-data-table';
-    }
-
-    public function get_title()
-    {
-        return esc_html__('Data Table', 'essential-addons-for-elementor-lite');
-    }
-
-    public function get_icon()
-    {
-        return 'eaicon-data-table';
-    }
-
-    public function get_categories()
-    {
-        return ['essential-addons-elementor'];
-    }
-
-    public function get_keywords()
-    {
-        return [
-            'table',
-            'ea table',
-            'data table',
-            'ea data table',
-            'export eable',
-            'CSV',
-            'comparison table',
-            'grid',
-            'ea',
-            'essential addons',
-        ];
-    }
-
-    public function get_custom_help_url()
-    {
-        return 'https://essential-addons.com/elementor/docs/data-table/';
-    }
-
-    protected function _register_controls()
-    {
-
-        /**
-         * Data Table Header
-         */
-        $this->start_controls_section(
-            'eael_section_data_table_header',
-            [
-                'label' => esc_html__('Header', 'essential-addons-for-elementor-lite')
-            ]
-        );
-
-        do_action('eael_section_data_table_enabled', $this);
-
-        if (!apply_filters('eael/pro_enabled', false)) {
-            $this->add_control(
-                'eael_pricing_table_style_pro_alert',
-                [
-                    'label'     => esc_html__('Sorting feature is available in pro version!', 'essential-addons-for-elementor-lite'),
-                    'type'      => Controls_Manager::HEADING,
-                    'condition' => [
-                        'eael_section_data_table_enabled' => 'true',
-                    ]
-                ]
-            );
-        }
-
-        $repeater = new Repeater();
-
-        $repeater->add_control(
-            'eael_data_table_header_col',
-            [
-                'label' => esc_html__('Column Name', 'essential-addons-for-elementor-lite'),
-                'default' => 'Table Header',
-                'type' => Controls_Manager::TEXT,
-                'label_block' => false,
-            ]
-        );
-
-        $repeater->add_control(
-            'eael_data_table_header_col_span',
-            [
-                'label' => esc_html__('Column Span', 'essential-addons-for-elementor-lite'),
-                'default' => '',
-                'type' => Controls_Manager::TEXT,
-                'label_block' => false,
-            ]
-        );
-
-        $repeater->add_control(
-            'eael_data_table_header_col_icon_enabled',
-            [
-                'label' => esc_html__('Enable Header Icon', 'essential-addons-for-elementor-lite'),
-                'type' => Controls_Manager::SWITCHER,
-                'label_on' => __('yes', 'essential-addons-for-elementor-lite'),
-                'label_off' => __('no', 'essential-addons-for-elementor-lite'),
-                'default' => 'false',
-                'return_value' => 'true',
-            ]
-        );
-
-        $repeater->add_control(
-            'eael_data_table_header_icon_type',
-            [
-                'label'    => esc_html__('Header Icon Type', 'essential-addons-for-elementor-lite'),
-                'type'    => Controls_Manager::CHOOSE,
-                'options'               => [
-                    'none'        => [
-                        'title'   => esc_html__('None', 'essential-addons-for-elementor-lite'),
-                        'icon'    => 'fa fa-ban',
-                    ],
-                    'icon'        => [
-                        'title'   => esc_html__('Icon', 'essential-addons-for-elementor-lite'),
-                        'icon'    => 'fa fa-star',
-                    ],
-                    'image'       => [
-                        'title'   => esc_html__('Image', 'essential-addons-for-elementor-lite'),
-                        'icon'    => 'fa fa-picture-o',
-                    ],
-                ],
-                'default'               => 'icon',
-                'condition' => [
-                    'eael_data_table_header_col_icon_enabled' => 'true'
-                ]
-            ]
-        );
-
-<<<<<<< HEAD
-        // Comment on this control
-        $repeater->add_control(
-            'eael_data_table_header_col_icon_new',
-            [
-                'label' => esc_html__('Icon', 'essential-addons-for-elementor-lite'),
-                'type' => Controls_Manager::ICONS,
-                'fa4compatibility' => 'eael_data_table_header_col_icon',
-=======
-		// Comment on this control
-		$repeater->add_control(
-			'eael_data_table_header_col_icon_new',
-			[
-				'label' => esc_html__( 'Icon', 'essential-addons-for-elementor-lite'),
-				'type' => Controls_Manager::ICONS,
-				'fa4compatibility' => 'eael_data_table_header_col_icon',
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'default' => [
                     'value' => 'fas fa-star',
                     'library' => 'solid',
@@ -604,18 +426,8 @@ class Data_Table extends Widget_Base {
             'ea_adv_data_table_export_csv_button',
             [
                 'label' => __('Export table as CSV file', 'essential-addons-for-elementor-lite'),
-<<<<<<< HEAD
                 'type'  => Controls_Manager::BUTTON,
                 'text'  => __('Export', 'essential-addons-for-elementor-lite'),
-=======
-<<<<<<< HEAD
-                'type'  => Controls_Manager::BUTTON,
-                'text'  => __('Export', 'essential-addons-for-elementor-lite'),
-=======
-                'type' => Controls_Manager::BUTTON,
-                'text' => __('Export', 'essential-addons-for-elementor-lite'),
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                 'event' => 'ea:table:export',
             ]
         );
@@ -665,7 +477,6 @@ class Data_Table extends Widget_Base {
 		$this->add_responsive_control(
             'table_width',
             [
-<<<<<<< HEAD
                 'label'      => __('Width', 'essential-addons-for-elementor-lite'),
                 'type'       => Controls_Manager::SLIDER,
                 'default'    => [
@@ -675,29 +486,6 @@ class Data_Table extends Widget_Base {
                 'size_units' => ['%', 'px'],
                 'range'      => [
                     '%'  => [
-=======
-<<<<<<< HEAD
-                'label'      => __('Width', 'essential-addons-for-elementor-lite'),
-                'type'       => Controls_Manager::SLIDER,
-                'default'    => [
-                    'size' => 100,
-                    'unit' => '%',
-                ],
-                'size_units' => ['%', 'px'],
-                'range'      => [
-                    '%'  => [
-=======
-                'label'                 => __( 'Width', 'essential-addons-for-elementor-lite'),
-                'type'                  => Controls_Manager::SLIDER,
-                'default'               => [
-                    'size' => 100,
-                    'unit' => '%',
-                ],
-                'size_units'            => [ '%', 'px' ],
-                'range'                 => [
-                    '%' => [
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                         'min' => 1,
                         'max' => 100,
                     ],
@@ -706,10 +494,6 @@ class Data_Table extends Widget_Base {
                         'max' => 1200,
                     ],
                 ],
-<<<<<<< HEAD
-                'selectors'  => [
-=======
-<<<<<<< HEAD
                 'selectors'  => [
                     '{{WRAPPER}} .eael-data-table' => 'max-width: {{SIZE}}{{UNIT}};',
                 ],
@@ -735,40 +519,6 @@ class Data_Table extends Widget_Base {
                     'right'  => [
                         'title' => __('Right', 'essential-addons-for-elementor-lite'),
                         'icon'  => 'eicon-h-align-right',
-=======
-                'selectors'             => [
->>>>>>> yanzhou-li
-                    '{{WRAPPER}} .eael-data-table' => 'max-width: {{SIZE}}{{UNIT}};',
-                ],
-            ]
-        );
-
-        $this->add_control(
-            'table_alignment',
-            [
-                'label'        => __('Alignment', 'essential-addons-for-elementor-lite'),
-                'type'         => Controls_Manager::CHOOSE,
-                'label_block'  => false,
-                'default'      => 'center',
-                'options'      => [
-                    'left'   => [
-                        'title' => __('Left', 'essential-addons-for-elementor-lite'),
-                        'icon'  => 'eicon-h-align-left',
-                    ],
-                    'center' => [
-                        'title' => __('Center', 'essential-addons-for-elementor-lite'),
-                        'icon'  => 'eicon-h-align-center',
-                    ],
-<<<<<<< HEAD
-                    'right'  => [
-                        'title' => __('Right', 'essential-addons-for-elementor-lite'),
-                        'icon'  => 'eicon-h-align-right',
-=======
-                    'right' 	=> [
-                        'title' => __( 'Right', 'essential-addons-for-elementor-lite'),
-                        'icon' 	=> 'eicon-h-align-right',
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                     ],
 				],
                 'prefix_class'           => 'eael-table-align-',
@@ -915,31 +665,14 @@ class Data_Table extends Widget_Base {
 		$this->add_responsive_control(
             'header_icon_size',
             [
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> yanzhou-li
                 'label'      => __('Icon Size', 'essential-addons-for-elementor-lite'),
                 'type'       => Controls_Manager::SLIDER,
                 'size_units' => ['px'],
                 'range'      => [
-<<<<<<< HEAD
-=======
-=======
-                'label'                 => __( 'Icon Size', 'essential-addons-for-elementor-lite'),
-				'type'                  => Controls_Manager::SLIDER,
-                'size_units'            => [ 'px' ],
-                'range'                 => [
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                     'px' => [
                         'min' => 1,
                         'max' => 70,
                     ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> yanzhou-li
                 ],
                 'default'    => [
                     'size' => 20,
@@ -948,8 +681,6 @@ class Data_Table extends Widget_Base {
                     '{{WRAPPER}} .eael-data-table thead tr th i'                           => 'font-size: {{SIZE}}{{UNIT}};',
                     '{{WRAPPER}} .eael-data-table thead tr th .data-table-header-svg-icon' => 'height: {{SIZE}}{{UNIT}}; width: {{SIZE}}{{UNIT}};',
                 ],
-<<<<<<< HEAD
-=======
             ]
         );
 
@@ -982,56 +713,6 @@ class Data_Table extends Widget_Base {
                 'type'       => Controls_Manager::SLIDER,
                 'size_units' => ['px'],
                 'range'      => [
-=======
-				],
-				'default'	=> [
-					'size'	=> 20
-				],
-                'selectors'             => [
-					'{{WRAPPER}} .eael-data-table thead tr th i' => 'font-size: {{SIZE}}{{UNIT}};',
-					'{{WRAPPER}} .eael-data-table thead tr th .data-table-header-svg-icon' => 'height: {{SIZE}}{{UNIT}}; width: {{SIZE}}{{UNIT}};',
-				]
->>>>>>> yanzhou-li
-            ]
-        );
-
-        $this->add_responsive_control(
-            'header_icon_position_from_top',
-            [
-                'label'      => __('Icon Position', 'essential-addons-for-elementor-lite'),
-                'type'       => Controls_Manager::SLIDER,
-                'size_units' => ['px', '%'],
-                'range'      => [
-                    'px' => [
-                        'min' => 1,
-                        'max' => 70,
-                    ],
-                    '%'  => [
-                        'min' => 0,
-                        'max' => 100,
-                    ],
-                ],
-                'selectors'  => [
-                    '{{WRAPPER}} .eael-data-table thead tr th .data-header-icon' => 'top: {{SIZE}}{{UNIT}};',
-                ],
-            ]
-        );
-
-        $this->add_responsive_control(
-            'header_icon_space',
-            [
-<<<<<<< HEAD
-                'label'      => __('Icon Space', 'essential-addons-for-elementor-lite'),
-                'type'       => Controls_Manager::SLIDER,
-                'size_units' => ['px'],
-                'range'      => [
-=======
-                'label'                 => __( 'Icon Space', 'essential-addons-for-elementor-lite'),
-				'type'                  => Controls_Manager::SLIDER,
-                'size_units'            => [ 'px' ],
-                'range'                 => [
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                     'px' => [
                         'min' => 1,
                         'max' => 70,
@@ -1349,7 +1030,6 @@ class Data_Table extends Widget_Base {
 		$this->add_responsive_control(
             'mobile_table_header_width',
             [
-<<<<<<< HEAD
                 'label'      => __('Width', 'essential-addons-for-elementor-lite'),
                 'type'       => Controls_Manager::SLIDER,
                 'default'    => [
@@ -1358,56 +1038,17 @@ class Data_Table extends Widget_Base {
                 ],
                 'size_units' => ['px'],
                 'range'      => [
-=======
-<<<<<<< HEAD
-                'label'      => __('Width', 'essential-addons-for-elementor-lite'),
-                'type'       => Controls_Manager::SLIDER,
-                'default'    => [
-                    'size' => 100,
-                    'unit' => 'px',
-                ],
-                'size_units' => ['px'],
-                'range'      => [
-=======
-                'label'                 => __( 'Width', 'essential-addons-for-elementor-lite'),
-				'type'                  => Controls_Manager::SLIDER,
-                'default'               => [
-                    'size' => 100,
-                    'unit' => 'px',
-                ],
-                'size_units'            => [ 'px' ],
-                'range'                 => [
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
                     'px' => [
                         'min' => 1,
                         'max' => 200,
                     ],
                 ],
-<<<<<<< HEAD
                 'selectors'  => [
                     '{{WRAPPER}} .eael-data-table .th-mobile-screen' => 'flex-basis: {{SIZE}}px;',
                 ],
                 'condition'  => [
                     'eael_enable_responsive_header_styles' => 'yes',
                 ],
-=======
-<<<<<<< HEAD
-                'selectors'  => [
-                    '{{WRAPPER}} .eael-data-table .th-mobile-screen' => 'flex-basis: {{SIZE}}px;',
-                ],
-                'condition'  => [
-                    'eael_enable_responsive_header_styles' => 'yes',
-                ],
-=======
-                'selectors'             => [
-                    '{{WRAPPER}} .eael-data-table .th-mobile-screen' => 'flex-basis: {{SIZE}}px;',
-                ],
-                'condition'	=> [
-                	'eael_enable_responsive_header_styles'	=> 'yes'
-                ]
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
             ]
 		);
 

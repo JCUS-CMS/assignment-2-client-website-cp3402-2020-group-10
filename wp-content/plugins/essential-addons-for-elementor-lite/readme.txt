@@ -4,15 +4,7 @@ Tags: elementor, elements, addons, elementor addon, elementor widget, elementor 
 Requires at least: 4.0
 Tested up to: 5.5
 Requires PHP: 5.4
-<<<<<<< HEAD
 Stable tag: 4.2.4
-=======
-<<<<<<< HEAD
-Stable tag: 4.2.4
-=======
-Stable tag: 4.2.3
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
 License: GPLv3
 License URI: https://opensource.org/licenses/GPL-3.0
 
@@ -232,10 +224,6 @@ Your existing elements/content will work with premium version. So you won't lose
 
 == Changelog ==
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> yanzhou-li
 = 4.2.4 - 13/09/2020 =
 - Fixed: get_elements_data on bool error
 - Fixed: PHP error notice for 'Search & Filter' option in EA Filterable Gallery
@@ -246,11 +234,6 @@ Your existing elements/content will work with premium version. So you won't lose
 - Improved: Styling controls for EA Product Grid
 - Few minor bugfix and improvements
 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
 = 4.2.3 - 03/09/2020 =
 - Removed: Dashboard widget 
 - Fixed: EA Filterable Gallery | Showing Duplicate Images in Gallery View

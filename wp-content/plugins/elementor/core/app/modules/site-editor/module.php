@@ -25,11 +25,6 @@ class Module extends BaseModule {
 		return 'site-editor';
 	}
 
-<<<<<<< HEAD
-	public function add_menu_in_admin_bar( $admin_bar_config ) {
-		$admin_bar_config['elementor_edit_page']['children'][] = [
-=======
-<<<<<<< HEAD
 	public function add_menu_in_admin_bar( $admin_bar_config ) {
 		$admin_bar_config['elementor_edit_page']['children'][] = [
 			'id' => 'elementor_app_site_editor',
@@ -43,25 +38,5 @@ class Module extends BaseModule {
 
 	public function __construct() {
 		add_filter( 'elementor/frontend/admin_bar/settings', [ $this, 'add_menu_in_admin_bar' ] );
-=======
-	public function add_menu_in_admin_bar( \WP_Admin_Bar $wp_admin_bar ) {
-		$wp_admin_bar->add_menu( [
->>>>>>> yanzhou-li
-			'id' => 'elementor_app_site_editor',
-			'title' => __( 'Open Theme Builder', 'elementor' ),
-			'href' => Plugin::$instance->app->get_settings( 'menu_url' ),
-			'class' => 'elementor-app-link',
-		];
-
-		return $admin_bar_config;
-	}
-
-	public function __construct() {
-<<<<<<< HEAD
-		add_filter( 'elementor/frontend/admin_bar/settings', [ $this, 'add_menu_in_admin_bar' ] );
-=======
-		add_action( 'admin_bar_menu', [ $this, 'add_menu_in_admin_bar' ], 201 /* After Elementor Edit */ );
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
 	}
 }

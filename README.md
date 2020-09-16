@@ -1,5 +1,4 @@
 # CP3402-2020
-<<<<<<< HEAD
 The reason I use readme is because I already finish all my part, but i didn't connect to github.
 Therefore I use readme to describe my commit
 
@@ -16,6 +15,3 @@ Eighth change, I change the header part of blog, as my teammates think another o
 Nineth change, I change one of the blog's content, because i pasted wrong content.
 
 Tenth change, I added pictures and change tags for all blogs.
-=======
-
->>>>>>> yanzhou-li

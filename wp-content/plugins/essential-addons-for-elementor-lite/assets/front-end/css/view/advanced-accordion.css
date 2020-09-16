@@ -27,26 +27,11 @@
   cursor: pointer;
 }
 
-<<<<<<< HEAD
 .eael-adv-accordion .eael-accordion-list .eael-accordion-header > .eael-accordion-tab-title {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   margin: 0;
-=======
-<<<<<<< HEAD
-.eael-adv-accordion .eael-accordion-list .eael-accordion-header > .eael-accordion-tab-title {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  margin: 0;
-=======
-.eael-adv-accordion .eael-accordion-list .eael-accordion-header > span {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
->>>>>>> origin/KyungYul-Noh
->>>>>>> yanzhou-li
 }
 
 .eael-adv-accordion .eael-accordion-list .eael-accordion-header > i {
