@@ -148,6 +148,10 @@
   position: absolute;
   top: 0;
   left: 0;
+<<<<<<< HEAD
+  right: 0;
+=======
+>>>>>>> origin/KyungYul-Noh
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;

@@ -1,4 +1,8 @@
 <?php
+<<<<<<< HEAD
+
+=======
+>>>>>>> origin/KyungYul-Noh
 namespace Essential_Addons_Elementor\Elements;
 
 // If this file is called directly, abort.
@@ -38,7 +42,12 @@ class WeForms extends Widget_Base
         return ['essential-addons-elementor'];
     }
 
+<<<<<<< HEAD
+    public function get_keywords()
+    {
+=======
     public function get_keywords() {
+>>>>>>> origin/KyungYul-Noh
         return [
             'contact form',
             'ea contact form',
@@ -54,14 +63,23 @@ class WeForms extends Widget_Base
         ];
     }
 
+<<<<<<< HEAD
+    public function get_custom_help_url()
+    {
+=======
     public function get_custom_help_url() {
+>>>>>>> origin/KyungYul-Noh
         return 'https://essential-addons.com/elementor/docs/weforms/';
     }
 
     protected function _register_controls()
     {
 
+<<<<<<< HEAD
+        if (!function_exists('WeForms')) {
+=======
         if(!function_exists('WeForms')) {
+>>>>>>> origin/KyungYul-Noh
             $this->start_controls_section(
                 'eael_global_warning',
                 [
@@ -368,6 +386,27 @@ class WeForms extends Widget_Base
             ]
         );
 
+<<<<<<< HEAD
+        $this->add_responsive_control(
+            'eael_weform_input_margin',
+            [
+                'label' => esc_html__('Fields Margin', 'essential-addons-for-elementor-lite'),
+                'type' => Controls_Manager::DIMENSIONS,
+                'size_units' => ['px', 'em', '%'],
+                'selectors' => [
+                    '{{WRAPPER}} .eael-weform-container ul.wpuf-form li .wpuf-fields input[type="text"],
+                    {{WRAPPER}} .eael-weform-container ul.wpuf-form li .wpuf-fields input[type="password"],
+                    {{WRAPPER}} .eael-weform-container ul.wpuf-form li .wpuf-fields input[type="email"],
+                    {{WRAPPER}} .eael-weform-container ul.wpuf-form li .wpuf-fields input[type="url"],
+                    {{WRAPPER}} .eael-weform-container ul.wpuf-form li .wpuf-fields input[type="url"],
+                    {{WRAPPER}} .eael-weform-container ul.wpuf-form li .wpuf-fields input[type="number"],
+                    {{WRAPPER}} .eael-weform-container ul.wpuf-form li .wpuf-fields textarea' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                ],
+            ]
+        );
+
+=======
+>>>>>>> origin/KyungYul-Noh
         $this->add_control(
             'eael_weform_input_border_radius',
             [
@@ -455,6 +494,31 @@ class WeForms extends Widget_Base
             ]
         );
 
+<<<<<<< HEAD
+        $this->add_control(
+            'eael_weform_label_style_heading',
+            [
+                'type' => Controls_Manager::HEADING,
+                'label' => esc_html__('Label Style', 'essential-addons-for-elementor-lite'),
+                'separator' => 'before',
+            ]
+        );
+
+        $this->add_control(
+            'eael_weform_label_margin',
+            [
+                'label' => __('Margin', 'essential-addons-for-elementor-lite'),
+                'type' => Controls_Manager::DIMENSIONS,
+                'size_units' => ['px', '%', 'em'],
+                'selectors' => [
+                    '{{WRAPPER}} .eael-weform-container .wpuf-label' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                ],
+            ]
+        );
+
+
+=======
+>>>>>>> origin/KyungYul-Noh
         $this->end_controls_section();
 
         $this->start_controls_section(
@@ -740,14 +804,23 @@ class WeForms extends Widget_Base
         );
 
         $this->end_controls_section();
+<<<<<<< HEAD
+=======
 
+>>>>>>> origin/KyungYul-Noh
     }
 
     protected function render()
     {
+<<<<<<< HEAD
+        if (!function_exists('WeForms')) {
+            return;
+        }
+=======
 		if(!function_exists('WeForms')) {
 			return;
 		}
+>>>>>>> origin/KyungYul-Noh
 
         $settings = $this->get_settings();
 
@@ -756,6 +829,9 @@ class WeForms extends Widget_Base
 			' . do_shortcode('[weforms id="' . $settings['wpuf_contact_form'] . '" ]') . '
 		</div>';
         }
+<<<<<<< HEAD
+=======
 
+>>>>>>> origin/KyungYul-Noh
     }
 }

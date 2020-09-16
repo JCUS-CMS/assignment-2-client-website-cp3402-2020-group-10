@@ -17,6 +17,18 @@
   margin: 0;
   padding: 0;
 }
+<<<<<<< HEAD
+.eael-product-grid .woocommerce ul.products .product a.add_to_cart_button,
+.eael-product-grid .woocommerce ul.products .product span.price,
+.eael-product-grid .woocommerce ul.products .product h2.woocommerce-loop-product__title,
+.eael-post-grid .woocommerce ul.products .product a.add_to_cart_button,
+.eael-post-grid .woocommerce ul.products .product span.price,
+.eael-post-grid .woocommerce ul.products .product h2.woocommerce-loop-product__title {
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+=======
+>>>>>>> origin/KyungYul-Noh
 .eael-product-grid .woocommerce ul.products.products[class*=columns-] li.product,
 .eael-post-grid .woocommerce ul.products.products[class*=columns-] li.product {
   width: 100%;
@@ -276,7 +288,19 @@
 .eael-post-grid.eael-product-overlay .woocommerce ul.products li.product .overlay .product-link,
 .eael-post-grid.eael-product-overlay .woocommerce ul.products li.product .overlay .add_to_cart_button,
 .eael-post-grid.eael-product-overlay .woocommerce ul.products li.product .overlay .added_to_cart {
+<<<<<<< HEAD
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+=======
   display: inline-block;
+>>>>>>> origin/KyungYul-Noh
   font-size: 14px;
   line-height: 38px;
   text-align: center;
@@ -435,6 +459,26 @@
       -ms-transform: translateY(0);
           transform: translateY(0);
 }
+<<<<<<< HEAD
+.eael-product-grid.eael-product-default .woocommerce ul.products li.product,
+.eael-post-grid.eael-product-default .woocommerce ul.products li.product {
+  overflow: visible !important;
+}
+.eael-product-grid.eael-product-default .woocommerce ul.products li.product .onsale,
+.eael-post-grid.eael-product-default .woocommerce ul.products li.product .onsale {
+  line-height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+=======
+>>>>>>> origin/KyungYul-Noh
 .eael-product-grid.eael-product-default .button.add_to_cart_button::before,
 .eael-post-grid.eael-product-default .button.add_to_cart_button::before {
   content: "";

@@ -133,12 +133,15 @@ class Frontend extends App {
 	 */
 	private $content_removed_filters = [];
 
+<<<<<<< HEAD
+=======
 
 	/**
 	 * @var Document[]
 	 */
 	private $admin_bar_edit_documents = [];
 
+>>>>>>> origin/KyungYul-Noh
 	/**
 	 * @var string[]
 	 */
@@ -234,12 +237,15 @@ class Frontend extends App {
 		add_action( 'wp_head', [ $this, 'print_fonts_links' ], 7 );
 		add_action( 'wp_head', [ $this, 'add_theme_color_meta_tag' ] );
 		add_action( 'wp_footer', [ $this, 'wp_footer' ] );
+<<<<<<< HEAD
+=======
 
 		// Add Edit with the Elementor in Admin Bar.
 		add_action( 'admin_bar_menu', [ $this, 'add_menu_in_admin_bar' ], 200 );
 
 		// Detect Elementor documents via their css that printed before the Admin Bar.
 		add_action( 'elementor/css-file/post/enqueue', [ $this, 'add_document_to_admin_bar' ] );
+>>>>>>> origin/KyungYul-Noh
 	}
 
 	/**
@@ -1003,10 +1009,17 @@ class Frontend extends App {
 
 		Plugin::$instance->documents->restore_document();
 
+<<<<<<< HEAD
+		do_action( 'elementor/frontend/get_builder_content', $document, $this->_is_excerpt, $with_css );
+
+=======
+>>>>>>> origin/KyungYul-Noh
 		return $content;
 	}
 
 	/**
+<<<<<<< HEAD
+=======
 	 * @param Post_CSS $css_file
 	 */
 	public function add_document_to_admin_bar( $css_file ) {
@@ -1060,6 +1073,7 @@ class Frontend extends App {
 	}
 
 	/**
+>>>>>>> origin/KyungYul-Noh
 	 * Retrieve builder content for display.
 	 *
 	 * Used to render and return the post content with all the Elementor elements.

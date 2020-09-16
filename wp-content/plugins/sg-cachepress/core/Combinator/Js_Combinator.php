@@ -16,6 +16,19 @@ class Js_Combinator extends Abstract_Combinator {
 	 * @var array Array containing all excluded inline content.
 	 */
 	private $excluded_inline_content = array(
+<<<<<<< HEAD
+		'var markersData',
+		'setREVStartSize',
+		'countUp',
+		'a2a_config',
+		'spg_current_url',
+		'ctSetCookie',
+		'stm_ajax_add_review',
+		'stm_lms',
+		'ywapo_textarea_',
+		'var disqus_config',
+=======
+>>>>>>> origin/KyungYul-Noh
 		'map.write("map_id',
 		'wpfh-print-action',
 		'tdbMenuItem',

@@ -21,6 +21,13 @@
   width: auto;
 }
 
+<<<<<<< HEAD
+.eael-weform-container ul.wpuf-form {
+  list-style: none;
+}
+
+=======
+>>>>>>> origin/KyungYul-Noh
 .eael-weform-container ul.wpuf-form li .wpuf-fields input[type=text],
 .eael-weform-container ul.wpuf-form li .wpuf-fields input[type=password],
 .eael-weform-container ul.wpuf-form li .wpuf-fields input[type=email],

@@ -56,7 +56,11 @@ trait Helper
                     ],
                 ]
             );
+<<<<<<< HEAD
+        } elseif ('eael-content-timeline' === $this->get_name()) {
+=======
         } else if ('eael-content-timeline' === $this->get_name()) {
+>>>>>>> origin/KyungYul-Noh
             $this->start_controls_section(
                 'eael_section_timeline__filters',
                 [
@@ -100,7 +104,12 @@ trait Helper
         );
 
         $this->add_control(
+<<<<<<< HEAD
+            'authors',
+            [
+=======
             'authors', [
+>>>>>>> origin/KyungYul-Noh
                 'label' => __('Author', 'essential-addons-for-elementor-lite'),
                 'label_block' => true,
                 'type' => Controls_Manager::SELECT2,
@@ -174,7 +183,10 @@ trait Helper
                 'type' => Controls_Manager::SELECT,
                 'options' => $this->eael_get_post_orderby_options(),
                 'default' => 'date',
+<<<<<<< HEAD
+=======
 
+>>>>>>> origin/KyungYul-Noh
             ]
         );
 
@@ -188,7 +200,10 @@ trait Helper
                     'desc' => 'Descending',
                 ],
                 'default' => 'desc',
+<<<<<<< HEAD
+=======
 
+>>>>>>> origin/KyungYul-Noh
             ]
         );
 
@@ -299,7 +314,10 @@ trait Helper
                     'desc' => 'Descending',
                 ],
                 'default' => 'asc',
+<<<<<<< HEAD
+=======
 
+>>>>>>> origin/KyungYul-Noh
             ]
         );
 
@@ -408,7 +426,10 @@ trait Helper
                     ],
                 ]
             );
+<<<<<<< HEAD
+=======
 
+>>>>>>> origin/KyungYul-Noh
         }
 
         if ('eael-post-block' === $this->get_name()) {
@@ -427,13 +448,19 @@ trait Helper
         }
 
         if ('eael-post-carousel' !== $this->get_name()) {
+<<<<<<< HEAD
+=======
 
+>>>>>>> origin/KyungYul-Noh
             /**
              * Show Read More
              * @uses ContentTimeLine Elements - EAE
              */
             if ('eael-content-timeline' === $this->get_name()) {
+<<<<<<< HEAD
+=======
 
+>>>>>>> origin/KyungYul-Noh
                 $this->add_control(
                     'content_timeline_layout',
                     [
@@ -465,7 +492,10 @@ trait Helper
                         ],
                     ]
                 );
+<<<<<<< HEAD
+=======
 
+>>>>>>> origin/KyungYul-Noh
             } else {
                 $this->add_control(
                     'show_load_more',
@@ -492,7 +522,10 @@ trait Helper
                     ]
                 );
             }
+<<<<<<< HEAD
+=======
 
+>>>>>>> origin/KyungYul-Noh
         }
 
         if ('eael-content-timeline' !== $this->get_name()) {
@@ -519,11 +552,17 @@ trait Helper
                     ],
                 ]
             );
+<<<<<<< HEAD
+        }
+
+        if ('eael-content-timeline' === $this->get_name()) {
+=======
 
         }
 
         if ('eael-content-timeline' === $this->get_name()) {
 
+>>>>>>> origin/KyungYul-Noh
             $this->add_control(
                 'eael_show_image_or_icon',
                 [
@@ -601,7 +640,10 @@ trait Helper
                     ],
                 ]
             );
+<<<<<<< HEAD
+=======
 
+>>>>>>> origin/KyungYul-Noh
         }
 
         $this->add_control(
@@ -781,7 +823,11 @@ trait Helper
             );
         }
 
+<<<<<<< HEAD
+        if ('eael-post-carousel' === $this->get_name() || 'eael-post-grid' === $this->get_name() || 'eael-post-block' === $this->get_name()) {
+=======
         if ('eael-post-carousel' === $this->get_name() || 'eael-post-grid' === $this->get_name()) {
+>>>>>>> origin/KyungYul-Noh
             $this->add_control(
                 'eael_show_post_terms',
                 [
@@ -828,11 +874,17 @@ trait Helper
                     ],
                 ]
             );
+<<<<<<< HEAD
+        }
+
+        if ('eael-post-grid' === $this->get_name() || 'eael-post-block' === $this->get_name() || 'eael-post-carousel' === $this->get_name()) {
+=======
 
         }
 
         if ('eael-post-grid' === $this->get_name() || 'eael-post-block' === $this->get_name() || 'eael-post-carousel' === $this->get_name()) {
 
+>>>>>>> origin/KyungYul-Noh
             $this->add_control(
                 'eael_show_meta',
                 [
@@ -906,7 +958,10 @@ trait Helper
                     ],
                 ]
             );
+<<<<<<< HEAD
+=======
 
+>>>>>>> origin/KyungYul-Noh
         }
 
         $this->end_controls_section();
@@ -1007,6 +1062,37 @@ trait Helper
                 ]
             );
 
+<<<<<<< HEAD
+            if ('eael-post-grid' === $this->get_name() || 'eael-post-carousel' === $this->get_name()) {
+                $this->add_control(
+                    'eael_post_read_more_btn_alignment',
+                    [
+                        'label' => __('Alignment', 'essential-addons-for-elementor-lite'),
+                        'type' => \Elementor\Controls_Manager::CHOOSE,
+                        'options' => [
+                            'left' => [
+                                'title' => __('Left', 'essential-addons-for-elementor-lite'),
+                                'icon' => 'fa fa-align-left',
+                            ],
+                            'center' => [
+                                'title' => __('Center', 'essential-addons-for-elementor-lite'),
+                                'icon' => 'fa fa-align-center',
+                            ],
+                            'right' => [
+                                'title' => __('Right', 'essential-addons-for-elementor-lite'),
+                                'icon' => 'fa fa-align-right',
+                            ],
+                        ],
+                        'default' => ('eael-post-grid' === $this->get_name() ? 'left' : 'center'),
+                        'selectors' => [
+                            '{{WRAPPER}} .eael-post-elements-readmore-wrap' => 'text-align: {{VALUE}};',
+                        ],
+                    ]
+                );
+            }
+
+=======
+>>>>>>> origin/KyungYul-Noh
             $this->add_group_control(
                 Group_Control_Typography::get_type(),
                 [
@@ -1305,7 +1391,10 @@ trait Helper
                     '{{WRAPPER}} .eael-load-more-button:hover' => 'border-color: {{VALUE}};',
                 ],
             ]
+<<<<<<< HEAD
+=======
 
+>>>>>>> origin/KyungYul-Noh
         );
         $this->add_group_control(
             Group_Control_Box_Shadow::get_type(),
@@ -1507,7 +1596,11 @@ trait Helper
      */
     public function eael_get_post_orderby_options()
     {
+<<<<<<< HEAD
+        $orderby = [
+=======
         $orderby = array(
+>>>>>>> origin/KyungYul-Noh
             'ID' => 'Post ID',
             'author' => 'Post Author',
             'title' => 'Title',
@@ -1517,7 +1610,33 @@ trait Helper
             'rand' => 'Random',
             'comment_count' => 'Comment Count',
             'menu_order' => 'Menu Order',
+<<<<<<< HEAD
+        ];
+
+        return $orderby;
+    }
+
+    /**
+     * POst Orderby Options
+     *
+     * @return array
+     */
+    public function eael_get_product_orderby_options()
+    {
+        $orderby = [
+            'ID' => __('Product ID', 'essential-addons-for-elementor-lite'),
+            'title' => __('Product Title', 'essential-addons-for-elementor-lite'),
+            '_price' => __('Price', 'essential-addons-for-elementor-lite'),
+            '_sku' => __('SKU', 'essential-addons-for-elementor-lite'),
+            'date' => __('Date', 'essential-addons-for-elementor-lite'),
+            'modified' => __('Last Modified Date', 'essential-addons-for-elementor-lite'),
+            'parent' => __('Parent Id', 'essential-addons-for-elementor-lite'),
+            'rand' => __('Random', 'essential-addons-for-elementor-lite'),
+            'menu_order' => __('Menu Order', 'essential-addons-for-elementor-lite'),
+        ];
+=======
         );
+>>>>>>> origin/KyungYul-Noh
 
         return $orderby;
     }
@@ -1546,10 +1665,17 @@ trait Helper
      */
     public function eael_post_type_categories($type = 'term_id', $term_key = 'category')
     {
+<<<<<<< HEAD
+        $terms = get_terms([
+            'taxonomy' => $term_key,
+            'hide_empty' => true,
+        ]);
+=======
         $terms = get_terms(array(
             'taxonomy' => $term_key,
             'hide_empty' => true,
         ));
+>>>>>>> origin/KyungYul-Noh
 
         $options = [];
 
@@ -1569,10 +1695,17 @@ trait Helper
      */
     public function eael_woocommerce_product_categories()
     {
+<<<<<<< HEAD
+        $terms = get_terms([
+            'taxonomy' => 'product_cat',
+            'hide_empty' => true,
+        ]);
+=======
         $terms = get_terms(array(
             'taxonomy' => 'product_cat',
             'hide_empty' => true,
         ));
+>>>>>>> origin/KyungYul-Noh
 
         if (!empty($terms) && !is_wp_error($terms)) {
             foreach ($terms as $term) {
@@ -1589,18 +1722,29 @@ trait Helper
      */
     public function eael_woocommerce_product_get_product_by_id()
     {
+<<<<<<< HEAD
+        $postlist = get_posts([
+            'post_type' => 'product',
+            'showposts' => 9999,
+        ]);
+        $options = [];
+=======
         $postlist = get_posts(array(
             'post_type' => 'product',
             'showposts' => 9999,
         ));
         $options = array();
+>>>>>>> origin/KyungYul-Noh
 
         if (!empty($postlist) && !is_wp_error($postlist)) {
             foreach ($postlist as $post) {
                 $options[$post->ID] = $post->post_title;
             }
             return $options;
+<<<<<<< HEAD
+=======
 
+>>>>>>> origin/KyungYul-Noh
         }
     }
 
@@ -1611,10 +1755,17 @@ trait Helper
      */
     public function eael_woocommerce_product_categories_by_id()
     {
+<<<<<<< HEAD
+        $terms = get_terms([
+            'taxonomy' => 'product_cat',
+            'hide_empty' => true,
+        ]);
+=======
         $terms = get_terms(array(
             'taxonomy' => 'product_cat',
             'hide_empty' => true,
         ));
+>>>>>>> origin/KyungYul-Noh
 
         if (!empty($terms) && !is_wp_error($terms)) {
             foreach ($terms as $term) {
@@ -1622,7 +1773,10 @@ trait Helper
             }
             return $options;
         }
+<<<<<<< HEAD
+=======
 
+>>>>>>> origin/KyungYul-Noh
     }
 
     /**
@@ -1630,6 +1784,15 @@ trait Helper
      */
     public function eael_select_contact_form()
     {
+<<<<<<< HEAD
+        $options = [];
+
+        if (function_exists('wpcf7')) {
+            $wpcf7_form_list = get_posts([
+                'post_type' => 'wpcf7_contact_form',
+                'showposts' => 999,
+            ]);
+=======
         $options = array();
 
         if (function_exists('wpcf7')) {
@@ -1637,6 +1800,7 @@ trait Helper
                 'post_type' => 'wpcf7_contact_form',
                 'showposts' => 999,
             ));
+>>>>>>> origin/KyungYul-Noh
             $options[0] = esc_html__('Select a Contact Form', 'essential-addons-for-elementor-lite');
             if (!empty($wpcf7_form_list) && !is_wp_error($wpcf7_form_list)) {
                 foreach ($wpcf7_form_list as $post) {
@@ -1656,18 +1820,28 @@ trait Helper
      */
     public function eael_select_gravity_form()
     {
+<<<<<<< HEAD
+        $options = [];
+=======
         $options = array();
+>>>>>>> origin/KyungYul-Noh
 
         if (class_exists('GFCommon')) {
             $gravity_forms = \RGFormsModel::get_forms(null, 'title');
 
             if (!empty($gravity_forms) && !is_wp_error($gravity_forms)) {
+<<<<<<< HEAD
+=======
 
+>>>>>>> origin/KyungYul-Noh
                 $options[0] = esc_html__('Select Gravity Form', 'essential-addons-for-elementor-lite');
                 foreach ($gravity_forms as $form) {
                     $options[$form->id] = $form->title;
                 }
+<<<<<<< HEAD
+=======
 
+>>>>>>> origin/KyungYul-Noh
             } else {
                 $options[0] = esc_html__('Create a Form First', 'essential-addons-for-elementor-lite');
             }
@@ -1683,12 +1857,21 @@ trait Helper
      */
     public function eael_select_weform()
     {
+<<<<<<< HEAD
+        $wpuf_form_list = get_posts([
+            'post_type' => 'wpuf_contact_form',
+            'showposts' => 999,
+        ]);
+
+        $options = [];
+=======
         $wpuf_form_list = get_posts(array(
             'post_type' => 'wpuf_contact_form',
             'showposts' => 999,
         ));
 
         $options = array();
+>>>>>>> origin/KyungYul-Noh
 
         if (!empty($wpuf_form_list) && !is_wp_error($wpuf_form_list)) {
             $options[0] = esc_html__('Select weForm', 'essential-addons-for-elementor-lite');
@@ -1709,13 +1892,20 @@ trait Helper
      */
     public function eael_select_ninja_form()
     {
+<<<<<<< HEAD
+        $options = [];
+=======
         $options = array();
+>>>>>>> origin/KyungYul-Noh
 
         if (class_exists('Ninja_Forms')) {
             $contact_forms = Ninja_Forms()->form()->get_forms();
 
             if (!empty($contact_forms) && !is_wp_error($contact_forms)) {
+<<<<<<< HEAD
+=======
 
+>>>>>>> origin/KyungYul-Noh
                 $options[0] = esc_html__('Select Ninja Form', 'essential-addons-for-elementor-lite');
 
                 foreach ($contact_forms as $form) {
@@ -1736,7 +1926,11 @@ trait Helper
      */
     public function eael_select_caldera_form()
     {
+<<<<<<< HEAD
+        $options = [];
+=======
         $options = array();
+>>>>>>> origin/KyungYul-Noh
 
         if (class_exists('Caldera_Forms')) {
             $contact_forms = \Caldera_Forms_Forms::get_forms(true, true);
@@ -1761,6 +1955,15 @@ trait Helper
      */
     public function eael_select_wpforms_forms()
     {
+<<<<<<< HEAD
+        $options = [];
+
+        if (class_exists('\WPForms\WPForms')) {
+            $args = [
+                'post_type' => 'wpforms',
+                'posts_per_page' => -1,
+            ];
+=======
         $options = array();
 
         if (class_exists('\WPForms\WPForms')) {
@@ -1768,6 +1971,7 @@ trait Helper
                 'post_type' => 'wpforms',
                 'posts_per_page' => -1,
             );
+>>>>>>> origin/KyungYul-Noh
 
             $contact_forms = get_posts($args);
 
@@ -1791,8 +1995,12 @@ trait Helper
      */
     public static function eael_select_fluent_forms()
     {
+<<<<<<< HEAD
+        $options = [];
+=======
 
         $options = array();
+>>>>>>> origin/KyungYul-Noh
 
         if (defined('FLUENTFORM')) {
             global $wpdb;
@@ -1809,7 +2017,10 @@ trait Helper
         }
 
         return $options;
+<<<<<<< HEAD
+=======
 
+>>>>>>> origin/KyungYul-Noh
     }
 
     /**
@@ -1835,7 +2046,11 @@ trait Helper
         }
 
         $page_templates = get_posts($args);
+<<<<<<< HEAD
+        $options = [];
+=======
         $options = array();
+>>>>>>> origin/KyungYul-Noh
 
         if (!empty($page_templates) && !is_wp_error($page_templates)) {
             foreach ($page_templates as $post) {
@@ -1875,7 +2090,11 @@ trait Helper
      *
      * @return array
      */
+<<<<<<< HEAD
+    public function eael_get_tags($args = [])
+=======
     public function eael_get_tags($args = array())
+>>>>>>> origin/KyungYul-Noh
     {
         $options = [];
         $tags = get_tags($args);
@@ -1937,14 +2156,24 @@ trait Helper
      */
     public function eael_get_posts()
     {
+<<<<<<< HEAD
+        $post_list = get_posts([
+=======
         $post_list = get_posts(array(
+>>>>>>> origin/KyungYul-Noh
             'post_type' => 'post',
             'orderby' => 'date',
             'order' => 'DESC',
             'posts_per_page' => -1,
+<<<<<<< HEAD
+        ]);
+
+        $posts = [];
+=======
         ));
 
         $posts = array();
+>>>>>>> origin/KyungYul-Noh
 
         if (!empty($post_list) && !is_wp_error($post_list)) {
             foreach ($post_list as $post) {
@@ -1962,14 +2191,24 @@ trait Helper
      */
     public function eael_get_pages()
     {
+<<<<<<< HEAD
+        $page_list = get_posts([
+=======
         $page_list = get_posts(array(
+>>>>>>> origin/KyungYul-Noh
             'post_type' => 'page',
             'orderby' => 'date',
             'order' => 'DESC',
             'posts_per_page' => -1,
+<<<<<<< HEAD
+        ]);
+
+        $pages = [];
+=======
         ));
 
         $pages = array();
+>>>>>>> origin/KyungYul-Noh
 
         if (!empty($page_list) && !is_wp_error($page_list)) {
             foreach ($page_list as $page) {
@@ -2051,6 +2290,15 @@ trait Helper
                 }
             }
 
+<<<<<<< HEAD
+            $args = [
+                'httpversion' => '1.1',
+                'blocking' => true,
+                'headers' => [
+                    'Authorization' => "Bearer $token",
+                ],
+            ];
+=======
             $args = array(
                 'httpversion' => '1.1',
                 'blocking' => true,
@@ -2058,6 +2306,7 @@ trait Helper
                     'Authorization' => "Bearer $token",
                 ),
             );
+>>>>>>> origin/KyungYul-Noh
 
             add_filter('https_ssl_verify', '__return_false');
 
@@ -2085,7 +2334,14 @@ trait Helper
 
                 if ($item['entities']['hashtags']) {
                     foreach ($item['entities']['hashtags'] as $tag) {
+<<<<<<< HEAD
+                        if (
+                            (isset($tag['text']) && isset($settings['eael_twitter_feed_hashtag_name'])) &&
+                            strcasecmp($tag['text'], $settings['eael_twitter_feed_hashtag_name']) == 0
+                        ) {
+=======
                         if (strcasecmp($tag['text'], $settings['eael_twitter_feed_hashtag_name']) == 0) {
+>>>>>>> origin/KyungYul-Noh
                             $match = true;
                         }
                     }
@@ -2101,6 +2357,102 @@ trait Helper
 
         foreach ($items as $item) {
             $delimeter = strlen($item['full_text']) > $settings['eael_twitter_feed_content_length'] ? '...' : '';
+<<<<<<< HEAD
+            $has_media = (isset($item['extended_entities']['media'][0]) && $settings['eael_twitter_feed_media'] == 'true' ? true : false);
+            if ($settings['eael_twitter_feed_card_choose_style'] == 'three') {
+                $html .= '<div class="eael-twitter-feed-item eael-twitter-feed-item-style-three ' . $class . '">
+                <div class="eael-twitter-feed-item-inner' . ($has_media === true ? ' has-media' : '') . '">';
+                // left icon bar
+                $html .= '<div class="eael-twitter-feed-entry-iconwrap">';
+                if ($settings['eael_twitter_feed_show_avatar'] == 'true') {
+                    $html .= '<a class="eael-twitter-feed-item-avatar avatar-' . $settings['eael_twitter_feed_avatar_style'] . '" href="//twitter.com/' . $settings['eael_twitter_feed_ac_name'] . '" target="_blank">
+                                 <img src="' . $item['user']['profile_image_url_https'] . '">
+                             </a>';
+                }
+                if ($settings['eael_twitter_feed_show_icon'] == 'true') {
+                    $html .= '<i class="fab fa-twitter eael-twitter-feed-item-icon"></i>';
+                }
+                $html .= '</div>';
+                // content
+                $html .= '<div class="eael-twitter-feed-entry-contentwrap">
+                    <div class="eael-twitter-feed-item-header clearfix">';
+
+                $html .= '<a class="eael-twitter-feed-item-meta" href="//twitter.com/' . $settings['eael_twitter_feed_ac_name'] . '" target="_blank">';
+                $html .= '<span class="eael-twitter-feed-item-author">' . $item['user']['name'] . '</span>
+                            </a>';
+                if ($settings['eael_twitter_feed_show_date'] == 'true') {
+                    $html .= '<span class="eael-twitter-feed-item-date">' . sprintf(__('%s ago', 'essential-addons-for-elementor-lite'), human_time_diff(strtotime($item['created_at']))) . '</span>';
+                }
+                $html .= '</div>
+                        <div class="eael-twitter-feed-item-content">
+                            <p>' . substr((isset($item['entities']['urls'][0]['url']) ? str_replace(@$item['entities']['urls'][0]['url'], '', $item['full_text']) : $item['full_text']), 0, $settings['eael_twitter_feed_content_length']) . $delimeter  . '</p>';
+
+                if ($settings['eael_twitter_feed_show_read_more'] == 'true') {
+                    $html .= '<a href="//twitter.com/' . @$item['user']['screen_name'] . '/status/' . $item['id_str'] . '" target="_blank" class="read-more-link">Read More <i class="fas fa-angle-double-right"></i></a>';
+                }
+                $html .= '</div>
+                        ' . ($has_media ? ($item['extended_entities']['media'][0]['type'] == 'photo' ? '<img src="' . $item['extended_entities']['media'][0]['media_url_https'] . '">' : '') : '') . '
+                </div>
+                </div>
+			</div>';
+            } elseif ($settings['eael_twitter_feed_card_choose_style'] == 'two') {
+                $html .= '<div class="eael-twitter-feed-item eael-twitter-feed-item-style-two ' . $class . '">
+				<div class="eael-twitter-feed-item-inner' . ($has_media === true ? ' has-media' : '') . '">
+				    <div class="eael-twitter-feed-item-header clearfix">';
+                if ($settings['eael_twitter_feed_show_avatar'] == 'true') {
+                    $html .= '<a class="eael-twitter-feed-item-avatar avatar-' . $settings['eael_twitter_feed_avatar_style'] . '" href="//twitter.com/' . $settings['eael_twitter_feed_ac_name'] . '" target="_blank">
+                                <img src="' . $item['user']['profile_image_url_https'] . '">
+                            </a>';
+                }
+                $html .= '<a class="eael-twitter-feed-item-meta" href="//twitter.com/' . $settings['eael_twitter_feed_ac_name'] . '" target="_blank">';
+                $html .= '<span class="eael-twitter-feed-item-author">' . $item['user']['name'] . '</span>
+                        </a>';
+                if ($settings['eael_twitter_feed_show_icon'] == 'true') {
+                    $html .= '<i class="fab fa-twitter eael-twitter-feed-item-icon"></i>';
+                }
+                $html .= '</div>
+                    <div class="eael-twitter-feed-item-content">
+                        <p>' . substr((isset($item['entities']['urls'][0]['url']) ? str_replace(@$item['entities']['urls'][0]['url'], '', $item['full_text']) : $item['full_text']), 0, $settings['eael_twitter_feed_content_length']) . $delimeter . '</p>';
+
+                if ($settings['eael_twitter_feed_show_read_more'] == 'true') {
+                    $html .= '<a href="//twitter.com/' . @$item['user']['screen_name'] . '/status/' . $item['id_str'] . '" target="_blank" class="read-more-link">Read More <i class="fas fa-angle-double-right"></i></a>';
+                }
+                $html .= '</div>
+                    ' . ($has_media ? ($item['extended_entities']['media'][0]['type'] == 'photo' ? '<img src="' . $item['extended_entities']['media'][0]['media_url_https'] . '">' : '') : '') . '
+                </div>
+			</div>';
+            } else {
+                $html .= '<div class="eael-twitter-feed-item ' . $class . '">
+				<div class="eael-twitter-feed-item-inner' . ($has_media === true ? ' has-media' : '') . '">
+				    <div class="eael-twitter-feed-item-header clearfix">';
+                if ($settings['eael_twitter_feed_show_avatar'] == 'true') {
+                    $html .= '<a class="eael-twitter-feed-item-avatar avatar-' . $settings['eael_twitter_feed_avatar_style'] . '" href="//twitter.com/' . $settings['eael_twitter_feed_ac_name'] . '" target="_blank">
+                                <img src="' . $item['user']['profile_image_url_https'] . '">
+                            </a>';
+                }
+                $html .= '<a class="eael-twitter-feed-item-meta" href="//twitter.com/' . $settings['eael_twitter_feed_ac_name'] . '" target="_blank">';
+                if ($settings['eael_twitter_feed_show_icon'] == 'true') {
+                    $html .= '<i class="fab fa-twitter eael-twitter-feed-item-icon"></i>';
+                }
+
+                $html .= '<span class="eael-twitter-feed-item-author">' . $item['user']['name'] . '</span>
+                        </a>';
+                if ($settings['eael_twitter_feed_show_date'] == 'true') {
+                    $html .= '<span class="eael-twitter-feed-item-date">' . sprintf(__('%s ago', 'essential-addons-for-elementor-lite'), human_time_diff(strtotime($item['created_at']))) . '</span>';
+                }
+                $html .= '</div>
+                    <div class="eael-twitter-feed-item-content">
+                        <p>' . substr((isset($item['entities']['urls'][0]['url']) ? str_replace(@$item['entities']['urls'][0]['url'], '', $item['full_text']) : $item['full_text']), 0, $settings['eael_twitter_feed_content_length']) . $delimeter . '</p>';
+
+                if ($settings['eael_twitter_feed_show_read_more'] == 'true') {
+                    $html .= '<a href="//twitter.com/' . @$item['user']['screen_name'] . '/status/' . $item['id_str'] . '" target="_blank" class="read-more-link">Read More <i class="fas fa-angle-double-right"></i></a>';
+                }
+                $html .= '</div>
+                    ' . ($has_media ? ($item['extended_entities']['media'][0]['type'] == 'photo' ? '<img src="' . $item['extended_entities']['media'][0]['media_url_https'] . '">' : '') : '') . '
+                </div>
+			</div>';
+            }
+=======
 
             $html .= '<div class="eael-twitter-feed-item ' . $class . '">
 				<div class="eael-twitter-feed-item-inner">
@@ -2132,6 +2484,7 @@ trait Helper
                     ' . (isset($item['extended_entities']['media'][0]) && $settings['eael_twitter_feed_media'] == 'true' ? ($item['extended_entities']['media'][0]['type'] == 'photo' ? '<img src="' . $item['extended_entities']['media'][0]['media_url_https'] . '">' : '') : '') . '
                 </div>
 			</div>';
+>>>>>>> origin/KyungYul-Noh
         }
 
         return $html;
@@ -2190,7 +2543,10 @@ trait Helper
         }
 
         $items = array_splice($facebook_data, ($page * $settings['eael_facebook_feed_image_count']['size']), $settings['eael_facebook_feed_image_count']['size']);
+<<<<<<< HEAD
+=======
 
+>>>>>>> origin/KyungYul-Noh
         foreach ($items as $item) {
             $message = wp_trim_words((isset($item['message']) ? $item['message'] : (isset($item['story']) ? $item['story'] : '')), $settings['eael_facebook_feed_message_max_length']['size'], '...');
             $photo = (isset($item['full_picture']) ? $item['full_picture'] : '');
@@ -2198,6 +2554,37 @@ trait Helper
             $comments = (isset($item['comments']) ? $item['comments']['summary']['total_count'] : 0);
 
             if ($settings['eael_facebook_feed_layout'] == 'card') {
+<<<<<<< HEAD
+                $html .= '<div class="eael-facebook-feed-item eael-facebook-feed-item-style-' . $settings['eael_facebook_feed_header_layout'] . '">
+                    <div class="eael-facebook-feed-item-inner">';
+                // card header
+                if ($settings['eael_facebook_feed_header_layout'] == 'two') {
+                    $html .= '<header class="eael-facebook-feed-item-header clearfix">
+                    <div class="eael-facebook-feed-item-user clearfix">
+                        <a href="https://www.facebook.com/' . $page_id . '" target="' . ($settings['eael_facebook_feed_link_target'] == 'yes' ? '_blank' : '_self') . '"><img src="https://graph.facebook.com/v4.0/' . $page_id . '/picture" alt="' . $item['from']['name'] . '" class="eael-facebook-feed-avatar"></a>';
+                    $html .= '<div class="eael-facebook-feed-header-content">';
+                    $html .= '<a class="eael-facebook-feed-username" href="https://www.facebook.com/' . $page_id . '" target="' . ($settings['eael_facebook_feed_link_target'] == 'yes' ? '_blank' : '_self') . '">' . $item['from']['name'] . '</a>';
+                    if ($settings['eael_facebook_feed_date']) {
+                        $html .= '<a href="' . $item['permalink_url'] . '" target="' . ($settings['eael_facebook_feed_link_target'] ? '_blank' : '_self') . '" class="eael-facebook-feed-post-time"><i class="far fa-clock" aria-hidden="true"></i> ' . date('d M Y', strtotime($item['created_time'])) . '</a>';
+                    }
+                    $html .= '</div>';
+
+                    $html .= '</div></header>';
+                } else {
+                    $html .= '<header class="eael-facebook-feed-item-header clearfix">
+                    <div class="eael-facebook-feed-item-user clearfix">
+                        <a href="https://www.facebook.com/' . $page_id . '" target="' . ($settings['eael_facebook_feed_link_target'] == 'yes' ? '_blank' : '_self') . '"><img src="https://graph.facebook.com/v4.0/' . $page_id . '/picture" alt="' . $item['from']['name'] . '" class="eael-facebook-feed-avatar"></a>
+                        <a href="https://www.facebook.com/' . $page_id . '" target="' . ($settings['eael_facebook_feed_link_target'] == 'yes' ? '_blank' : '_self') . '"><p class="eael-facebook-feed-username">' . $item['from']['name'] . '</p></a>
+                    </div>';
+
+                    if ($settings['eael_facebook_feed_date']) {
+                        $html .= '<a href="' . $item['permalink_url'] . '" target="' . ($settings['eael_facebook_feed_link_target'] ? '_blank' : '_self') . '" class="eael-facebook-feed-post-time"><i class="far fa-clock" aria-hidden="true"></i> ' . date('d M Y', strtotime($item['created_time'])) . '</a>';
+                    }
+                    $html .= '</header>';
+                }
+
+                // normal message
+=======
                 $html .= '<div class="eael-facebook-feed-item">
                     <div class="eael-facebook-feed-item-inner">
                         <header class="eael-facebook-feed-item-header clearfix">
@@ -2211,12 +2598,43 @@ trait Helper
                 }
                 $html .= '</header>';
 
+>>>>>>> origin/KyungYul-Noh
                 if ($settings['eael_facebook_feed_message'] && !empty($message)) {
                     $html .= '<div class="eael-facebook-feed-item-content">
                                         <p class="eael-facebook-feed-message">' . esc_html($message) . '</p>
                                     </div>';
                 }
 
+<<<<<<< HEAD
+                // preview content
+                if (!empty($photo) || isset($item['attachments']['data'])) {
+                    $html .= '<div class="eael-facebook-feed-preview-wrap">';
+                    if ($item['status_type'] == 'shared_story') {
+                        if ($settings['eael_facebook_feed_is_show_preview_content'] == 'yes' && $settings['eael_facebook_feed_is_show_preview_thumbnail'] == 'yes') {
+                            $html .= '<a href="' . $item['permalink_url'] . '" target="' . ($settings['eael_facebook_feed_link_target'] == 'yes' ? '_blank' : '_self') . '" class="eael-facebook-feed-preview-img">';
+                            if ($item['attachments']['data'][0]['media_type'] == 'video') {
+                                $html .= '<img class="eael-facebook-feed-img" src="' . $photo . '">
+                                                    <div class="eael-facebook-feed-preview-overlay"><i class="far fa-play-circle" aria-hidden="true"></i></div>';
+                            } else {
+                                $html .= '<img class="eael-facebook-feed-img" src="' . $photo . '">';
+                            }
+                            $html .= '</a>';
+                        }
+                        if ($settings['eael_facebook_feed_is_show_preview_content'] == 'yes') {
+                            $html .= '<div class="eael-facebook-feed-url-preview">';
+                            if ($settings['eael_facebook_feed_is_show_preview_host'] == 'yes') {
+                                $html .= '<p class="eael-facebook-feed-url-host">' . parse_url($item['attachments']['data'][0]['unshimmed_url'])['host'] . '</p>';
+                            }
+                            if ($settings['eael_facebook_feed_is_show_preview_title'] == 'yes') {
+                                $html .= '<h2 class="eael-facebook-feed-url-title">' . $item['attachments']['data'][0]['title'] . '</h2>';
+                            }
+                            if ($settings['eael_facebook_feed_is_show_preview_description'] == 'yes') {
+                                $html .= '<p class="eael-facebook-feed-url-description">' . @$item['attachments']['data'][0]['description'] . '</p>';
+                            }
+                            $html .= '</div>';
+                        }
+                    } elseif ($item['status_type'] == 'added_video') {
+=======
                 if (!empty($photo) || isset($item['attachments']['data'])) {
                     $html .= '<div class="eael-facebook-feed-preview-wrap">';
                     if ($item['status_type'] == 'shared_story') {
@@ -2235,6 +2653,7 @@ trait Helper
                                                 <p class="eael-facebook-feed-url-description">' . @$item['attachments']['data'][0]['description'] . '</p>
                                             </div>';
                     } else if ($item['status_type'] == 'added_video') {
+>>>>>>> origin/KyungYul-Noh
                         $html .= '<a href="' . $item['permalink_url'] . '" target="' . ($settings['eael_facebook_feed_link_target'] == 'yes' ? '_blank' : '_self') . '" class="eael-facebook-feed-preview-img">
                                                 <img class="eael-facebook-feed-img" src="' . $photo . '">
                                                 <div class="eael-facebook-feed-preview-overlay"><i class="far fa-play-circle" aria-hidden="true"></i></div>
@@ -2247,6 +2666,10 @@ trait Helper
                     $html .= '</div>';
                 }
 
+<<<<<<< HEAD
+                // card footer
+=======
+>>>>>>> origin/KyungYul-Noh
                 if ($settings['eael_facebook_feed_likes'] || $settings['eael_facebook_feed_comments']) {
                     $html .= '<footer class="eael-facebook-feed-item-footer">
                                 <div class="clearfix">';
@@ -2259,6 +2682,10 @@ trait Helper
                     $html .= '</div>
                             </footer>';
                 }
+<<<<<<< HEAD
+
+=======
+>>>>>>> origin/KyungYul-Noh
                 $html .= '</div>
                 </div>';
             } else {
@@ -2304,7 +2731,11 @@ trait Helper
     {
         if (isset($page_settings_model) && $page_settings_model->get_settings($extension) == 'yes') {
             return $page_settings_model->get_settings($key);
+<<<<<<< HEAD
+        } elseif (isset($global_settings[$extension]['enabled'])) {
+=======
         } else if (isset($global_settings[$extension]['enabled'])) {
+>>>>>>> origin/KyungYul-Noh
             return isset($global_settings[$extension][$key]) ? $global_settings[$extension][$key] : '';
         }
 
@@ -2318,7 +2749,10 @@ trait Helper
      */
     public function eael_toc_global_css($page_settings_model, $global_settings)
     {
+<<<<<<< HEAD
+=======
 
+>>>>>>> origin/KyungYul-Noh
         $eael_toc = $global_settings['eael_ext_table_of_content'];
         $eael_toc_width = isset($eael_toc['eael_ext_toc_width']['size']) ? $eael_toc['eael_ext_toc_width']['size'] : 300;
         $toc_list_color_active = $eael_toc['eael_ext_table_of_content_list_text_color_active'];
@@ -2728,7 +3162,10 @@ trait Helper
 
     protected static function get_terms_as_list($term_type = 'category', $length = 1)
     {
+<<<<<<< HEAD
+=======
 
+>>>>>>> origin/KyungYul-Noh
         if ($term_type === 'category') {
             $terms = get_the_category();
         }
@@ -2744,7 +3181,13 @@ trait Helper
         $html = '<ul class="post-carousel-categories">';
         $count = 0;
         foreach ($terms as $term) {
+<<<<<<< HEAD
+            if ($count === $length) {
+                break;
+            }
+=======
             if ($count === $length) {break;}
+>>>>>>> origin/KyungYul-Noh
             $link = ($term_type === 'category') ? get_category_link($term->term_id) : get_tag_link($term->term_id);
             $html .= '<li>';
             $html .= '<a href="' . esc_url($link) . '">';
@@ -2756,7 +3199,10 @@ trait Helper
         $html .= '</ul>';
 
         return $html;
+<<<<<<< HEAD
+=======
 
+>>>>>>> origin/KyungYul-Noh
     }
 
     /**
@@ -2770,9 +3216,15 @@ trait Helper
         $woo_checkout_update_order_review = ob_get_clean();
 
         wp_send_json(
+<<<<<<< HEAD
+            [
+                'order_review' => $woo_checkout_update_order_review,
+            ]
+=======
             array(
                 'order_review' => $woo_checkout_update_order_review,
             )
+>>>>>>> origin/KyungYul-Noh
         );
     }
 
@@ -3031,10 +3483,18 @@ trait Helper
      *
      * @since  4.0.2
      */
+<<<<<<< HEAD
+    public function eael_typeform_auth_handle()
+    {
+        $post = $_POST;
+        if (isset($post['typeform_tk']) && isset($post['pr_code'])) {
+            if (wp_hash('eael_typeform') === $post['pr_code']) {
+=======
     public function eael_typeform_auth_handle () {
         $post = $_POST;
         if (isset($post['typeform_tk']) && isset($post['pr_code'])) {
             if(wp_hash('eael_typeform')===$post['pr_code']){
+>>>>>>> origin/KyungYul-Noh
                 update_option('eael_save_typeform_personal_token', sanitize_text_field($post['typeform_tk']));
             }
         }

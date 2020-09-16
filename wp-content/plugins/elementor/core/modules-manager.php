@@ -66,6 +66,10 @@ class Modules_Manager {
 	 */
 	public function get_modules_names() {
 		return [
+<<<<<<< HEAD
+			'admin-bar',
+=======
+>>>>>>> origin/KyungYul-Noh
 			'history',
 			'library',
 			'dynamic-tags',

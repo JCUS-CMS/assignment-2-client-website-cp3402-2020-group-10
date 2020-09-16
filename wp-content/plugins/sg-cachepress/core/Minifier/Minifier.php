@@ -73,6 +73,10 @@ class Minifier {
 		'elementor-preview',
 		'preview',
 		'wc-api',
+<<<<<<< HEAD
+		'method',
+=======
+>>>>>>> origin/KyungYul-Noh
 	);
 
 	/**

@@ -104,6 +104,11 @@ class Replace {
 	 */
 	protected $json_replace_columns;
 
+<<<<<<< HEAD
+	protected $json_merged;
+
+=======
+>>>>>>> origin/KyungYul-Noh
 	function __construct(
 		MigrationStateManager $migration_state_manager,
 		TableHelper $table_helper,
@@ -119,9 +124,17 @@ class Replace {
 	public function get($prop){
 		return $this->$prop;
 	}
+<<<<<<< HEAD
+
 	public function set($prop, $value){
 		return $this->$prop = $value;
 	}
+
+=======
+	public function set($prop, $value){
+		return $this->$prop = $value;
+	}
+>>>>>>> origin/KyungYul-Noh
 	public function register( $args ) {
 		$keys = array(
 			'table',
@@ -155,6 +168,10 @@ class Replace {
 		$this->json_replace         = '';
 		$this->json_replace_tables  = '';
 		$this->json_replace_columns = '';
+<<<<<<< HEAD
+		$this->json_merged          = false;
+=======
+>>>>>>> origin/KyungYul-Noh
 
 		global $wpdb;
 
@@ -327,6 +344,37 @@ class Replace {
 		return $new;
 	}
 
+<<<<<<< HEAD
+
+	public function maybe_merge_json_replaces()
+	{
+		if ( $this->json_merged ) {
+			return false;
+		}
+
+		if ( !in_array( $this->table, $this->json_replace_tables ) ||
+		     !in_array( $this->column, $this->json_replace_columns ) ) {
+			return false;
+		}
+
+		if ( empty( $this->search ) && empty( $this->replace ) ) {
+			return false;
+		}
+
+		if ( !is_array( $this->json_search ) || !is_array( $this->json_replace ) ) {
+			return false;
+		}
+
+		//Only add json replacements once
+		$this->search      = array_merge( $this->search, $this->json_search );
+		$this->replace     = array_merge( $this->replace, $this->json_replace );
+		$this->json_merged = true;
+
+		return true;
+	}
+
+=======
+>>>>>>> origin/KyungYul-Noh
 	/**
 	 * Applies find/replace pairs to a given string.
 	 *
@@ -334,6 +382,15 @@ class Replace {
 	 *
 	 * @return string
 	 */
+<<<<<<< HEAD
+	public function apply_replaces( $subject )
+	{
+		if ( empty( $this->search ) && empty( $this->replace ) ) {
+			return $subject;
+		}
+
+		$this->maybe_merge_json_replaces(); // Maybe merge in json_encoded find/replace values
+=======
 	function apply_replaces( $subject ) {
 
 		if ( in_array( $this->table, $this->json_replace_tables ) && in_array( $this->column, $this->json_replace_columns ) ) {
@@ -341,6 +398,7 @@ class Replace {
 			$this->replace = array_merge( $this->replace, $this->json_replace );
 		}
 
+>>>>>>> origin/KyungYul-Noh
 		$new = str_ireplace( $this->search, $this->replace, $subject, $count );
 
 		if ( $this->is_subdomain_replaces_on() ) {
@@ -549,9 +607,23 @@ class Replace {
 	 */
 	protected function json_replaces( $prefix )
 	{
+<<<<<<< HEAD
+		$default_tables = [
+			"${prefix}posts",
+		];
+
+		if ( in_array( $this->intent, ['find_replace', 'import'] ) ) {
+			$default_tables = [
+				"_mig_${prefix}posts",
+			];
+		}
+
+		$this->json_replace_tables = apply_filters( 'wpmdb_json_replace_tables', $default_tables );
+=======
 		$this->json_replace_tables = apply_filters( 'wpmdb_json_replace_tables', [
 			"${prefix}posts",
 		] );
+>>>>>>> origin/KyungYul-Noh
 
 		$this->json_replace_columns = apply_filters( 'wpmdb_json_replace_columns', [
 			'post_content',
