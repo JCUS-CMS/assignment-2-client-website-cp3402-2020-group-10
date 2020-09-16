@@ -4,3 +4,4 @@ Therefore I use readme to describe my commit
 Hello this is the third change, I updated two blogs and pictures
 This is the fourth change, I updated another two blogs and pictures
 Sixth change, I added 4 blogs for visitor to click into.
+Seventh change, I change some content and added some picture to blogs.
