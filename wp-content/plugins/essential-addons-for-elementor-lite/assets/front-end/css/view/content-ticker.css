@@ -1,5 +1,12 @@
 .eael-ticker-wrap {
+<<<<<<< HEAD
   position: relative;
+=======
+<<<<<<< HEAD
+  position: relative;
+=======
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -81,7 +88,16 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+<<<<<<< HEAD
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+=======
+<<<<<<< HEAD
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+=======
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
 }

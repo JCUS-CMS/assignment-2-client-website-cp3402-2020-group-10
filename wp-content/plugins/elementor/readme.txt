@@ -4,7 +4,15 @@ Tags: page builder, editor, landing page, drag-and-drop, elementor, visual edito
 Requires at least: 5.0
 Tested up to: 5.5
 Requires PHP: 5.6
+<<<<<<< HEAD
 Stable tag: 3.0.8.1
+=======
+<<<<<<< HEAD
+Stable tag: 3.0.8.1
+=======
+Stable tag: 3.0.7
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -218,6 +226,10 @@ No. Elementor supports WordPress 5.0 or greater, and is compatible with PHP 5.6 
 
 == Changelog ==
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> yanzhou-li
 = 3.0.8.1 - 2020-09-14 =
 * Fix: Reverted Shape Dividers are in front other elements in Chrome 85 fix due to display glitches ([#12393](https://github.com/elementor/elementor/issues/12393))
 * Fix: Auto Columns control setting causes layout to be displayed in one row in a Social icons ([Topic](https://wordpress.org/support/topic/sloppy-updates/), [#12519](https://github.com/elementor/elementor/issues/12519))
@@ -233,6 +245,11 @@ No. Elementor supports WordPress 5.0 or greater, and is compatible with PHP 5.6 
 * Fix: Message After Submit RTL icon spacing glitch
 * Fix: Select2 control dimensions adjustments
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
 = 3.0.7 - 2020-09-09 =
 * Fix: Additional cases of Global Style inconsistencies in Editor and Frontend ([#12363](https://github.com/elementor/elementor/issues/12363))
 * Fix: Plugins conflict on non-admin login to the dashboard ([#12383](https://github.com/elementor/elementor/issues/12383), [#12388](https://github.com/elementor/elementor/issues/12388))

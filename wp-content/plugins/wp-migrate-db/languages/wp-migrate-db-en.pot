@@ -8,7 +8,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wp-migrate-db-pro\n"
 "Report-Msgid-Bugs-To: nom@deliciousbrains.com\n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2020-09-14 11:51-0400\n"
+=======
+<<<<<<< HEAD
+"POT-Creation-Date: 2020-09-14 11:51-0400\n"
+=======
+"POT-Creation-Date: 2020-07-30 11:21-0400\n"
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -436,7 +444,14 @@ msgid "Could not delete the MySQL export file."
 msgstr ""
 
 #: src/wp-migrate-db-pro/class/Common/Replace.php:408
+<<<<<<< HEAD
 #: src/wp-migrate-db-pro/class/Common/Replace.php:441
+=======
+<<<<<<< HEAD
+#: src/wp-migrate-db-pro/class/Common/Replace.php:441
+=======
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
 #, php-format
 msgid ""
 "WP Migrate DB - Failed to instantiate object for replacement. If the "
@@ -446,7 +461,14 @@ msgid ""
 msgstr ""
 
 #: src/wp-migrate-db-pro/class/Common/Replace.php:463
+<<<<<<< HEAD
 #: src/wp-migrate-db-pro/class/Common/Replace.php:496
+=======
+<<<<<<< HEAD
+#: src/wp-migrate-db-pro/class/Common/Replace.php:496
+=======
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
 msgid ""
 "Failed attempting to do the recursive unserialize replace. Please contact "
 "support."
@@ -1658,13 +1680,27 @@ msgid "Find & Replace complete"
 msgstr ""
 
 #: src/wp-migrate-db-pro/class/Common/Filesystem/Filesystem.php:743
+<<<<<<< HEAD
 #: src/wp-migrate-db-pro/class/Common/Filesystem/Filesystem.php:758
+=======
+<<<<<<< HEAD
+#: src/wp-migrate-db-pro/class/Common/Filesystem/Filesystem.php:758
+=======
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
 #, php-format
 msgid "<h3>Output prevented download. </h3> %s"
 msgstr ""
 
 #: src/wp-migrate-db-pro/class/Common/Filesystem/Filesystem.php:746
+<<<<<<< HEAD
 #: src/wp-migrate-db-pro/class/Common/Filesystem/Filesystem.php:761
+=======
+<<<<<<< HEAD
+#: src/wp-migrate-db-pro/class/Common/Filesystem/Filesystem.php:761
+=======
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
 msgid "Could not find the file to download:"
 msgstr ""
 

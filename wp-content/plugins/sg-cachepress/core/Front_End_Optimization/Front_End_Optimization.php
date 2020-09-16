@@ -31,7 +31,15 @@ class Front_End_Optimization {
 	 *
 	 * @var int Bytes.
 	 */
+<<<<<<< HEAD
 	const LIMIT = 200000000;
+=======
+<<<<<<< HEAD
+	const LIMIT = 200000000;
+=======
+	const LIMIT = 100000000;
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
 
 	/**
 	 * Script handles that shouldn't be loaded async.

@@ -35,11 +35,20 @@ abstract class Document extends Controls_Stack {
 
 	private $main_id;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> yanzhou-li
 	/**
 	 * @var bool
 	 */
 	private $is_saving = false;
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
 	private static $properties = [];
 
 	/**
@@ -524,8 +533,16 @@ abstract class Document extends Controls_Stack {
 			return false;
 		}
 
+<<<<<<< HEAD
 		$this->set_is_saving( true );
 
+=======
+<<<<<<< HEAD
+		$this->set_is_saving( true );
+
+=======
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
 		/**
 		 * Before document save.
 		 *
@@ -581,8 +598,16 @@ abstract class Document extends Controls_Stack {
 		 */
 		do_action( 'elementor/document/after_save', $this, $data );
 
+<<<<<<< HEAD
 		$this->set_is_saving( false );
 
+=======
+<<<<<<< HEAD
+		$this->set_is_saving( false );
+
+=======
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
 		return true;
 	}
 
@@ -1111,6 +1136,10 @@ abstract class Document extends Controls_Stack {
 		return $last_edited;
 	}
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> yanzhou-li
 
 	/**
 	 * @return bool
@@ -1130,6 +1159,11 @@ abstract class Document extends Controls_Stack {
 		return $this;
 	}
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
 	/**
 	 * @since 2.0.0
 	 * @access public

@@ -1,5 +1,12 @@
 <?php
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
 namespace Essential_Addons_Elementor\Elements;
 
 // If this file is called directly, abort.
@@ -18,7 +25,14 @@ use \Elementor\Widget_Base as Widget_Base;
 class Contact_Form_7 extends Widget_Base
 {
     use \Essential_Addons_Elementor\Traits\Helper;
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
     /**
      * Retrieve contact form 7 widget name.
      *
@@ -81,7 +95,15 @@ class Contact_Form_7 extends Widget_Base
             'ea cf7',
             'ea contact form 7',
             'ea',
+<<<<<<< HEAD
             'essential addons',
+=======
+<<<<<<< HEAD
+            'essential addons',
+=======
+            'essential addons'
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
         ];
     }
 
@@ -99,6 +121,13 @@ class Contact_Form_7 extends Widget_Base
      */
     protected function _register_controls()
     {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
         /*-----------------------------------------------------------------------------------*/
         /*    CONTENT TAB
         /*-----------------------------------------------------------------------------------*/
@@ -283,6 +312,13 @@ class Contact_Form_7 extends Widget_Base
 
                 $this->end_controls_section();
             }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
         }
 
         /*-----------------------------------------------------------------------------------*/
@@ -363,7 +399,15 @@ class Contact_Form_7 extends Widget_Base
         $this->add_responsive_control(
             'eael_contact_form_margin',
             [
+<<<<<<< HEAD
                 'label' => esc_html__('Margin', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+                'label' => esc_html__('Margin', 'essential-addons-for-elementor-lite'),
+=======
+                'label' => esc_html__('Form Margin', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -545,7 +589,15 @@ class Contact_Form_7 extends Widget_Base
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
+<<<<<<< HEAD
                     '{{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-text, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-quiz, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-date, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-textarea, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-select' => 'background-color: {{VALUE}}',
+=======
+<<<<<<< HEAD
+                    '{{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-text, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-quiz, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-date, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-textarea, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-select' => 'background-color: {{VALUE}}',
+=======
+                    '{{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-text, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-date, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-textarea, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-select' => 'background-color: {{VALUE}}',
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 ],
             ]
         );
@@ -557,7 +609,15 @@ class Contact_Form_7 extends Widget_Base
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
+<<<<<<< HEAD
                     '{{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-text, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-quiz, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-date, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-textarea, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-select, {{WRAPPER}} .eael-contact-form-7 .wpcf7-list-item-label' => 'color: {{VALUE}}',
+=======
+<<<<<<< HEAD
+                    '{{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-text, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-quiz, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-date, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-textarea, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-select, {{WRAPPER}} .eael-contact-form-7 .wpcf7-list-item-label' => 'color: {{VALUE}}',
+=======
+                    '{{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-text, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-date, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-textarea, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-select, {{WRAPPER}} .eael-contact-form-7 .wpcf7-list-item-label' => 'color: {{VALUE}}',
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 ],
                 'separator' => 'before',
             ]
@@ -593,7 +653,15 @@ class Contact_Form_7 extends Widget_Base
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
+<<<<<<< HEAD
                     '{{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-text, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-quiz, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-date, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-textarea' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+=======
+<<<<<<< HEAD
+                    '{{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-text, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-quiz, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-date, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-textarea' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+=======
+                    '{{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-text, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-date, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-textarea' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 ],
             ]
         );
@@ -617,7 +685,15 @@ class Contact_Form_7 extends Widget_Base
                 ],
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
+<<<<<<< HEAD
                     '{{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-text, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-quiz, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-textarea, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-date, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-select' => 'text-indent: {{SIZE}}{{UNIT}}',
+=======
+<<<<<<< HEAD
+                    '{{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-text, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-quiz, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-textarea, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-date, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-select' => 'text-indent: {{SIZE}}{{UNIT}}',
+=======
+                    '{{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-text, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-textarea, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-date, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-select' => 'text-indent: {{SIZE}}{{UNIT}}',
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 ],
             ]
         );
@@ -636,6 +712,10 @@ class Contact_Form_7 extends Widget_Base
                 ],
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> yanzhou-li
                     '{{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-text, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-quiz, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-date, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-select' => 'width: {{SIZE}}{{UNIT}}',
                 ],
             ]
@@ -656,6 +736,12 @@ class Contact_Form_7 extends Widget_Base
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
                     '{{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-text, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-quiz, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-date, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-select' => 'height: {{SIZE}}{{UNIT}}',
+<<<<<<< HEAD
+=======
+=======
+                    '{{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-text, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-date, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-select' => 'width: {{SIZE}}{{UNIT}}',
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 ],
             ]
         );
@@ -679,6 +765,10 @@ class Contact_Form_7 extends Widget_Base
             ]
         );
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> yanzhou-li
         $this->add_responsive_control(
             'textarea_height',
             [
@@ -698,6 +788,11 @@ class Contact_Form_7 extends Widget_Base
             ]
         );
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
         $this->add_group_control(
             Group_Control_Border::get_type(),
             [
@@ -705,7 +800,15 @@ class Contact_Form_7 extends Widget_Base
                 'label' => __('Border', 'essential-addons-for-elementor-lite'),
                 'placeholder' => '1px',
                 'default' => '1px',
+<<<<<<< HEAD
                 'selector' => '{{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-text, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-quiz, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-date, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-textarea, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-select',
+=======
+<<<<<<< HEAD
+                'selector' => '{{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-text, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-quiz, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-date, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-textarea, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-select',
+=======
+                'selector' => '{{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-text,{{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-date, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-textarea, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-select',
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'separator' => 'before',
             ]
         );
@@ -717,7 +820,15 @@ class Contact_Form_7 extends Widget_Base
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
+<<<<<<< HEAD
                     '{{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-text, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-quiz, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-date, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-textarea' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+=======
+<<<<<<< HEAD
+                    '{{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-text, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-quiz, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-date, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-textarea' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+=======
+                    '{{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-text, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-date, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-textarea' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 ],
             ]
         );
@@ -728,7 +839,15 @@ class Contact_Form_7 extends Widget_Base
                 'name' => 'field_typography',
                 'label' => __('Typography', 'essential-addons-for-elementor-lite'),
                 'scheme' => Scheme_Typography::TYPOGRAPHY_4,
+<<<<<<< HEAD
                 'selector' => '{{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-text, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-quiz, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-quiz, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-textarea, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-select',
+=======
+<<<<<<< HEAD
+                'selector' => '{{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-text, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-quiz, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-quiz, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-textarea, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-select',
+=======
+                'selector' => '{{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-text, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-textarea, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-select',
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'separator' => 'before',
             ]
         );
@@ -737,7 +856,15 @@ class Contact_Form_7 extends Widget_Base
             Group_Control_Box_Shadow::get_type(),
             [
                 'name' => 'field_box_shadow',
+<<<<<<< HEAD
                 'selector' => '{{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-text, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-quiz, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-textarea, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-select',
+=======
+<<<<<<< HEAD
+                'selector' => '{{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-text, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-quiz, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-textarea, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-select',
+=======
+                'selector' => '{{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-text, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-textarea, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-select',
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'separator' => 'before',
             ]
         );
@@ -805,6 +932,10 @@ class Contact_Form_7 extends Widget_Base
         );
 
         $this->add_control(
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> yanzhou-li
             'label_error_note',
             [
                 'type' => \Elementor\Controls_Manager::RAW_HTML,
@@ -834,13 +965,26 @@ class Contact_Form_7 extends Widget_Base
         );
 
         $this->add_control(
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
             'text_color_label',
             [
                 'label' => __('Text Color', 'essential-addons-for-elementor-lite'),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .eael-contact-form-7 .wpcf7-form label' => 'color: {{VALUE}}',
+<<<<<<< HEAD
                     '{{WRAPPER}} .eael-contact-form-7 label' => 'color: {{VALUE}}',
+=======
+<<<<<<< HEAD
+                    '{{WRAPPER}} .eael-contact-form-7 label' => 'color: {{VALUE}}',
+=======
+                    '{{WRAPPER}} .eael-contact-form-7 label' => 'color: {{VALUE}}'
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 ],
                 'condition' => [
                     'labels_switch' => 'yes',
@@ -862,7 +1006,15 @@ class Contact_Form_7 extends Widget_Base
                 ],
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
+<<<<<<< HEAD
                     '{{WRAPPER}} .eael-contact-form-7 .wpcf7-form label, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form .wpcf7-quiz-label' => 'margin-bottom: {{SIZE}}{{UNIT}}',
+=======
+<<<<<<< HEAD
+                    '{{WRAPPER}} .eael-contact-form-7 .wpcf7-form label, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form .wpcf7-quiz-label' => 'margin-bottom: {{SIZE}}{{UNIT}}',
+=======
+                    '{{WRAPPER}} .eael-contact-form-7 .wpcf7-form label' => 'margin-bottom: {{SIZE}}{{UNIT}}',
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 ],
                 'condition' => [
                     'labels_switch' => 'yes',
@@ -876,7 +1028,15 @@ class Contact_Form_7 extends Widget_Base
                 'name' => 'typography_label',
                 'label' => __('Typography', 'essential-addons-for-elementor-lite'),
                 'scheme' => Scheme_Typography::TYPOGRAPHY_4,
+<<<<<<< HEAD
                 'selector' => '{{WRAPPER}} .eael-contact-form-7 .wpcf7-form label, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form .wpcf7-quiz-label',
+=======
+<<<<<<< HEAD
+                'selector' => '{{WRAPPER}} .eael-contact-form-7 .wpcf7-form label, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form .wpcf7-quiz-label',
+=======
+                'selector' => '{{WRAPPER}} .eael-contact-form-7 .wpcf7-form label',
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'condition' => [
                     'labels_switch' => 'yes',
                 ],
@@ -1698,6 +1858,13 @@ class Contact_Form_7 extends Widget_Base
         );
 
         $this->end_controls_section();
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
     }
 
     /**
@@ -1741,10 +1908,16 @@ class Contact_Form_7 extends Widget_Base
         if (!empty($settings['contact_form_list'])) {
             echo '<div class="eael-contact-form-7-wrapper">
                 <div ' . $this->get_render_attribute_string('contact-form') . '>';
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> yanzhou-li
             if ($settings['form_title'] == 'yes' || $settings['form_description'] == 'yes') {
                 echo '<div class="eael-contact-form-7-heading">';
                 if ($settings['form_title'] == 'yes' && $settings['form_title_text'] != '') {
                     echo '<h3 class="eael-contact-form-title eael-contact-form-7-title">
+<<<<<<< HEAD
+=======
                                     ' . esc_attr($settings['form_title_text']) . '
                                 </h3>';
                 }
@@ -1757,6 +1930,33 @@ class Contact_Form_7 extends Widget_Base
             }
             echo do_shortcode('[contact-form-7 id="' . $settings['contact_form_list'] . '" ]');
             echo '</div>
+=======
+                    if ($settings['form_title'] == 'yes' || $settings['form_description'] == 'yes') {
+                        echo '<div class="eael-contact-form-7-heading">';
+                            if ($settings['form_title'] == 'yes' && $settings['form_title_text'] != '') {
+                                echo '<h3 class="eael-contact-form-title eael-contact-form-7-title">
+>>>>>>> yanzhou-li
+                                    ' . esc_attr($settings['form_title_text']) . '
+                                </h3>';
+                }
+                if ($settings['form_description'] == 'yes' && $settings['form_description_text'] != '') {
+                    echo '<div class="eael-contact-form-description eael-contact-form-7-description">
+                                    ' . $this->parse_text_editor($settings['form_description_text']) . '
+                                </div>';
+<<<<<<< HEAD
+                }
+                echo '</div>';
+            }
+            echo do_shortcode('[contact-form-7 id="' . $settings['contact_form_list'] . '" ]');
+            echo '</div>
+=======
+                            }
+                        echo '</div>';
+                    }
+                    echo do_shortcode('[contact-form-7 id="' . $settings['contact_form_list'] . '" ]');
+                echo '</div>
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
             </div>';
         }
     }

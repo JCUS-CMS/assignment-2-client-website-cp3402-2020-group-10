@@ -1,5 +1,12 @@
 <?php
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
 namespace Essential_Addons_Elementor\Elements;
 
 // If this file is called directly, abort.
@@ -227,18 +234,43 @@ class Adv_Tabs extends Widget_Base
         );
         $this->end_controls_section();
 
+<<<<<<< HEAD
         if (!apply_filters('eael/pro_enabled', false)) {
             $this->start_controls_section(
                 'eael_section_pro',
                 [
                     'label' => __('Go Premium for More Features', 'essential-addons-for-elementor-lite')
+=======
+<<<<<<< HEAD
+        if (!apply_filters('eael/pro_enabled', false)) {
+            $this->start_controls_section(
+                'eael_section_pro',
+                [
+                    'label' => __('Go Premium for More Features', 'essential-addons-for-elementor-lite')
+=======
+
+        if(!apply_filters('eael/pro_enabled', false)) {
+            $this->start_controls_section(
+                'eael_section_pro',
+                [
+                    'label' => __( 'Go Premium for More Features', 'essential-addons-for-elementor-lite')
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 ]
             );
 
             $this->add_control(
                 'eael_control_get_pro',
                 [
+<<<<<<< HEAD
                     'label' => __('Unlock more possibilities', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+                    'label' => __('Unlock more possibilities', 'essential-addons-for-elementor-lite'),
+=======
+                    'label' => __( 'Unlock more possibilities', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                     'type' => Controls_Manager::CHOOSE,
                     'options' => [
                         '1' => [
@@ -356,7 +388,15 @@ class Adv_Tabs extends Widget_Base
                     ],
                 ],
                 'selectors' => [
+<<<<<<< HEAD
                     '{{WRAPPER}} .eael-advance-tabs.eael-tabs-vertical > .eael-tabs-nav > ul' => 'min-width: {{SIZE}}{{UNIT}};',
+=======
+<<<<<<< HEAD
+                    '{{WRAPPER}} .eael-advance-tabs.eael-tabs-vertical > .eael-tabs-nav > ul' => 'min-width: {{SIZE}}{{UNIT}};',
+=======
+                    '{{WRAPPER}} .eael-advance-tabs.eael-tabs-vertical .eael-tabs-nav > ul' => 'min-width: {{SIZE}}{{UNIT}};',
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 ],
                 'condition' => [
                     'eael_adv_tab_layout' => 'eael-tabs-vertical',
@@ -450,7 +490,15 @@ class Adv_Tabs extends Widget_Base
             Group_Control_Background::get_type(),
             [
                 'name' => 'eael_adv_tabs_tab_bgtype',
+<<<<<<< HEAD
                 'types' => ['classic', 'gradient'],
+=======
+<<<<<<< HEAD
+                'types' => ['classic', 'gradient'],
+=======
+                'types' => [ 'classic', 'gradient' ],
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'selector' => '{{WRAPPER}} .eael-advance-tabs .eael-tabs-nav > ul li'
             ]
         );
@@ -516,7 +564,15 @@ class Adv_Tabs extends Widget_Base
             Group_Control_Background::get_type(),
             [
                 'name' => 'eael_adv_tabs_tab_bgtype_hover',
+<<<<<<< HEAD
                 'types' => ['classic', 'gradient'],
+=======
+<<<<<<< HEAD
+                'types' => ['classic', 'gradient'],
+=======
+                'types' => [ 'classic', 'gradient' ],
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'selector' => '{{WRAPPER}} .eael-advance-tabs .eael-tabs-nav > ul li:hover'
             ]
         );
@@ -583,7 +639,15 @@ class Adv_Tabs extends Widget_Base
             Group_Control_Background::get_type(),
             [
                 'name' => 'eael_adv_tabs_tab_bgtype_active',
+<<<<<<< HEAD
                 'types' => ['classic', 'gradient'],
+=======
+<<<<<<< HEAD
+                'types' => ['classic', 'gradient'],
+=======
+                'types' => [ 'classic', 'gradient' ],
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'selector' => '{{WRAPPER}} .eael-advance-tabs .eael-tabs-nav > ul li.active,{{WRAPPER}} .eael-advance-tabs .eael-tabs-nav > ul li.active-default'
             ]
         );
@@ -665,7 +729,15 @@ class Adv_Tabs extends Widget_Base
             Group_Control_Background::get_type(),
             [
                 'name' => 'adv_tabs_content_bgtype',
+<<<<<<< HEAD
                 'types' => ['classic', 'gradient'],
+=======
+<<<<<<< HEAD
+                'types' => ['classic', 'gradient'],
+=======
+                'types' => [ 'classic', 'gradient' ],
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'selector' => '{{WRAPPER}} .eael-advance-tabs .eael-tabs-content > div'
             ]
         );
@@ -774,7 +846,15 @@ class Adv_Tabs extends Widget_Base
                 ],
                 'selectors' => [
                     '{{WRAPPER}} .eael-advance-tabs .eael-tabs-nav > ul li:after' => 'border-width: {{SIZE}}px; bottom: -{{SIZE}}px',
+<<<<<<< HEAD
                     '{{WRAPPER}} .eael-advance-tabs.eael-tabs-vertical > .eael-tabs-nav > ul li:after' => 'right: -{{SIZE}}px; top: calc(50% - {{SIZE}}px) !important;',
+=======
+<<<<<<< HEAD
+                    '{{WRAPPER}} .eael-advance-tabs.eael-tabs-vertical > .eael-tabs-nav > ul li:after' => 'right: -{{SIZE}}px; top: calc(50% - {{SIZE}}px) !important;',
+=======
+                    '{{WRAPPER}} .eael-advance-tabs.eael-tabs-vertical .eael-tabs-nav > ul li:after' => 'right: -{{SIZE}}px; top: calc(50% - {{SIZE}}px) !important;',
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 ],
                 'condition' => [
                     'eael_adv_tabs_tab_caret_show' => 'yes',
@@ -789,7 +869,15 @@ class Adv_Tabs extends Widget_Base
                 'default' => '#444',
                 'selectors' => [
                     '{{WRAPPER}} .eael-advance-tabs .eael-tabs-nav > ul li:after' => 'border-top-color: {{VALUE}};',
+<<<<<<< HEAD
                     '{{WRAPPER}} .eael-advance-tabs.eael-tabs-vertical > .eael-tabs-nav > ul li:after' => 'border-top-color: transparent; border-left-color: {{VALUE}};',
+=======
+<<<<<<< HEAD
+                    '{{WRAPPER}} .eael-advance-tabs.eael-tabs-vertical > .eael-tabs-nav > ul li:after' => 'border-top-color: transparent; border-left-color: {{VALUE}};',
+=======
+                    '{{WRAPPER}} .eael-advance-tabs.eael-tabs-vertical .eael-tabs-nav > ul li:after' => 'border-top-color: transparent; border-left-color: {{VALUE}};',
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 ],
                 'condition' => [
                     'eael_adv_tabs_tab_caret_show' => 'yes',
@@ -812,6 +900,10 @@ class Adv_Tabs extends Widget_Base
         );
 
         $this->add_control(
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> yanzhou-li
             'responsive_vertical_layout',
             [
                 'label'     => __('Vertical Layout', 'essential-addons-elementor'),
@@ -821,6 +913,20 @@ class Adv_Tabs extends Widget_Base
                 'return_value' => 'yes',
                 'default' => 'yes',
             ]
+<<<<<<< HEAD
+=======
+=======
+			'responsive_vertical_layout',
+			[
+				'label'     => __( 'Vertical Layout', 'essential-addons-elementor' ),
+				'type'      => Controls_Manager::SWITCHER,
+				'label_on'  => __( 'Yes', 'essential-addons-for-elementor-lite' ),
+				'label_off' => __( 'No', 'essential-addons-for-elementor-lite' ),
+				'return_value' => 'yes',
+				'default' => 'yes',
+			]
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
         );
 
         $this->end_controls_section();
@@ -829,7 +935,15 @@ class Adv_Tabs extends Widget_Base
     protected function render()
     {
         $settings = $this->get_settings_for_display();
+<<<<<<< HEAD
         $eael_find_default_tab = [];
+=======
+<<<<<<< HEAD
+        $eael_find_default_tab = [];
+=======
+        $eael_find_default_tab = array();
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
         $eael_adv_tab_id = 1;
         $eael_adv_tab_content_id = 1;
         $tab_icon_migrated = isset($settings['__fa4_migrated']['eael_adv_tabs_tab_title_icon_new']);
@@ -847,6 +961,10 @@ class Adv_Tabs extends Widget_Base
             $this->add_render_attribute('eael_tab_wrapper', 'class', 'active-caret-on');
         }
 
+<<<<<<< HEAD
+        if ($settings['responsive_vertical_layout'] != 'yes') {
+=======
+<<<<<<< HEAD
         if ($settings['responsive_vertical_layout'] != 'yes') {
             $this->add_render_attribute('eael_tab_wrapper', 'class', 'responsive-vertical-layout');
         }
@@ -894,4 +1012,58 @@ class Adv_Tabs extends Widget_Base
     protected function content_template()
     {
     }
+=======
+        if($settings['responsive_vertical_layout'] != 'yes') {
+>>>>>>> yanzhou-li
+            $this->add_render_attribute('eael_tab_wrapper', 'class', 'responsive-vertical-layout');
+        }
+
+        $this->add_render_attribute('eael_tab_icon_position', 'class', esc_attr($settings['eael_adv_tab_icon_position'])); ?>
+        <div <?php echo $this->get_render_attribute_string('eael_tab_wrapper'); ?>>
+            <div class="eael-tabs-nav">
+                <ul <?php echo $this->get_render_attribute_string('eael_tab_icon_position'); ?>>
+                    <?php foreach ($settings['eael_adv_tabs_tab'] as $tab) : ?>
+                        <li class="<?php echo esc_attr($tab['eael_adv_tabs_tab_show_as_default']); ?>"><?php if ($settings['eael_adv_tabs_icon_show'] === 'yes') :
+                                                                                                            if ($tab['eael_adv_tabs_icon_type'] === 'icon') : ?>
+                                    <?php if ($tab_icon_is_new || $tab_icon_migrated) {
+                                                                                                                    if (isset($tab['eael_adv_tabs_tab_title_icon_new']['value']['url'])) {
+                                                                                                                        echo '<img src="' . $tab['eael_adv_tabs_tab_title_icon_new']['value']['url'] . '"/>';
+                                                                                                                    } else {
+                                                                                                                        echo '<i class="' . $tab['eael_adv_tabs_tab_title_icon_new']['value'] . '"></i>';
+                                                                                                                    }
+                                                                                                                } else {
+                                                                                                                    echo '<i class="' . $tab['eael_adv_tabs_tab_title_icon'] . '"></i>';
+                                                                                                                } ?>
+                                <?php elseif ($tab['eael_adv_tabs_icon_type'] === 'image') : ?>
+                                    <img src="<?php echo esc_attr($tab['eael_adv_tabs_tab_title_image']['url']); ?>" alt="<?php echo esc_attr(get_post_meta($tab['eael_adv_tabs_tab_title_image']['id'], '_wp_attachment_image_alt', true)); ?>">
+                                <?php endif; ?>
+                            <?php endif; ?> <span class="eael-tab-title"><?php echo $tab['eael_adv_tabs_tab_title']; ?></span></li>
+                    <?php endforeach; ?>
+                </ul>
+            </div>
+            <div class="eael-tabs-content">
+                <?php foreach ($settings['eael_adv_tabs_tab'] as $tab) : $eael_find_default_tab[] = $tab['eael_adv_tabs_tab_show_as_default']; ?>
+                    <div class="clearfix <?php echo esc_attr($tab['eael_adv_tabs_tab_show_as_default']); ?>">
+                        <?php if ('content' == $tab['eael_adv_tabs_text_type']) : ?>
+                            <?php echo do_shortcode($tab['eael_adv_tabs_tab_content']); ?>
+                        <?php elseif ('template' == $tab['eael_adv_tabs_text_type']) : ?>
+                            <?php if (!empty($tab['eael_primary_templates'])) {
+                                echo Plugin::$instance->frontend->get_builder_content($tab['eael_primary_templates'], true);
+                            } ?>
+                        <?php endif; ?>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
+<?php
+    }
+
+<<<<<<< HEAD
+    protected function content_template()
+    {
+    }
+=======
+    protected function content_template(){}
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
 }

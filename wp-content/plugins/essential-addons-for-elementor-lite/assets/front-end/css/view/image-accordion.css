@@ -120,7 +120,14 @@
   -webkit-transform: translate3d(0, 60px, 0);
           transform: translate3d(0, 60px, 0);
 }
+<<<<<<< HEAD
 .eael-img-accordion a.overlay-active .overlay-inner *,
+=======
+<<<<<<< HEAD
+.eael-img-accordion a.overlay-active .overlay-inner *,
+=======
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
 .eael-img-accordion .overlay-inner-show * {
   opacity: 1;
   visibility: visible;

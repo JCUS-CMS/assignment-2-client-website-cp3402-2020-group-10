@@ -1,5 +1,12 @@
 <?php
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
 namespace Essential_Addons_Elementor\Elements;
 
 // If this file is called directly, abort.
@@ -37,8 +44,17 @@ class Twitter_Feed extends Widget_Base
         return ['essential-addons-elementor'];
     }
 
+<<<<<<< HEAD
     public function get_keywords()
     {
+=======
+<<<<<<< HEAD
+    public function get_keywords()
+    {
+=======
+    public function get_keywords() {
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
         return [
             'twitter',
             'ea twitter feed',
@@ -50,12 +66,29 @@ class Twitter_Feed extends Widget_Base
             'tweet feed',
             'tweet embed',
             'ea',
+<<<<<<< HEAD
             'essential addons',
         ];
     }
 
     public function get_custom_help_url()
     {
+=======
+<<<<<<< HEAD
+            'essential addons',
+        ];
+    }
+
+    public function get_custom_help_url()
+    {
+=======
+            'essential addons'
+        ];
+    }
+
+    public function get_custom_help_url() {
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
         return 'https://essential-addons.com/elementor/docs/twitter-feed/';
     }
 
@@ -70,12 +103,27 @@ class Twitter_Feed extends Widget_Base
     public function get_script_depends()
     {
         return [
+<<<<<<< HEAD
             'font-awesome-4-shim',
+=======
+<<<<<<< HEAD
+            'font-awesome-4-shim',
+=======
+            'font-awesome-4-shim'
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
         ];
     }
 
     protected function _register_controls()
     {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
         $this->start_controls_section(
             'eael_section_twitter_feed_acc_settings',
             [
@@ -91,6 +139,13 @@ class Twitter_Feed extends Widget_Base
                 'default' => '@wpdevteam',
                 'label_block' => false,
                 'description' => esc_html__('Use @ sign with your account name.', 'essential-addons-for-elementor-lite'),
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
             ]
         );
 
@@ -101,6 +156,13 @@ class Twitter_Feed extends Widget_Base
                 'type' => Controls_Manager::TEXT,
                 'label_block' => false,
                 'description' => esc_html__('Remove # sign from your hashtag name.', 'essential-addons-for-elementor-lite'),
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
             ]
         );
 
@@ -238,6 +300,29 @@ class Twitter_Feed extends Widget_Base
         );
 
         $this->add_control(
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+            'eael_twitter_feed_avatar_style',
+            [
+                'label' => __('Avatar Style', 'essential-addons-for-elementor-lite'),
+                'type' => Controls_Manager::SELECT,
+                'options' => [
+                    'circle' => 'Circle',
+                    'square' => 'Square',
+                ],
+                'default' => 'circle',
+                'prefix_class' => 'eael-social-feed-avatar-',
+                'condition' => [
+                    'eael_twitter_feed_show_avatar' => 'true',
+                ],
+            ]
+        );
+
+        $this->add_control(
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
             'eael_twitter_feed_show_date',
             [
                 'label' => esc_html__('Show Date', 'essential-addons-for-elementor-lite'),
@@ -316,6 +401,10 @@ class Twitter_Feed extends Widget_Base
         );
 
         $this->add_control(
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> yanzhou-li
             'eael_twitter_feed_card_choose_style',
             [
                 'label' => __('Choose Style', 'essential-addons-for-elementor-lite'),
@@ -383,6 +472,11 @@ class Twitter_Feed extends Widget_Base
         );
 
         $this->add_control(
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
             'eael_twitter_feed_card_bg_color',
             [
                 'label' => esc_html__('Background Color', 'essential-addons-for-elementor-lite'),
@@ -391,6 +485,10 @@ class Twitter_Feed extends Widget_Base
                 'selectors' => [
                     '{{WRAPPER}} .eael-twitter-feed-item-inner' => 'background-color: {{VALUE}};',
                 ],
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> yanzhou-li
                 'condition' => [
                     'eael_twitter_feed_card_is_gradient_bg' => '',
                 ],
@@ -409,6 +507,11 @@ class Twitter_Feed extends Widget_Base
                 'condition' => [
                     'eael_twitter_feed_card_choose_style' => 'three',
                 ],
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
             ]
         );
 
@@ -422,9 +525,18 @@ class Twitter_Feed extends Widget_Base
                     '{{WRAPPER}} .eael-twitter-feed-item-header' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} 0 {{LEFT}}{{UNIT}};',
                     '{{WRAPPER}} .eael-twitter-feed-item-content' => 'padding: 0 {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
+<<<<<<< HEAD
                 'condition' => [
                     'eael_twitter_feed_card_choose_style!' => 'three',
                 ],
+=======
+<<<<<<< HEAD
+                'condition' => [
+                    'eael_twitter_feed_card_choose_style!' => 'three',
+                ],
+=======
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
             ]
         );
 
@@ -460,6 +572,10 @@ class Twitter_Feed extends Widget_Base
                 'selector' => '{{WRAPPER}} .eael-twitter-feed-item-inner',
             ]
         );
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> yanzhou-li
         $this->add_control(
             'eael_twitter_feed_card_left_icon_heading',
             [
@@ -639,6 +755,11 @@ class Twitter_Feed extends Widget_Base
                 'selector' => '{{WRAPPER}} .eael-twitter-feed-item-inner:hover',
             ]
         );
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
 
         $this->end_controls_section();
 
@@ -755,6 +876,10 @@ class Twitter_Feed extends Widget_Base
         );
 
         $this->end_controls_section();
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> yanzhou-li
 
         /**
          * -------------------------------------------
@@ -908,6 +1033,11 @@ class Twitter_Feed extends Widget_Base
         );
 
         $this->end_controls_section();
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
     }
 
     protected function render()
@@ -928,7 +1058,15 @@ class Twitter_Feed extends Widget_Base
             .eael-twitter-feed-' . $this->get_id() . '.eael-twitter-feed-masonry.eael-twitter-feed-col-4 .eael-twitter-feed-item {
                 width: calc(25% - ' . ceil($settings['eael_twitter_feed_column_spacing']['size'] * 3 / 4) . 'px);
             }
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+            
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
             .eael-twitter-feed-' . $this->get_id() . '.eael-twitter-feed-col-2 .eael-twitter-feed-item,
             .eael-twitter-feed-' . $this->get_id() . '.eael-twitter-feed-col-3 .eael-twitter-feed-item,
             .eael-twitter-feed-' . $this->get_id() . '.eael-twitter-feed-col-4 .eael-twitter-feed-item {
@@ -956,10 +1094,24 @@ class Twitter_Feed extends Widget_Base
                                 gutter: $gutter
                             }
                         };
+<<<<<<< HEAD
 
                         // init isotope
                         $twitter_feed_gallery = $(".eael-twitter-feed", $scope).isotope($settings);
 
+=======
+<<<<<<< HEAD
+
+                        // init isotope
+                        $twitter_feed_gallery = $(".eael-twitter-feed", $scope).isotope($settings);
+
+=======
+                        
+                        // init isotope
+                        $twitter_feed_gallery = $(".eael-twitter-feed", $scope).isotope($settings);
+                    
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                         // layout gal, while images are loading
                         $twitter_feed_gallery.imagesLoaded().progress(function() {
                             $twitter_feed_gallery.isotope("layout");

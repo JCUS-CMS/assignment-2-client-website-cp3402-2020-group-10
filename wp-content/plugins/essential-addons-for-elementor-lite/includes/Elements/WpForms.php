@@ -1,5 +1,12 @@
 <?php
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
 namespace Essential_Addons_Elementor\Elements;
 
 // If this file is called directly, abort.
@@ -14,6 +21,11 @@ use \Elementor\Group_Control_Typography as Group_Control_Typography;
 use \Elementor\Scheme_Typography as Scheme_Typography;
 use \Elementor\Widget_Base as Widget_Base;
 
+<<<<<<< HEAD
+class WpForms extends Widget_Base
+{
+=======
+<<<<<<< HEAD
 class WpForms extends Widget_Base
 {
     use \Essential_Addons_Elementor\Traits\Helper;
@@ -38,6 +50,36 @@ class WpForms extends Widget_Base
         return 'eaicon-wpforms';
     }
 
+=======
+class WpForms extends Widget_Base {
+>>>>>>> yanzhou-li
+    use \Essential_Addons_Elementor\Traits\Helper;
+
+    public function get_name()
+    {
+        return 'eael-wpforms';
+    }
+
+    public function get_title()
+    {
+        return __('WPForms', 'essential-addons-for-elementor-lite');
+    }
+
+    public function get_categories()
+    {
+        return ['essential-addons-elementor'];
+    }
+
+    public function get_icon()
+    {
+        return 'eaicon-wpforms';
+    }
+<<<<<<< HEAD
+
+=======
+    
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
     public function get_keywords()
     {
         return [
@@ -60,6 +102,11 @@ class WpForms extends Widget_Base
         return 'https://essential-addons.com/elementor/docs/wpforms/';
     }
 
+<<<<<<< HEAD
+    protected function _register_controls()
+    {
+=======
+<<<<<<< HEAD
     protected function _register_controls()
     {
 
@@ -68,6 +115,20 @@ class WpForms extends Widget_Base
                 'eael_global_warning',
                 [
                     'label'             => __('Warning!', 'essential-addons-for-elementor-lite'),
+=======
+    protected function _register_controls() {
+>>>>>>> yanzhou-li
+
+        if (!class_exists('\WPForms\WPForms')) {
+            $this->start_controls_section(
+                'eael_global_warning',
+                [
+<<<<<<< HEAD
+                    'label'             => __('Warning!', 'essential-addons-for-elementor-lite'),
+=======
+                    'label'             => __( 'Warning!', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 ]
             );
 
@@ -75,7 +136,15 @@ class WpForms extends Widget_Base
                 'eael_global_warning_text',
                 [
                     'type' => Controls_Manager::RAW_HTML,
+<<<<<<< HEAD
                     'raw' => __('<strong>WPForms</strong> is not installed/activated on your site. Please install and activate <strong>WPForms</strong> first.', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+                    'raw' => __('<strong>WPForms</strong> is not installed/activated on your site. Please install and activate <strong>WPForms</strong> first.', 'essential-addons-for-elementor-lite'),
+=======
+                    'raw' => __( '<strong>WPForms</strong> is not installed/activated on your site. Please install and activate <strong>WPForms</strong> first.', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                     'content_classes' => 'eael-warning',
                 ]
             );
@@ -85,6 +154,10 @@ class WpForms extends Widget_Base
             $this->start_controls_section(
                 'section_info_box',
                 [
+<<<<<<< HEAD
+                    'label'             => __('WPForms', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
                     'label'             => __('WPForms', 'essential-addons-for-elementor-lite'),
                 ]
             );
@@ -93,12 +166,31 @@ class WpForms extends Widget_Base
                 'contact_form_list',
                 [
                     'label'             => esc_html__('Select Form', 'essential-addons-for-elementor-lite'),
+=======
+                    'label'             => __( 'WPForms', 'essential-addons-for-elementor-lite'),
+>>>>>>> yanzhou-li
+                ]
+            );
+
+            $this->add_control(
+                'contact_form_list',
+                [
+<<<<<<< HEAD
+                    'label'             => esc_html__('Select Form', 'essential-addons-for-elementor-lite'),
+=======
+                    'label'             => esc_html__( 'Select Form', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                     'type'              => Controls_Manager::SELECT,
                     'label_block'       => true,
                     'options'           => $this->eael_select_wpforms_forms(),
                     'default'           => '0',
                 ]
             );
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
 
             $this->add_control(
                 'custom_title_description',
@@ -119,12 +211,44 @@ class WpForms extends Widget_Base
                     'default'               => 'yes',
                     'label_on'              => __('Show', 'essential-addons-for-elementor-lite'),
                     'label_off'             => __('Hide', 'essential-addons-for-elementor-lite'),
+=======
+            
+>>>>>>> yanzhou-li
+            $this->add_control(
+                'custom_title_description',
+                [
+                    'label'                 => __('Custom Title & Description', 'essential-addons-for-elementor-lite'),
+                    'type'                  => Controls_Manager::SWITCHER,
+                    'label_on'              => __('Yes', 'essential-addons-for-elementor-lite'),
+                    'label_off'             => __('No', 'essential-addons-for-elementor-lite'),
+                    'return_value'          => 'yes',
+                ]
+            );
+
+            $this->add_control(
+                'form_title',
+                [
+                    'label'                 => __('Title', 'essential-addons-for-elementor-lite'),
+                    'type'                  => Controls_Manager::SWITCHER,
+                    'default'               => 'yes',
+<<<<<<< HEAD
+                    'label_on'              => __('Show', 'essential-addons-for-elementor-lite'),
+                    'label_off'             => __('Hide', 'essential-addons-for-elementor-lite'),
+=======
+                    'label_on'              => __( 'Show', 'essential-addons-for-elementor-lite'),
+                    'label_off'             => __( 'Hide', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                     'return_value'          => 'yes',
                     'condition'             => [
                         'custom_title_description!'   => 'yes',
                     ],
                 ]
             );
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
 
             $this->add_control(
                 'form_description',
@@ -134,17 +258,50 @@ class WpForms extends Widget_Base
                     'default'               => 'yes',
                     'label_on'              => __('Show', 'essential-addons-for-elementor-lite'),
                     'label_off'             => __('Hide', 'essential-addons-for-elementor-lite'),
+=======
+            
+>>>>>>> yanzhou-li
+            $this->add_control(
+                'form_description',
+                [
+                    'label'                 => __('Description', 'essential-addons-for-elementor-lite'),
+                    'type'                  => Controls_Manager::SWITCHER,
+                    'default'               => 'yes',
+<<<<<<< HEAD
+                    'label_on'              => __('Show', 'essential-addons-for-elementor-lite'),
+                    'label_off'             => __('Hide', 'essential-addons-for-elementor-lite'),
+=======
+                    'label_on'              => __( 'Show', 'essential-addons-for-elementor-lite'),
+                    'label_off'             => __( 'Hide', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                     'return_value'          => 'yes',
                     'condition'             => [
                         'custom_title_description!'   => 'yes',
                     ],
                 ]
             );
+<<<<<<< HEAD
 
             $this->add_control(
                 'form_title_custom',
                 [
                     'label'                 => esc_html__('Title', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+
+            $this->add_control(
+                'form_title_custom',
+                [
+                    'label'                 => esc_html__('Title', 'essential-addons-for-elementor-lite'),
+=======
+            
+            $this->add_control(
+                'form_title_custom',
+                [
+                    'label'                 => esc_html__( 'Title', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                     'type'                  => Controls_Manager::TEXT,
                     'label_block'           => true,
                     'default'               => '',
@@ -153,11 +310,27 @@ class WpForms extends Widget_Base
                     ],
                 ]
             );
+<<<<<<< HEAD
 
             $this->add_control(
                 'form_description_custom',
                 [
                     'label'                 => esc_html__('Description', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+
+            $this->add_control(
+                'form_description_custom',
+                [
+                    'label'                 => esc_html__('Description', 'essential-addons-for-elementor-lite'),
+=======
+            
+            $this->add_control(
+                'form_description_custom',
+                [
+                    'label'                 => esc_html__( 'Description', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                     'type'                  => Controls_Manager::TEXTAREA,
                     'default'               => '',
                     'condition'             => [
@@ -165,6 +338,10 @@ class WpForms extends Widget_Base
                     ],
                 ]
             );
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
 
             $this->add_control(
                 'labels_switch',
@@ -174,10 +351,31 @@ class WpForms extends Widget_Base
                     'default'               => 'yes',
                     'label_on'              => __('Show', 'essential-addons-for-elementor-lite'),
                     'label_off'             => __('Hide', 'essential-addons-for-elementor-lite'),
+=======
+            
+>>>>>>> yanzhou-li
+            $this->add_control(
+                'labels_switch',
+                [
+                    'label'                 => __('Labels', 'essential-addons-for-elementor-lite'),
+                    'type'                  => Controls_Manager::SWITCHER,
+                    'default'               => 'yes',
+<<<<<<< HEAD
+                    'label_on'              => __('Show', 'essential-addons-for-elementor-lite'),
+                    'label_off'             => __('Hide', 'essential-addons-for-elementor-lite'),
+=======
+                    'label_on'              => __( 'Show', 'essential-addons-for-elementor-lite'),
+                    'label_off'             => __( 'Hide', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                     'return_value'          => 'yes',
                     'prefix_class'          => 'eael-wpforms-labels-',
                 ]
             );
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
 
             $this->add_control(
                 'placeholder_switch',
@@ -210,6 +408,46 @@ class WpForms extends Widget_Base
                     'options'               => [
                         'show'          => __('Show', 'essential-addons-for-elementor-lite'),
                         'hide'          => __('Hide', 'essential-addons-for-elementor-lite'),
+=======
+            
+>>>>>>> yanzhou-li
+            $this->add_control(
+                'placeholder_switch',
+                [
+                    'label'                 => __('Placeholder', 'essential-addons-for-elementor-lite'),
+                    'type'                  => Controls_Manager::SWITCHER,
+                    'default'               => 'yes',
+                    'label_on'              => __('Show', 'essential-addons-for-elementor-lite'),
+                    'label_off'             => __('Hide', 'essential-addons-for-elementor-lite'),
+                    'return_value'          => 'yes',
+                ]
+            );
+
+            $this->end_controls_section();
+
+
+            $this->start_controls_section(
+                'section_errors',
+                [
+                    'label'                 => __('Errors', 'essential-addons-for-elementor-lite'),
+                ]
+            );
+
+            $this->add_control(
+                'error_messages',
+                [
+                    'label'                 => __('Error Messages', 'essential-addons-for-elementor-lite'),
+                    'type'                  => Controls_Manager::SELECT,
+                    'default'               => 'show',
+                    'options'               => [
+<<<<<<< HEAD
+                        'show'          => __('Show', 'essential-addons-for-elementor-lite'),
+                        'hide'          => __('Hide', 'essential-addons-for-elementor-lite'),
+=======
+                        'show'          => __( 'Show', 'essential-addons-for-elementor-lite'),
+                        'hide'          => __( 'Hide', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                     ],
                     'selectors_dictionary'  => [
                         'show'          => 'block',
@@ -220,7 +458,15 @@ class WpForms extends Widget_Base
                     ],
                 ]
             );
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+            
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
             $this->end_controls_section();
         }
 
@@ -235,7 +481,15 @@ class WpForms extends Widget_Base
         $this->start_controls_section(
             'section_container_style',
             [
+<<<<<<< HEAD
                 'label'                 => __('Form Container', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+                'label'                 => __('Form Container', 'essential-addons-for-elementor-lite'),
+=======
+                'label'                 => __( 'Form Container', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'tab'                   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -243,22 +497,50 @@ class WpForms extends Widget_Base
         $this->add_control(
             'eael_contact_form_background',
             [
+<<<<<<< HEAD
                 'label' => esc_html__('Form Background Color', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+                'label' => esc_html__('Form Background Color', 'essential-addons-for-elementor-lite'),
+=======
+                'label' => esc_html__( 'Form Background Color', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .eael-contact-form' => 'background: {{VALUE}};',
                 ],
             ]
         );
+<<<<<<< HEAD
 
         $this->add_responsive_control(
             'eael_contact_form_alignment',
             [
                 'label' => esc_html__('Form Alignment', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+
+        $this->add_responsive_control(
+            'eael_contact_form_alignment',
+            [
+                'label' => esc_html__('Form Alignment', 'essential-addons-for-elementor-lite'),
+=======
+        
+        $this->add_responsive_control(
+            'eael_contact_form_alignment',
+            [
+                'label' => esc_html__( 'Form Alignment', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'type' => Controls_Manager::CHOOSE,
                 'label_block' => true,
                 'options' => [
                     'default' => [
+<<<<<<< HEAD
+                        'title' => __('Default', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
                         'title' => __('Default', 'essential-addons-for-elementor-lite'),
                         'icon' => 'fa fa-ban',
                     ],
@@ -272,6 +554,26 @@ class WpForms extends Widget_Base
                     ],
                     'right' => [
                         'title' => esc_html__('Right', 'essential-addons-for-elementor-lite'),
+=======
+                        'title' => __( 'Default', 'essential-addons-for-elementor-lite'),
+>>>>>>> yanzhou-li
+                        'icon' => 'fa fa-ban',
+                    ],
+                    'left' => [
+                        'title' => esc_html__('Left', 'essential-addons-for-elementor-lite'),
+                        'icon' => 'eicon-h-align-left',
+                    ],
+                    'center' => [
+                        'title' => esc_html__('Center', 'essential-addons-for-elementor-lite'),
+                        'icon' => 'eicon-h-align-center',
+                    ],
+                    'right' => [
+<<<<<<< HEAD
+                        'title' => esc_html__('Right', 'essential-addons-for-elementor-lite'),
+=======
+                        'title' => esc_html__( 'Right', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                         'icon' => 'eicon-h-align-right',
                     ],
                 ],
@@ -282,9 +584,21 @@ class WpForms extends Widget_Base
         $this->add_responsive_control(
             'eael_contact_form_max_width',
             [
+<<<<<<< HEAD
                 'label' => esc_html__('Form Max Width', 'essential-addons-for-elementor-lite'),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => ['px', 'em', '%'],
+=======
+<<<<<<< HEAD
+                'label' => esc_html__('Form Max Width', 'essential-addons-for-elementor-lite'),
+                'type' => Controls_Manager::SLIDER,
+                'size_units' => ['px', 'em', '%'],
+=======
+                'label' => esc_html__( 'Form Max Width', 'essential-addons-for-elementor-lite'),
+                'type' => Controls_Manager::SLIDER,
+                'size_units' => [ 'px', 'em', '%' ],
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'range' => [
                     'px' => [
                         'min' => 10,
@@ -300,6 +614,11 @@ class WpForms extends Widget_Base
                 ],
             ]
         );
+<<<<<<< HEAD
+
+
+=======
+<<<<<<< HEAD
 
 
         $this->add_responsive_control(
@@ -308,10 +627,30 @@ class WpForms extends Widget_Base
                 'label' => esc_html__('Form Margin', 'essential-addons-for-elementor-lite'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
+=======
+        
+        
+>>>>>>> yanzhou-li
+        $this->add_responsive_control(
+            'eael_contact_form_margin',
+            [
+                'label' => esc_html__('Form Margin', 'essential-addons-for-elementor-lite'),
+                'type' => Controls_Manager::DIMENSIONS,
+<<<<<<< HEAD
+                'size_units' => ['px', 'em', '%'],
+=======
+                'size_units' => [ 'px', 'em', '%' ],
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'selectors' => [
                     '{{WRAPPER}} .eael-contact-form' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
             ]
+<<<<<<< HEAD
+        );
+
+=======
+<<<<<<< HEAD
         );
 
         $this->add_responsive_control(
@@ -320,11 +659,31 @@ class WpForms extends Widget_Base
                 'label' => esc_html__('Form Padding', 'essential-addons-for-elementor-lite'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
+=======
+        );      
+        
+>>>>>>> yanzhou-li
+        $this->add_responsive_control(
+            'eael_contact_form_padding',
+            [
+                'label' => esc_html__('Form Padding', 'essential-addons-for-elementor-lite'),
+                'type' => Controls_Manager::DIMENSIONS,
+<<<<<<< HEAD
+                'size_units' => ['px', 'em', '%'],
+=======
+                'size_units' => [ 'px', 'em', '%' ],
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'selectors' => [
                     '{{WRAPPER}} .eael-contact-form' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
             ]
         );
+<<<<<<< HEAD
+
+
+=======
+<<<<<<< HEAD
 
 
         $this->add_control(
@@ -334,13 +693,39 @@ class WpForms extends Widget_Base
                 'type' => Controls_Manager::DIMENSIONS,
                 'separator' => 'before',
                 'size_units' => ['px'],
+=======
+        
+        
+>>>>>>> yanzhou-li
+        $this->add_control(
+            'eael_contact_form_border_radius',
+            [
+                'label' => esc_html__('Border Radius', 'essential-addons-for-elementor-lite'),
+                'type' => Controls_Manager::DIMENSIONS,
+                'separator' => 'before',
+<<<<<<< HEAD
+                'size_units' => ['px'],
+=======
+                'size_units' => [ 'px' ],
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'selectors' => [
                     '{{WRAPPER}} .eael-contact-form' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
             ]
         );
+<<<<<<< HEAD
 
 
+=======
+<<<<<<< HEAD
+
+
+=======
+        
+        
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
         $this->add_group_control(
             Group_Control_Border::get_type(),
             [
@@ -348,8 +733,18 @@ class WpForms extends Widget_Base
                 'selector' => '{{WRAPPER}} .eael-contact-form',
             ]
         );
+<<<<<<< HEAD
 
 
+=======
+<<<<<<< HEAD
+
+
+=======
+        
+        
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
         $this->add_group_control(
             Group_Control_Box_Shadow::get_type(),
             [
@@ -368,6 +763,10 @@ class WpForms extends Widget_Base
         $this->start_controls_section(
             'section_form_title_style',
             [
+<<<<<<< HEAD
+                'label'                 => __('Title & Description', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
                 'label'                 => __('Title & Description', 'essential-addons-for-elementor-lite'),
                 'tab'                   => Controls_Manager::TAB_STYLE,
             ]
@@ -389,6 +788,34 @@ class WpForms extends Widget_Base
                     ],
                     'right'     => [
                         'title' => __('Right', 'essential-addons-for-elementor-lite'),
+=======
+                'label'                 => __( 'Title & Description', 'essential-addons-for-elementor-lite'),
+>>>>>>> yanzhou-li
+                'tab'                   => Controls_Manager::TAB_STYLE,
+            ]
+        );
+
+        $this->add_responsive_control(
+            'heading_alignment',
+            [
+                'label'                 => __('Alignment', 'essential-addons-for-elementor-lite'),
+                'type'                  => Controls_Manager::CHOOSE,
+                'options'               => [
+                    'left'      => [
+                        'title' => __('Left', 'essential-addons-for-elementor-lite'),
+                        'icon'  => 'fa fa-align-left',
+                    ],
+                    'center'    => [
+                        'title' => __('Center', 'essential-addons-for-elementor-lite'),
+                        'icon'  => 'fa fa-align-center',
+                    ],
+                    'right'     => [
+<<<<<<< HEAD
+                        'title' => __('Right', 'essential-addons-for-elementor-lite'),
+=======
+                        'title' => __( 'Right', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                         'icon'  => 'fa fa-align-right',
                     ],
                 ],
@@ -398,11 +825,27 @@ class WpForms extends Widget_Base
                 ],
             ]
         );
+<<<<<<< HEAD
 
         $this->add_control(
             'title_heading',
             [
                 'label'                 => __('Title', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+
+        $this->add_control(
+            'title_heading',
+            [
+                'label'                 => __('Title', 'essential-addons-for-elementor-lite'),
+=======
+        
+        $this->add_control(
+            'title_heading',
+            [
+                'label'                 => __( 'Title', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'type'                  => Controls_Manager::HEADING,
                 'separator'             => 'before',
             ]
@@ -411,7 +854,15 @@ class WpForms extends Widget_Base
         $this->add_control(
             'form_title_text_color',
             [
+<<<<<<< HEAD
                 'label'                 => __('Text Color', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+                'label'                 => __('Text Color', 'essential-addons-for-elementor-lite'),
+=======
+                'label'                 => __( 'Text Color', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'type'                  => Controls_Manager::COLOR,
                 'default'               => '',
                 'selectors'             => [
@@ -419,11 +870,23 @@ class WpForms extends Widget_Base
                 ],
             ]
         );
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+        
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
         $this->add_group_control(
             Group_Control_Typography::get_type(),
             [
                 'name'                  => 'form_title_typography',
+<<<<<<< HEAD
+                'label'                 => __('Typography', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
                 'label'                 => __('Typography', 'essential-addons-for-elementor-lite'),
                 'selector'              => '{{WRAPPER}} .eael-contact-form-title, {{WRAPPER}} .wpforms-title',
             ]
@@ -435,6 +898,24 @@ class WpForms extends Widget_Base
                 'label'                 => __('Margin', 'essential-addons-for-elementor-lite'),
                 'type'                  => Controls_Manager::DIMENSIONS,
                 'size_units'            => ['px', 'em', '%'],
+=======
+                'label'                 => __( 'Typography', 'essential-addons-for-elementor-lite'),
+>>>>>>> yanzhou-li
+                'selector'              => '{{WRAPPER}} .eael-contact-form-title, {{WRAPPER}} .wpforms-title',
+            ]
+        );
+
+        $this->add_responsive_control(
+            'form_title_margin',
+            [
+                'label'                 => __('Margin', 'essential-addons-for-elementor-lite'),
+                'type'                  => Controls_Manager::DIMENSIONS,
+<<<<<<< HEAD
+                'size_units'            => ['px', 'em', '%'],
+=======
+                'size_units'            => [ 'px', 'em', '%' ],
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'allowed_dimensions'    => 'vertical',
                 'placeholder'           => [
                     'top'      => '',
@@ -447,11 +928,27 @@ class WpForms extends Widget_Base
                 ],
             ]
         );
+<<<<<<< HEAD
 
         $this->add_control(
             'description_heading',
             [
                 'label'                 => __('Description', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+
+        $this->add_control(
+            'description_heading',
+            [
+                'label'                 => __('Description', 'essential-addons-for-elementor-lite'),
+=======
+        
+        $this->add_control(
+            'description_heading',
+            [
+                'label'                 => __( 'Description', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'type'                  => Controls_Manager::HEADING,
                 'separator'             => 'before',
             ]
@@ -460,7 +957,15 @@ class WpForms extends Widget_Base
         $this->add_control(
             'form_description_text_color',
             [
+<<<<<<< HEAD
                 'label'                 => __('Text Color', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+                'label'                 => __('Text Color', 'essential-addons-for-elementor-lite'),
+=======
+                'label'                 => __( 'Text Color', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'type'                  => Controls_Manager::COLOR,
                 'default'               => '',
                 'selectors'             => [
@@ -468,16 +973,36 @@ class WpForms extends Widget_Base
                 ],
             ]
         );
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+        
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
         $this->add_group_control(
             Group_Control_Typography::get_type(),
             [
                 'name'                  => 'form_description_typography',
+<<<<<<< HEAD
                 'label'                 => __('Typography', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+                'label'                 => __('Typography', 'essential-addons-for-elementor-lite'),
+=======
+                'label'                 => __( 'Typography', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'scheme'                => Scheme_Typography::TYPOGRAPHY_4,
                 'selector'              => '{{WRAPPER}} .eael-contact-form-description, {{WRAPPER}} .wpforms-description',
             ]
         );
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
 
         $this->add_responsive_control(
             'form_description_margin',
@@ -485,6 +1010,20 @@ class WpForms extends Widget_Base
                 'label'                 => __('Margin', 'essential-addons-for-elementor-lite'),
                 'type'                  => Controls_Manager::DIMENSIONS,
                 'size_units'            => ['px', 'em', '%'],
+=======
+        
+>>>>>>> yanzhou-li
+        $this->add_responsive_control(
+            'form_description_margin',
+            [
+                'label'                 => __('Margin', 'essential-addons-for-elementor-lite'),
+                'type'                  => Controls_Manager::DIMENSIONS,
+<<<<<<< HEAD
+                'size_units'            => ['px', 'em', '%'],
+=======
+                'size_units'            => [ 'px', 'em', '%' ],
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'allowed_dimensions'    => 'vertical',
                 'placeholder'           => [
                     'top'      => '',
@@ -497,7 +1036,15 @@ class WpForms extends Widget_Base
                 ],
             ]
         );
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+        
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
         $this->end_controls_section();
 
         /**
@@ -507,6 +1054,10 @@ class WpForms extends Widget_Base
         $this->start_controls_section(
             'section_label_style',
             [
+<<<<<<< HEAD
+                'label'             => __('Labels', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
                 'label'             => __('Labels', 'essential-addons-for-elementor-lite'),
                 'tab'               => Controls_Manager::TAB_STYLE,
             ]
@@ -526,23 +1077,73 @@ class WpForms extends Widget_Base
             'text_color_label',
             [
                 'label'             => __('Text Color', 'essential-addons-for-elementor-lite'),
+=======
+                'label'             => __( 'Labels', 'essential-addons-for-elementor-lite'),
+>>>>>>> yanzhou-li
+                'tab'               => Controls_Manager::TAB_STYLE,
+            ]
+        );
+        $this->add_control(
+            'label_margin',
+            [
+                'label' => __('Margin', 'essential-addons-for-elementor-lite'),
+                'type' => Controls_Manager::DIMENSIONS,
+                'size_units' => ['px', '%', 'em'],
+                'selectors' => [
+                    '{{WRAPPER}} .eael-wpforms .wpforms-field label' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                ],
+            ]
+        );
+        $this->add_control(
+            'text_color_label',
+            [
+<<<<<<< HEAD
+                'label'             => __('Text Color', 'essential-addons-for-elementor-lite'),
+=======
+                'label'             => __( 'Text Color', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'type'              => Controls_Manager::COLOR,
                 'selectors'         => [
                     '{{WRAPPER}} .eael-wpforms .wpforms-field label' => 'color: {{VALUE}}',
                 ],
             ]
         );
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+        
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
         $this->add_group_control(
             Group_Control_Typography::get_type(),
             [
                 'name'              => 'typography_label',
+<<<<<<< HEAD
                 'label'             => __('Typography', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+                'label'             => __('Typography', 'essential-addons-for-elementor-lite'),
+=======
+                'label'             => __( 'Typography', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'scheme'            => Scheme_Typography::TYPOGRAPHY_4,
                 'selector'          => '{{WRAPPER}} .eael-wpforms .wpforms-field label',
             ]
         );
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+        
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
         $this->end_controls_section();
 
         /**
@@ -552,6 +1153,10 @@ class WpForms extends Widget_Base
         $this->start_controls_section(
             'section_fields_style',
             [
+<<<<<<< HEAD
+                'label'             => __('Input & Textarea', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
                 'label'             => __('Input & Textarea', 'essential-addons-for-elementor-lite'),
                 'tab'               => Controls_Manager::TAB_STYLE,
             ]
@@ -573,6 +1178,34 @@ class WpForms extends Widget_Base
                     ],
                     'right'     => [
                         'title' => __('Right', 'essential-addons-for-elementor-lite'),
+=======
+                'label'             => __( 'Input & Textarea', 'essential-addons-for-elementor-lite'),
+>>>>>>> yanzhou-li
+                'tab'               => Controls_Manager::TAB_STYLE,
+            ]
+        );
+
+        $this->add_responsive_control(
+            'input_alignment',
+            [
+                'label'                 => __('Alignment', 'essential-addons-for-elementor-lite'),
+                'type'                  => Controls_Manager::CHOOSE,
+                'options'               => [
+                    'left'      => [
+                        'title' => __('Left', 'essential-addons-for-elementor-lite'),
+                        'icon'  => 'fa fa-align-left',
+                    ],
+                    'center'    => [
+                        'title' => __('Center', 'essential-addons-for-elementor-lite'),
+                        'icon'  => 'fa fa-align-center',
+                    ],
+                    'right'     => [
+<<<<<<< HEAD
+                        'title' => __('Right', 'essential-addons-for-elementor-lite'),
+=======
+                        'title' => __( 'Right', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                         'icon'  => 'fa fa-align-right',
                     ],
                 ],
@@ -583,19 +1216,43 @@ class WpForms extends Widget_Base
             ]
         );
 
+<<<<<<< HEAD
         $this->start_controls_tabs('tabs_fields_style');
+=======
+<<<<<<< HEAD
+        $this->start_controls_tabs('tabs_fields_style');
+=======
+        $this->start_controls_tabs( 'tabs_fields_style' );
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
 
         $this->start_controls_tab(
             'tab_fields_normal',
             [
+<<<<<<< HEAD
                 'label'                 => __('Normal', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+                'label'                 => __('Normal', 'essential-addons-for-elementor-lite'),
+=======
+                'label'                 => __( 'Normal', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
             ]
         );
 
         $this->add_control(
             'field_bg_color',
             [
+<<<<<<< HEAD
                 'label'             => __('Background Color', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+                'label'             => __('Background Color', 'essential-addons-for-elementor-lite'),
+=======
+                'label'             => __( 'Background Color', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'type'              => Controls_Manager::COLOR,
                 'default'           => '',
                 'selectors'         => [
@@ -607,7 +1264,15 @@ class WpForms extends Widget_Base
         $this->add_control(
             'field_text_color',
             [
+<<<<<<< HEAD
                 'label'             => __('Text Color', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+                'label'             => __('Text Color', 'essential-addons-for-elementor-lite'),
+=======
+                'label'             => __( 'Text Color', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'type'              => Controls_Manager::COLOR,
                 'default'           => '',
                 'selectors'         => [
@@ -620,7 +1285,15 @@ class WpForms extends Widget_Base
             Group_Control_Border::get_type(),
             [
                 'name'              => 'field_border',
+<<<<<<< HEAD
                 'label'             => __('Border', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+                'label'             => __('Border', 'essential-addons-for-elementor-lite'),
+=======
+                'label'             => __( 'Border', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'placeholder'       => '1px',
                 'default'           => '1px',
                 'selector'          => '{{WRAPPER}} .eael-wpforms .wpforms-field input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]), {{WRAPPER}} .eael-wpforms .wpforms-field textarea, {{WRAPPER}} .eael-wpforms .wpforms-field select',
@@ -631,19 +1304,47 @@ class WpForms extends Widget_Base
         $this->add_control(
             'field_radius',
             [
+<<<<<<< HEAD
                 'label'             => __('Border Radius', 'essential-addons-for-elementor-lite'),
                 'type'              => Controls_Manager::DIMENSIONS,
                 'size_units'        => ['px', 'em', '%'],
+=======
+<<<<<<< HEAD
+                'label'             => __('Border Radius', 'essential-addons-for-elementor-lite'),
+                'type'              => Controls_Manager::DIMENSIONS,
+                'size_units'        => ['px', 'em', '%'],
+=======
+                'label'             => __( 'Border Radius', 'essential-addons-for-elementor-lite'),
+                'type'              => Controls_Manager::DIMENSIONS,
+                'size_units'        => [ 'px', 'em', '%' ],
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'selectors'         => [
                     '{{WRAPPER}} .eael-wpforms .wpforms-field input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]), {{WRAPPER}} .eael-wpforms .wpforms-field textarea, {{WRAPPER}} .eael-wpforms .wpforms-field select' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
             ]
         );
+<<<<<<< HEAD
 
         $this->add_responsive_control(
             'text_indent',
             [
                 'label'                 => __('Text Indent', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+
+        $this->add_responsive_control(
+            'text_indent',
+            [
+                'label'                 => __('Text Indent', 'essential-addons-for-elementor-lite'),
+=======
+        
+        $this->add_responsive_control(
+            'text_indent',
+            [
+                'label'                 => __( 'Text Indent', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'type'                  => Controls_Manager::SLIDER,
                 'range'                 => [
                     'px'        => [
@@ -657,18 +1358,42 @@ class WpForms extends Widget_Base
                         'step'  => 1,
                     ],
                 ],
+<<<<<<< HEAD
                 'size_units'            => ['px', 'em', '%'],
+=======
+<<<<<<< HEAD
+                'size_units'            => ['px', 'em', '%'],
+=======
+                'size_units'            => [ 'px', 'em', '%' ],
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'selectors'             => [
                     '{{WRAPPER}} .eael-wpforms .wpforms-field input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]), {{WRAPPER}} .eael-wpforms .wpforms-field textarea, {{WRAPPER}} .eael-wpforms .wpforms-field select' => 'text-indent: {{SIZE}}{{UNIT}}',
                 ],
                 'separator'         => 'before',
             ]
         );
+<<<<<<< HEAD
 
         $this->add_responsive_control(
             'input_width',
             [
                 'label'             => __('Input Width', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+
+        $this->add_responsive_control(
+            'input_width',
+            [
+                'label'             => __('Input Width', 'essential-addons-for-elementor-lite'),
+=======
+        
+        $this->add_responsive_control(
+            'input_width',
+            [
+                'label'             => __( 'Input Width', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'type'              => Controls_Manager::SLIDER,
                 'range'             => [
                     'px' => [
@@ -677,17 +1402,41 @@ class WpForms extends Widget_Base
                         'step'  => 1,
                     ],
                 ],
+<<<<<<< HEAD
                 'size_units'        => ['px', 'em', '%'],
+=======
+<<<<<<< HEAD
+                'size_units'        => ['px', 'em', '%'],
+=======
+                'size_units'        => [ 'px', 'em', '%' ],
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'selectors'         => [
                     '{{WRAPPER}} .eael-wpforms .wpforms-field input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]), {{WRAPPER}} .eael-wpforms .wpforms-field select' => 'width: {{SIZE}}{{UNIT}}',
                 ],
             ]
         );
+<<<<<<< HEAD
 
         $this->add_responsive_control(
             'input_height',
             [
                 'label'             => __('Input Height', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+
+        $this->add_responsive_control(
+            'input_height',
+            [
+                'label'             => __('Input Height', 'essential-addons-for-elementor-lite'),
+=======
+        
+        $this->add_responsive_control(
+            'input_height',
+            [
+                'label'             => __( 'Input Height', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'type'              => Controls_Manager::SLIDER,
                 'range'             => [
                     'px' => [
@@ -696,17 +1445,41 @@ class WpForms extends Widget_Base
                         'step'  => 1,
                     ],
                 ],
+<<<<<<< HEAD
                 'size_units'        => ['px', 'em', '%'],
+=======
+<<<<<<< HEAD
+                'size_units'        => ['px', 'em', '%'],
+=======
+                'size_units'        => [ 'px', 'em', '%' ],
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'selectors'         => [
                     '{{WRAPPER}} .eael-wpforms .wpforms-field input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]), {{WRAPPER}} .eael-wpforms .wpforms-field select' => 'height: {{SIZE}}{{UNIT}}',
                 ],
             ]
         );
+<<<<<<< HEAD
 
         $this->add_responsive_control(
             'textarea_width',
             [
                 'label'             => __('Textarea Width', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+
+        $this->add_responsive_control(
+            'textarea_width',
+            [
+                'label'             => __('Textarea Width', 'essential-addons-for-elementor-lite'),
+=======
+        
+        $this->add_responsive_control(
+            'textarea_width',
+            [
+                'label'             => __( 'Textarea Width', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'type'              => Controls_Manager::SLIDER,
                 'range'             => [
                     'px' => [
@@ -715,17 +1488,41 @@ class WpForms extends Widget_Base
                         'step'  => 1,
                     ],
                 ],
+<<<<<<< HEAD
                 'size_units'        => ['px', 'em', '%'],
+=======
+<<<<<<< HEAD
+                'size_units'        => ['px', 'em', '%'],
+=======
+                'size_units'        => [ 'px', 'em', '%' ],
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'selectors'         => [
                     '{{WRAPPER}} .eael-wpforms .wpforms-field textarea' => 'width: {{SIZE}}{{UNIT}}',
                 ],
             ]
         );
+<<<<<<< HEAD
 
         $this->add_responsive_control(
             'textarea_height',
             [
                 'label'             => __('Textarea Height', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+
+        $this->add_responsive_control(
+            'textarea_height',
+            [
+                'label'             => __('Textarea Height', 'essential-addons-for-elementor-lite'),
+=======
+        
+        $this->add_responsive_control(
+            'textarea_height',
+            [
+                'label'             => __( 'Textarea Height', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'type'              => Controls_Manager::SLIDER,
                 'range'             => [
                     'px' => [
@@ -734,7 +1531,15 @@ class WpForms extends Widget_Base
                         'step'  => 1,
                     ],
                 ],
+<<<<<<< HEAD
                 'size_units'        => ['px', 'em', '%'],
+=======
+<<<<<<< HEAD
+                'size_units'        => ['px', 'em', '%'],
+=======
+                'size_units'        => [ 'px', 'em', '%' ],
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'selectors'         => [
                     '{{WRAPPER}} .eael-wpforms .wpforms-field textarea' => 'height: {{SIZE}}{{UNIT}}',
                 ],
@@ -744,20 +1549,48 @@ class WpForms extends Widget_Base
         $this->add_responsive_control(
             'field_padding',
             [
+<<<<<<< HEAD
                 'label'             => __('Padding', 'essential-addons-for-elementor-lite'),
                 'type'              => Controls_Manager::DIMENSIONS,
                 'size_units'        => ['px', 'em', '%'],
+=======
+<<<<<<< HEAD
+                'label'             => __('Padding', 'essential-addons-for-elementor-lite'),
+                'type'              => Controls_Manager::DIMENSIONS,
+                'size_units'        => ['px', 'em', '%'],
+=======
+                'label'             => __( 'Padding', 'essential-addons-for-elementor-lite'),
+                'type'              => Controls_Manager::DIMENSIONS,
+                'size_units'        => [ 'px', 'em', '%' ],
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'selectors'         => [
                     '{{WRAPPER}} .eael-wpforms .wpforms-field input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]), {{WRAPPER}} .eael-wpforms .wpforms-field textarea, {{WRAPPER}} .eael-wpforms .wpforms-field select' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
                 'separator'         => 'before',
             ]
         );
+<<<<<<< HEAD
 
         $this->add_responsive_control(
             'field_spacing',
             [
                 'label'                 => __('Spacing', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+
+        $this->add_responsive_control(
+            'field_spacing',
+            [
+                'label'                 => __('Spacing', 'essential-addons-for-elementor-lite'),
+=======
+        
+        $this->add_responsive_control(
+            'field_spacing',
+            [
+                'label'                 => __( 'Spacing', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'type'                  => Controls_Manager::SLIDER,
                 'range'                 => [
                     'px'        => [
@@ -766,18 +1599,42 @@ class WpForms extends Widget_Base
                         'step'  => 1,
                     ],
                 ],
+<<<<<<< HEAD
                 'size_units'            => ['px', 'em', '%'],
+=======
+<<<<<<< HEAD
+                'size_units'            => ['px', 'em', '%'],
+=======
+                'size_units'            => [ 'px', 'em', '%' ],
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'selectors'             => [
                     '{{WRAPPER}} .eael-wpforms .wpforms-field' => 'margin-bottom: {{SIZE}}{{UNIT}}',
                 ],
             ]
         );
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+        
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
         $this->add_group_control(
             Group_Control_Typography::get_type(),
             [
                 'name'              => 'field_typography',
+<<<<<<< HEAD
                 'label'             => __('Typography', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+                'label'             => __('Typography', 'essential-addons-for-elementor-lite'),
+=======
+                'label'             => __( 'Typography', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'scheme'            => Scheme_Typography::TYPOGRAPHY_4,
                 'selector'          => '{{WRAPPER}} .eael-wpforms .wpforms-field input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]), {{WRAPPER}} .eael-wpforms .wpforms-field textarea, {{WRAPPER}} .eael-wpforms .wpforms-field select',
                 'separator'         => 'before',
@@ -798,7 +1655,15 @@ class WpForms extends Widget_Base
         $this->start_controls_tab(
             'tab_fields_focus',
             [
+<<<<<<< HEAD
                 'label'                 => __('Focus', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+                'label'                 => __('Focus', 'essential-addons-for-elementor-lite'),
+=======
+                'label'                 => __( 'Focus', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
             ]
         );
 
@@ -806,7 +1671,15 @@ class WpForms extends Widget_Base
             Group_Control_Border::get_type(),
             [
                 'name'              => 'focus_input_border',
+<<<<<<< HEAD
                 'label'             => __('Border', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+                'label'             => __('Border', 'essential-addons-for-elementor-lite'),
+=======
+                'label'             => __( 'Border', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'placeholder'       => '1px',
                 'default'           => '1px',
                 'selector'          => '{{WRAPPER}} .eael-wpforms .wpforms-field input:focus, {{WRAPPER}} .eael-wpforms .wpforms-field textarea:focus',
@@ -825,7 +1698,15 @@ class WpForms extends Widget_Base
         $this->end_controls_tab();
 
         $this->end_controls_tabs();
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+        
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
         $this->end_controls_section();
 
         /**
@@ -835,7 +1716,15 @@ class WpForms extends Widget_Base
         $this->start_controls_section(
             'section_field_description_style',
             [
+<<<<<<< HEAD
                 'label'                 => __('Field Description', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+                'label'                 => __('Field Description', 'essential-addons-for-elementor-lite'),
+=======
+                'label'                 => __( 'Field Description', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'tab'                   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -843,18 +1732,38 @@ class WpForms extends Widget_Base
         $this->add_control(
             'field_description_text_color',
             [
+<<<<<<< HEAD
                 'label'                 => __('Text Color', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+                'label'                 => __('Text Color', 'essential-addons-for-elementor-lite'),
+=======
+                'label'                 => __( 'Text Color', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'type'                  => Controls_Manager::COLOR,
                 'selectors'             => [
                     '{{WRAPPER}} .eael-wpforms .wpforms-field .wpforms-field-description, {{WRAPPER}} .eael-wpforms .wpforms-field .wpforms-field-sublabel' => 'color: {{VALUE}}',
                 ],
             ]
         );
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+        
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
         $this->add_group_control(
             Group_Control_Typography::get_type(),
             [
                 'name'                  => 'field_description_typography',
+<<<<<<< HEAD
+                'label'                 => __('Typography', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
                 'label'                 => __('Typography', 'essential-addons-for-elementor-lite'),
                 'selector'              => '{{WRAPPER}} .eael-wpforms .wpforms-field .wpforms-field-description, {{WRAPPER}} .eael-wpforms .wpforms-field .wpforms-field-sublabel',
             ]
@@ -864,6 +1773,22 @@ class WpForms extends Widget_Base
             'field_description_spacing',
             [
                 'label'                 => __('Spacing', 'essential-addons-for-elementor-lite'),
+=======
+                'label'                 => __( 'Typography', 'essential-addons-for-elementor-lite'),
+>>>>>>> yanzhou-li
+                'selector'              => '{{WRAPPER}} .eael-wpforms .wpforms-field .wpforms-field-description, {{WRAPPER}} .eael-wpforms .wpforms-field .wpforms-field-sublabel',
+            ]
+        );
+
+        $this->add_responsive_control(
+            'field_description_spacing',
+            [
+<<<<<<< HEAD
+                'label'                 => __('Spacing', 'essential-addons-for-elementor-lite'),
+=======
+                'label'                 => __( 'Spacing', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'type'                  => Controls_Manager::SLIDER,
                 'range'                 => [
                     'px'        => [
@@ -872,13 +1797,29 @@ class WpForms extends Widget_Base
                         'step'  => 1,
                     ],
                 ],
+<<<<<<< HEAD
                 'size_units'            => ['px', 'em', '%'],
+=======
+<<<<<<< HEAD
+                'size_units'            => ['px', 'em', '%'],
+=======
+                'size_units'            => [ 'px', 'em', '%' ],
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'selectors'             => [
                     '{{WRAPPER}} .eael-wpforms .wpforms-field .wpforms-field-description, {{WRAPPER}} .eael-wpforms .wpforms-field .wpforms-field-sublabel' => 'padding-top: {{SIZE}}{{UNIT}}',
                 ],
             ]
         );
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+        
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
         $this->end_controls_section();
 
         /**
@@ -888,7 +1829,15 @@ class WpForms extends Widget_Base
         $this->start_controls_section(
             'section_placeholder_style',
             [
+<<<<<<< HEAD
                 'label'             => __('Placeholder', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+                'label'             => __('Placeholder', 'essential-addons-for-elementor-lite'),
+=======
+                'label'             => __( 'Placeholder', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'tab'               => Controls_Manager::TAB_STYLE,
                 'condition'             => [
                     'placeholder_switch'   => 'yes',
@@ -899,7 +1848,15 @@ class WpForms extends Widget_Base
         $this->add_control(
             'text_color_placeholder',
             [
+<<<<<<< HEAD
                 'label'             => __('Text Color', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+                'label'             => __('Text Color', 'essential-addons-for-elementor-lite'),
+=======
+                'label'             => __( 'Text Color', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'type'              => Controls_Manager::COLOR,
                 'selectors'         => [
                     '{{WRAPPER}} .eael-wpforms .wpforms-field input::-webkit-input-placeholder, {{WRAPPER}} .eael-wpforms .wpforms-field textarea::-webkit-input-placeholder' => 'color: {{VALUE}}',
@@ -909,9 +1866,21 @@ class WpForms extends Widget_Base
                 ],
             ]
         );
+<<<<<<< HEAD
 
         $this->end_controls_section();
 
+=======
+<<<<<<< HEAD
+
+        $this->end_controls_section();
+
+=======
+        
+        $this->end_controls_section();
+        
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
         /**
          * Style Tab: Radio & Checkbox
          * -------------------------------------------------
@@ -919,6 +1888,10 @@ class WpForms extends Widget_Base
         $this->start_controls_section(
             'section_radio_checkbox_style',
             [
+<<<<<<< HEAD
+                'label'                 => __('Radio & Checkbox', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
                 'label'                 => __('Radio & Checkbox', 'essential-addons-for-elementor-lite'),
                 'tab'                   => Controls_Manager::TAB_STYLE,
             ]
@@ -939,6 +1912,33 @@ class WpForms extends Widget_Base
             'radio_checkbox_size',
             [
                 'label'                 => __('Size', 'essential-addons-for-elementor-lite'),
+=======
+                'label'                 => __( 'Radio & Checkbox', 'essential-addons-for-elementor-lite'),
+>>>>>>> yanzhou-li
+                'tab'                   => Controls_Manager::TAB_STYLE,
+            ]
+        );
+
+        $this->add_control(
+            'custom_radio_checkbox',
+            [
+                'label'                 => __('Custom Styles', 'essential-addons-for-elementor-lite'),
+                'type'                  => Controls_Manager::SWITCHER,
+                'label_on'              => __('Yes', 'essential-addons-for-elementor-lite'),
+                'label_off'             => __('No', 'essential-addons-for-elementor-lite'),
+                'return_value'          => 'yes',
+            ]
+        );
+
+        $this->add_responsive_control(
+            'radio_checkbox_size',
+            [
+<<<<<<< HEAD
+                'label'                 => __('Size', 'essential-addons-for-elementor-lite'),
+=======
+                'label'                 => __( 'Size', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'type'                  => Controls_Manager::SLIDER,
                 'default'               => [
                     'size'      => '15',
@@ -951,7 +1951,15 @@ class WpForms extends Widget_Base
                         'step'  => 1,
                     ],
                 ],
+<<<<<<< HEAD
                 'size_units'            => ['px', 'em', '%'],
+=======
+<<<<<<< HEAD
+                'size_units'            => ['px', 'em', '%'],
+=======
+                'size_units'            => [ 'px', 'em', '%' ],
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'selectors'             => [
                     '{{WRAPPER}} .eael-custom-radio-checkbox input[type="checkbox"], {{WRAPPER}} .eael-custom-radio-checkbox input[type="radio"]' => 'width: {{SIZE}}{{UNIT}} !important; height: {{SIZE}}{{UNIT}}',
                 ],
@@ -961,12 +1969,28 @@ class WpForms extends Widget_Base
             ]
         );
 
+<<<<<<< HEAD
         $this->start_controls_tabs('tabs_radio_checkbox_style');
+=======
+<<<<<<< HEAD
+        $this->start_controls_tabs('tabs_radio_checkbox_style');
+=======
+        $this->start_controls_tabs( 'tabs_radio_checkbox_style' );
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
 
         $this->start_controls_tab(
             'radio_checkbox_normal',
             [
+<<<<<<< HEAD
                 'label'                 => __('Normal', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+                'label'                 => __('Normal', 'essential-addons-for-elementor-lite'),
+=======
+                'label'                 => __( 'Normal', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'condition'             => [
                     'custom_radio_checkbox' => 'yes',
                 ],
@@ -976,7 +2000,15 @@ class WpForms extends Widget_Base
         $this->add_control(
             'radio_checkbox_color',
             [
+<<<<<<< HEAD
                 'label'                 => __('Color', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+                'label'                 => __('Color', 'essential-addons-for-elementor-lite'),
+=======
+                'label'                 => __( 'Color', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'type'                  => Controls_Manager::COLOR,
                 'default'               => '',
                 'selectors'             => [
@@ -987,11 +2019,27 @@ class WpForms extends Widget_Base
                 ],
             ]
         );
+<<<<<<< HEAD
 
         $this->add_responsive_control(
             'radio_checkbox_border_width',
             [
                 'label'                 => __('Border Width', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+
+        $this->add_responsive_control(
+            'radio_checkbox_border_width',
+            [
+                'label'                 => __('Border Width', 'essential-addons-for-elementor-lite'),
+=======
+        
+        $this->add_responsive_control(
+            'radio_checkbox_border_width',
+            [
+                'label'                 => __( 'Border Width', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'type'                  => Controls_Manager::SLIDER,
                 'range'                 => [
                     'px'        => [
@@ -1000,7 +2048,15 @@ class WpForms extends Widget_Base
                         'step'  => 1,
                     ],
                 ],
+<<<<<<< HEAD
                 'size_units'            => ['px'],
+=======
+<<<<<<< HEAD
+                'size_units'            => ['px'],
+=======
+                'size_units'            => [ 'px' ],
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'selectors'             => [
                     '{{WRAPPER}} .eael-custom-radio-checkbox input[type="checkbox"], {{WRAPPER}} .eael-custom-radio-checkbox input[type="radio"]' => 'border-width: {{SIZE}}{{UNIT}}',
                 ],
@@ -1013,7 +2069,15 @@ class WpForms extends Widget_Base
         $this->add_control(
             'radio_checkbox_border_color',
             [
+<<<<<<< HEAD
                 'label'                 => __('Border Color', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+                'label'                 => __('Border Color', 'essential-addons-for-elementor-lite'),
+=======
+                'label'                 => __( 'Border Color', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'type'                  => Controls_Manager::COLOR,
                 'default'               => '',
                 'selectors'             => [
@@ -1024,11 +2088,27 @@ class WpForms extends Widget_Base
                 ],
             ]
         );
+<<<<<<< HEAD
 
         $this->add_control(
             'checkbox_heading',
             [
                 'label'                 => __('Checkbox', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+
+        $this->add_control(
+            'checkbox_heading',
+            [
+                'label'                 => __('Checkbox', 'essential-addons-for-elementor-lite'),
+=======
+        
+        $this->add_control(
+            'checkbox_heading',
+            [
+                'label'                 => __( 'Checkbox', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'type'                  => Controls_Manager::HEADING,
                 'condition'             => [
                     'custom_radio_checkbox' => 'yes',
@@ -1039,9 +2119,21 @@ class WpForms extends Widget_Base
         $this->add_control(
             'checkbox_border_radius',
             [
+<<<<<<< HEAD
                 'label'                 => __('Border Radius', 'essential-addons-for-elementor-lite'),
                 'type'                  => Controls_Manager::DIMENSIONS,
                 'size_units'            => ['px', 'em', '%'],
+=======
+<<<<<<< HEAD
+                'label'                 => __('Border Radius', 'essential-addons-for-elementor-lite'),
+                'type'                  => Controls_Manager::DIMENSIONS,
+                'size_units'            => ['px', 'em', '%'],
+=======
+                'label'                 => __( 'Border Radius', 'essential-addons-for-elementor-lite'),
+                'type'                  => Controls_Manager::DIMENSIONS,
+                'size_units'            => [ 'px', 'em', '%' ],
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'selectors'             => [
                     '{{WRAPPER}} .eael-custom-radio-checkbox input[type="checkbox"], {{WRAPPER}} .eael-custom-radio-checkbox input[type="checkbox"]:before' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
@@ -1050,11 +2142,27 @@ class WpForms extends Widget_Base
                 ],
             ]
         );
+<<<<<<< HEAD
 
         $this->add_control(
             'radio_heading',
             [
                 'label'                 => __('Radio Buttons', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+
+        $this->add_control(
+            'radio_heading',
+            [
+                'label'                 => __('Radio Buttons', 'essential-addons-for-elementor-lite'),
+=======
+        
+        $this->add_control(
+            'radio_heading',
+            [
+                'label'                 => __( 'Radio Buttons', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'type'                  => Controls_Manager::HEADING,
                 'condition'             => [
                     'custom_radio_checkbox' => 'yes',
@@ -1065,9 +2173,21 @@ class WpForms extends Widget_Base
         $this->add_control(
             'radio_border_radius',
             [
+<<<<<<< HEAD
                 'label'                 => __('Border Radius', 'essential-addons-for-elementor-lite'),
                 'type'                  => Controls_Manager::DIMENSIONS,
                 'size_units'            => ['px', 'em', '%'],
+=======
+<<<<<<< HEAD
+                'label'                 => __('Border Radius', 'essential-addons-for-elementor-lite'),
+                'type'                  => Controls_Manager::DIMENSIONS,
+                'size_units'            => ['px', 'em', '%'],
+=======
+                'label'                 => __( 'Border Radius', 'essential-addons-for-elementor-lite'),
+                'type'                  => Controls_Manager::DIMENSIONS,
+                'size_units'            => [ 'px', 'em', '%' ],
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'selectors'             => [
                     '{{WRAPPER}} .eael-custom-radio-checkbox input[type="radio"], {{WRAPPER}} .eael-custom-radio-checkbox input[type="radio"]:before' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
@@ -1082,7 +2202,15 @@ class WpForms extends Widget_Base
         $this->start_controls_tab(
             'radio_checkbox_checked',
             [
+<<<<<<< HEAD
                 'label'                 => __('Checked', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+                'label'                 => __('Checked', 'essential-addons-for-elementor-lite'),
+=======
+                'label'                 => __( 'Checked', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'condition'             => [
                     'custom_radio_checkbox' => 'yes',
                 ],
@@ -1092,7 +2220,15 @@ class WpForms extends Widget_Base
         $this->add_control(
             'radio_checkbox_color_checked',
             [
+<<<<<<< HEAD
                 'label'                 => __('Color', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+                'label'                 => __('Color', 'essential-addons-for-elementor-lite'),
+=======
+                'label'                 => __( 'Color', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'type'                  => Controls_Manager::COLOR,
                 'default'               => '',
                 'selectors'             => [
@@ -1107,7 +2243,15 @@ class WpForms extends Widget_Base
         $this->end_controls_tab();
 
         $this->end_controls_tabs();
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+        
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
         $this->end_controls_section();
 
         /**
@@ -1117,6 +2261,10 @@ class WpForms extends Widget_Base
         $this->start_controls_section(
             'section_submit_button_style',
             [
+<<<<<<< HEAD
+                'label'             => __('Submit Button', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
                 'label'             => __('Submit Button', 'essential-addons-for-elementor-lite'),
                 'tab'               => Controls_Manager::TAB_STYLE,
             ]
@@ -1138,6 +2286,34 @@ class WpForms extends Widget_Base
                     ],
                     'right'       => [
                         'title'   => __('Right', 'essential-addons-for-elementor-lite'),
+=======
+                'label'             => __( 'Submit Button', 'essential-addons-for-elementor-lite'),
+>>>>>>> yanzhou-li
+                'tab'               => Controls_Manager::TAB_STYLE,
+            ]
+        );
+
+        $this->add_responsive_control(
+            'button_align',
+            [
+                'label'             => __('Alignment', 'essential-addons-for-elementor-lite'),
+                'type'              => Controls_Manager::CHOOSE,
+                'options'           => [
+                    'left'        => [
+                        'title'   => __('Left', 'essential-addons-for-elementor-lite'),
+                        'icon'    => 'eicon-h-align-left',
+                    ],
+                    'center'      => [
+                        'title'   => __('Center', 'essential-addons-for-elementor-lite'),
+                        'icon'    => 'eicon-h-align-center',
+                    ],
+                    'right'       => [
+<<<<<<< HEAD
+                        'title'   => __('Right', 'essential-addons-for-elementor-lite'),
+=======
+                        'title'   => __( 'Right', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                         'icon'    => 'eicon-h-align-right',
                     ],
                 ],
@@ -1151,6 +2327,10 @@ class WpForms extends Widget_Base
                 ],
             ]
         );
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
 
         $this->add_control(
             'button_width_type',
@@ -1161,15 +2341,49 @@ class WpForms extends Widget_Base
                 'options'               => [
                     'full-width'    => __('Full Width', 'essential-addons-for-elementor-lite'),
                     'custom'        => __('Custom', 'essential-addons-for-elementor-lite'),
+=======
+        
+>>>>>>> yanzhou-li
+        $this->add_control(
+            'button_width_type',
+            [
+                'label'                 => __('Width', 'essential-addons-for-elementor-lite'),
+                'type'                  => Controls_Manager::SELECT,
+                'default'               => 'custom',
+                'options'               => [
+<<<<<<< HEAD
+                    'full-width'    => __('Full Width', 'essential-addons-for-elementor-lite'),
+                    'custom'        => __('Custom', 'essential-addons-for-elementor-lite'),
+=======
+                    'full-width'    => __( 'Full Width', 'essential-addons-for-elementor-lite'),
+                    'custom'        => __( 'Custom', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 ],
                 'prefix_class'          => 'eael-wpforms-form-button-',
             ]
         );
+<<<<<<< HEAD
 
         $this->add_responsive_control(
             'button_width',
             [
                 'label'                 => __('Width', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+
+        $this->add_responsive_control(
+            'button_width',
+            [
+                'label'                 => __('Width', 'essential-addons-for-elementor-lite'),
+=======
+        
+        $this->add_responsive_control(
+            'button_width',
+            [
+                'label'                 => __( 'Width', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'type'                  => Controls_Manager::SLIDER,
                 'range'                 => [
                     'px'        => [
@@ -1178,7 +2392,15 @@ class WpForms extends Widget_Base
                         'step'  => 1,
                     ],
                 ],
+<<<<<<< HEAD
                 'size_units'            => ['px', '%'],
+=======
+<<<<<<< HEAD
+                'size_units'            => ['px', '%'],
+=======
+                'size_units'            => [ 'px', '%' ],
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'selectors'             => [
                     '{{WRAPPER}} .eael-wpforms .wpforms-submit-container .wpforms-submit' => 'width: {{SIZE}}{{UNIT}}',
                 ],
@@ -1188,19 +2410,43 @@ class WpForms extends Widget_Base
             ]
         );
 
+<<<<<<< HEAD
         $this->start_controls_tabs('tabs_button_style');
+=======
+<<<<<<< HEAD
+        $this->start_controls_tabs('tabs_button_style');
+=======
+        $this->start_controls_tabs( 'tabs_button_style' );
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
 
         $this->start_controls_tab(
             'tab_button_normal',
             [
+<<<<<<< HEAD
                 'label'             => __('Normal', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+                'label'             => __('Normal', 'essential-addons-for-elementor-lite'),
+=======
+                'label'             => __( 'Normal', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
             ]
         );
 
         $this->add_control(
             'button_bg_color_normal',
             [
+<<<<<<< HEAD
                 'label'             => __('Background Color', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+                'label'             => __('Background Color', 'essential-addons-for-elementor-lite'),
+=======
+                'label'             => __( 'Background Color', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'type'              => Controls_Manager::COLOR,
                 'default'           => '',
                 'selectors'         => [
@@ -1212,7 +2458,15 @@ class WpForms extends Widget_Base
         $this->add_control(
             'button_text_color_normal',
             [
+<<<<<<< HEAD
                 'label'             => __('Text Color', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+                'label'             => __('Text Color', 'essential-addons-for-elementor-lite'),
+=======
+                'label'             => __( 'Text Color', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'type'              => Controls_Manager::COLOR,
                 'default'           => '',
                 'selectors'         => [
@@ -1225,7 +2479,15 @@ class WpForms extends Widget_Base
             Group_Control_Border::get_type(),
             [
                 'name'              => 'button_border_normal',
+<<<<<<< HEAD
                 'label'             => __('Border', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+                'label'             => __('Border', 'essential-addons-for-elementor-lite'),
+=======
+                'label'             => __( 'Border', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'placeholder'       => '1px',
                 'default'           => '1px',
                 'selector'          => '{{WRAPPER}} .eael-wpforms .wpforms-submit-container .wpforms-submit',
@@ -1235,9 +2497,21 @@ class WpForms extends Widget_Base
         $this->add_control(
             'button_border_radius',
             [
+<<<<<<< HEAD
                 'label'             => __('Border Radius', 'essential-addons-for-elementor-lite'),
                 'type'              => Controls_Manager::DIMENSIONS,
                 'size_units'        => ['px', 'em', '%'],
+=======
+<<<<<<< HEAD
+                'label'             => __('Border Radius', 'essential-addons-for-elementor-lite'),
+                'type'              => Controls_Manager::DIMENSIONS,
+                'size_units'        => ['px', 'em', '%'],
+=======
+                'label'             => __( 'Border Radius', 'essential-addons-for-elementor-lite'),
+                'type'              => Controls_Manager::DIMENSIONS,
+                'size_units'        => [ 'px', 'em', '%' ],
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'selectors'         => [
                     '{{WRAPPER}} .eael-wpforms .wpforms-submit-container .wpforms-submit' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
@@ -1247,19 +2521,47 @@ class WpForms extends Widget_Base
         $this->add_responsive_control(
             'button_padding',
             [
+<<<<<<< HEAD
                 'label'             => __('Padding', 'essential-addons-for-elementor-lite'),
                 'type'              => Controls_Manager::DIMENSIONS,
                 'size_units'        => ['px', 'em', '%'],
+=======
+<<<<<<< HEAD
+                'label'             => __('Padding', 'essential-addons-for-elementor-lite'),
+                'type'              => Controls_Manager::DIMENSIONS,
+                'size_units'        => ['px', 'em', '%'],
+=======
+                'label'             => __( 'Padding', 'essential-addons-for-elementor-lite'),
+                'type'              => Controls_Manager::DIMENSIONS,
+                'size_units'        => [ 'px', 'em', '%' ],
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'selectors'         => [
                     '{{WRAPPER}} .eael-wpforms .wpforms-submit-container .wpforms-submit' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
             ]
         );
+<<<<<<< HEAD
 
         $this->add_responsive_control(
             'button_margin',
             [
                 'label'                 => __('Margin Top', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+
+        $this->add_responsive_control(
+            'button_margin',
+            [
+                'label'                 => __('Margin Top', 'essential-addons-for-elementor-lite'),
+=======
+        
+        $this->add_responsive_control(
+            'button_margin',
+            [
+                'label'                 => __( 'Margin Top', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'type'                  => Controls_Manager::SLIDER,
                 'range'                 => [
                     'px'        => [
@@ -1268,18 +2570,42 @@ class WpForms extends Widget_Base
                         'step'  => 1,
                     ],
                 ],
+<<<<<<< HEAD
                 'size_units'            => ['px', 'em', '%'],
+=======
+<<<<<<< HEAD
+                'size_units'            => ['px', 'em', '%'],
+=======
+                'size_units'            => [ 'px', 'em', '%' ],
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'selectors'             => [
                     '{{WRAPPER}} .eael-wpforms .wpforms-submit-container' => 'margin-top: {{SIZE}}{{UNIT}}',
                 ],
             ]
         );
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+        
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
         $this->add_group_control(
             Group_Control_Typography::get_type(),
             [
                 'name'              => 'button_typography',
+<<<<<<< HEAD
                 'label'             => __('Typography', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+                'label'             => __('Typography', 'essential-addons-for-elementor-lite'),
+=======
+                'label'             => __( 'Typography', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'scheme'            => Scheme_Typography::TYPOGRAPHY_4,
                 'selector'          => '{{WRAPPER}} .eael-wpforms .wpforms-submit-container .wpforms-submit',
                 'separator'         => 'before',
@@ -1294,20 +2620,44 @@ class WpForms extends Widget_Base
                 'separator'         => 'before',
             ]
         );
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+        
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
         $this->end_controls_tab();
 
         $this->start_controls_tab(
             'tab_button_hover',
             [
+<<<<<<< HEAD
                 'label'             => __('Hover', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+                'label'             => __('Hover', 'essential-addons-for-elementor-lite'),
+=======
+                'label'             => __( 'Hover', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
             ]
         );
 
         $this->add_control(
             'button_bg_color_hover',
             [
+<<<<<<< HEAD
                 'label'             => __('Background Color', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+                'label'             => __('Background Color', 'essential-addons-for-elementor-lite'),
+=======
+                'label'             => __( 'Background Color', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'type'              => Controls_Manager::COLOR,
                 'default'           => '',
                 'selectors'         => [
@@ -1319,7 +2669,15 @@ class WpForms extends Widget_Base
         $this->add_control(
             'button_text_color_hover',
             [
+<<<<<<< HEAD
                 'label'             => __('Text Color', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+                'label'             => __('Text Color', 'essential-addons-for-elementor-lite'),
+=======
+                'label'             => __( 'Text Color', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'type'              => Controls_Manager::COLOR,
                 'default'           => '',
                 'selectors'         => [
@@ -1331,7 +2689,15 @@ class WpForms extends Widget_Base
         $this->add_control(
             'button_border_color_hover',
             [
+<<<<<<< HEAD
                 'label'             => __('Border Color', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+                'label'             => __('Border Color', 'essential-addons-for-elementor-lite'),
+=======
+                'label'             => __( 'Border Color', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'type'              => Controls_Manager::COLOR,
                 'default'           => '',
                 'selectors'         => [
@@ -1339,11 +2705,27 @@ class WpForms extends Widget_Base
                 ],
             ]
         );
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
 
         $this->end_controls_tab();
 
         $this->end_controls_tabs();
 
+=======
+        
+>>>>>>> yanzhou-li
+        $this->end_controls_tab();
+
+        $this->end_controls_tabs();
+<<<<<<< HEAD
+
+=======
+        
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
         $this->end_controls_section();
 
         /**
@@ -1353,7 +2735,15 @@ class WpForms extends Widget_Base
         $this->start_controls_section(
             'section_error_style',
             [
+<<<<<<< HEAD
                 'label'                 => __('Errors', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+                'label'                 => __('Errors', 'essential-addons-for-elementor-lite'),
+=======
+                'label'                 => __( 'Errors', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'tab'                   => Controls_Manager::TAB_STYLE,
                 'condition'             => [
                     'error_messages' => 'show',
@@ -1364,7 +2754,15 @@ class WpForms extends Widget_Base
         $this->add_control(
             'error_message_text_color',
             [
+<<<<<<< HEAD
                 'label'                 => __('Text Color', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+                'label'                 => __('Text Color', 'essential-addons-for-elementor-lite'),
+=======
+                'label'                 => __( 'Text Color', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'type'                  => Controls_Manager::COLOR,
                 'default'               => '',
                 'selectors'             => [
@@ -1379,7 +2777,15 @@ class WpForms extends Widget_Base
         $this->add_control(
             'error_field_input_border_color',
             [
+<<<<<<< HEAD
                 'label'                 => __('Error Field Input Border Color', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+                'label'                 => __('Error Field Input Border Color', 'essential-addons-for-elementor-lite'),
+=======
+                'label'                 => __( 'Error Field Input Border Color', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'type'                  => Controls_Manager::COLOR,
                 'default'               => '',
                 'selectors'             => [
@@ -1394,7 +2800,15 @@ class WpForms extends Widget_Base
         $this->add_control(
             'error_field_input_border_width',
             [
+<<<<<<< HEAD
                 'label'                 => __('Error Field Input Border Width', 'essential-addons-for-elementor-lite'),
+=======
+<<<<<<< HEAD
+                'label'                 => __('Error Field Input Border Width', 'essential-addons-for-elementor-lite'),
+=======
+                'label'                 => __( 'Error Field Input Border Width', 'essential-addons-for-elementor-lite'),
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                 'type'                  => Controls_Manager::NUMBER,
                 'default'               => 1,
                 'min'                   => 1,
@@ -1408,6 +2822,7 @@ class WpForms extends Widget_Base
                 ],
             ]
         );
+<<<<<<< HEAD
 
         $this->end_controls_section();
     }
@@ -1415,10 +2830,32 @@ class WpForms extends Widget_Base
     protected function render()
     {
         if (!class_exists('\WPForms\WPForms')) {
+=======
+<<<<<<< HEAD
+
+        $this->end_controls_section();
+    }
+
+    protected function render()
+    {
+        if (!class_exists('\WPForms\WPForms')) {
+=======
+        
+        $this->end_controls_section();
+    }
+
+    protected function render() {
+        if (! class_exists( '\WPForms\WPForms' ) ) {
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
             return;
         }
 
         $settings = $this->get_settings();
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> yanzhou-li
 
         $this->add_render_attribute('contact-form', 'class', [
             'eael-contact-form',
@@ -1427,6 +2864,8 @@ class WpForms extends Widget_Base
 
         if ($settings['placeholder_switch'] != 'yes') {
             $this->add_render_attribute('contact-form', 'class', 'placeholder-hide');
+<<<<<<< HEAD
+=======
         }
 
         if ($settings['custom_title_description'] == 'yes') {
@@ -1458,11 +2897,74 @@ class WpForms extends Widget_Base
                         <?php if ($settings['form_description_custom'] != '') { ?>
                             <div class="eael-contact-form-description eael-wpforms-description">
                                 <?php echo $this->parse_text_editor($settings['form_description_custom']); ?>
+=======
+        
+        $this->add_render_attribute( 'contact-form', 'class', [
+                'eael-contact-form',
+                'eael-wpforms',
+            ]
+        );
+        
+        if ( $settings['placeholder_switch'] != 'yes' ) {
+            $this->add_render_attribute( 'contact-form', 'class', 'placeholder-hide' );
+        }
+        
+        if ( $settings['custom_title_description'] == 'yes' ) {
+            $this->add_render_attribute( 'contact-form', 'class', 'title-description-hide' );
+        }
+        
+        if ( $settings['custom_radio_checkbox'] == 'yes' ) {
+            $this->add_render_attribute( 'contact-form', 'class', 'eael-custom-radio-checkbox' );
+        }
+        if ( $settings['eael_contact_form_alignment'] == 'left' ) {
+            $this->add_render_attribute( 'contact-form', 'class', 'eael-contact-form-align-left' );
+>>>>>>> yanzhou-li
+        }
+
+        if ($settings['custom_title_description'] == 'yes') {
+            $this->add_render_attribute('contact-form', 'class', 'title-description-hide');
+        }
+
+        if ($settings['custom_radio_checkbox'] == 'yes') {
+            $this->add_render_attribute('contact-form', 'class', 'eael-custom-radio-checkbox');
+        }
+        if ($settings['eael_contact_form_alignment'] == 'left') {
+            $this->add_render_attribute('contact-form', 'class', 'eael-contact-form-align-left');
+        } elseif ($settings['eael_contact_form_alignment'] == 'center') {
+            $this->add_render_attribute('contact-form', 'class', 'eael-contact-form-align-center');
+        } elseif ($settings['eael_contact_form_alignment'] == 'right') {
+            $this->add_render_attribute('contact-form', 'class', 'eael-contact-form-align-right');
+        } else {
+            $this->add_render_attribute('contact-form', 'class', 'eael-contact-form-align-default');
+        }
+
+        if (!empty($settings['contact_form_list'])) { ?>
+            <div <?php echo $this->get_render_attribute_string('contact-form'); ?>>
+                <?php if ($settings['custom_title_description'] == 'yes') { ?>
+                    <div class="eael-wpforms-heading">
+                        <?php if ($settings['form_title_custom'] != '') { ?>
+                            <h3 class="eael-contact-form-title eael-wpforms-title">
+                                <?php echo esc_attr($settings['form_title_custom']); ?>
+                            </h3>
+                        <?php } ?>
+                        <?php if ($settings['form_description_custom'] != '') { ?>
+                            <div class="eael-contact-form-description eael-wpforms-description">
+<<<<<<< HEAD
+                                <?php echo $this->parse_text_editor($settings['form_description_custom']); ?>
+=======
+                                <?php echo $this->parse_text_editor( $settings['form_description_custom'] ); ?>
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
                             </div>
                         <?php } ?>
                     </div>
                 <?php } ?>
                 <?php
+<<<<<<< HEAD
+                $eael_form_title = $settings['form_title'];
+                $eael_form_description = $settings['form_description'];
+=======
+<<<<<<< HEAD
                 $eael_form_title = $settings['form_title'];
                 $eael_form_description = $settings['form_description'];
 
@@ -1478,3 +2980,26 @@ class WpForms extends Widget_Base
         }
     }
 }
+=======
+                    $eael_form_title = $settings['form_title'];
+                    $eael_form_description = $settings['form_description'];
+>>>>>>> yanzhou-li
+
+                if ($settings['custom_title_description'] == 'yes') {
+                    $eael_form_title = false;
+                    $eael_form_description = false;
+                }
+
+                echo wpforms_display($settings['contact_form_list'], $eael_form_title, $eael_form_description);
+                ?>
+            </div>
+<?php
+        }
+    }
+<<<<<<< HEAD
+}
+=======
+
+}
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li

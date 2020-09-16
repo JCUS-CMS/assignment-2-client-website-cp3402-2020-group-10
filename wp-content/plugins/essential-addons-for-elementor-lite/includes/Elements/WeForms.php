@@ -1,5 +1,12 @@
 <?php
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
 namespace Essential_Addons_Elementor\Elements;
 
 // If this file is called directly, abort.
@@ -39,8 +46,17 @@ class WeForms extends Widget_Base
         return ['essential-addons-elementor'];
     }
 
+<<<<<<< HEAD
     public function get_keywords()
     {
+=======
+<<<<<<< HEAD
+    public function get_keywords()
+    {
+=======
+    public function get_keywords() {
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
         return [
             'contact form',
             'ea contact form',
@@ -56,15 +72,32 @@ class WeForms extends Widget_Base
         ];
     }
 
+<<<<<<< HEAD
     public function get_custom_help_url()
     {
+=======
+<<<<<<< HEAD
+    public function get_custom_help_url()
+    {
+=======
+    public function get_custom_help_url() {
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
         return 'https://essential-addons.com/elementor/docs/weforms/';
     }
 
     protected function _register_controls()
     {
 
+<<<<<<< HEAD
         if (!function_exists('WeForms')) {
+=======
+<<<<<<< HEAD
+        if (!function_exists('WeForms')) {
+=======
+        if(!function_exists('WeForms')) {
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
             $this->start_controls_section(
                 'eael_global_warning',
                 [
@@ -371,6 +404,10 @@ class WeForms extends Widget_Base
             ]
         );
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> yanzhou-li
         $this->add_responsive_control(
             'eael_weform_input_margin',
             [
@@ -389,6 +426,11 @@ class WeForms extends Widget_Base
             ]
         );
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
         $this->add_control(
             'eael_weform_input_border_radius',
             [
@@ -476,6 +518,10 @@ class WeForms extends Widget_Base
             ]
         );
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> yanzhou-li
         $this->add_control(
             'eael_weform_label_style_heading',
             [
@@ -498,6 +544,11 @@ class WeForms extends Widget_Base
         );
 
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
         $this->end_controls_section();
 
         $this->start_controls_section(
@@ -783,13 +834,32 @@ class WeForms extends Widget_Base
         );
 
         $this->end_controls_section();
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
     }
 
     protected function render()
     {
+<<<<<<< HEAD
         if (!function_exists('WeForms')) {
             return;
         }
+=======
+<<<<<<< HEAD
+        if (!function_exists('WeForms')) {
+            return;
+        }
+=======
+		if(!function_exists('WeForms')) {
+			return;
+		}
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
 
         $settings = $this->get_settings();
 
@@ -798,5 +868,12 @@ class WeForms extends Widget_Base
 			' . do_shortcode('[weforms id="' . $settings['wpuf_contact_form'] . '" ]') . '
 		</div>';
         }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
     }
 }

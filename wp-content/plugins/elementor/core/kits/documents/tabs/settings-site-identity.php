@@ -93,6 +93,10 @@ class Settings_Site_Identity extends Tab_Base {
 	}
 
 	public function on_save( $data ) {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> yanzhou-li
 		if (
 			! isset( $data['settings'] ) ||
 			DB::STATUS_PUBLISH !== $data['settings']['post_status'] ||
@@ -100,9 +104,20 @@ class Settings_Site_Identity extends Tab_Base {
 			// when updating options like: "blogname" and "blogdescription".
 			strpos( current_action(), 'update_option_' ) === 0
 		) {
+<<<<<<< HEAD
 			return;
 		}
 
+=======
+			return;
+		}
+
+=======
+		if ( ! isset( $data['settings'] ) || DB::STATUS_PUBLISH !== $data['settings']['post_status'] ) {
+			return;
+		}
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
 		if ( isset( $data['settings']['site_name'] ) ) {
 			update_option( 'blogname', $data['settings']['site_name'] );
 		}

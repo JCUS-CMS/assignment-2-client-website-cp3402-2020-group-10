@@ -359,7 +359,14 @@ a.eael-gallery-load-more, a.eael-gallery-load-more:hover {
   margin-right: calc(20px/2);
   margin-bottom: 20px;
   position: relative;
+<<<<<<< HEAD
   overflow: hidden;
+=======
+<<<<<<< HEAD
+  overflow: hidden;
+=======
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
 }
 
 .gallery-item-caption-wrap,

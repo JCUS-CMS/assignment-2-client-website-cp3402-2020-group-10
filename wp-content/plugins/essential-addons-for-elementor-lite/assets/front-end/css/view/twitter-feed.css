@@ -28,6 +28,10 @@
 .eael-twitter-feed-item .eael-twitter-feed-item-inner {
   background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> yanzhou-li
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -43,6 +47,11 @@
 
 .eael-twitter-feed-item .eael-twitter-feed-item-inner .eael-twitter-feed-item-avatar.avatar-circle img {
   border-radius: 50%;
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
 }
 
 .eael-twitter-feed-item a {
@@ -71,7 +80,15 @@
 }
 
 .eael-twitter-feed-item .eael-twitter-feed-item-header .eael-twitter-feed-item-avatar img {
+<<<<<<< HEAD
   max-width: initial;
+=======
+<<<<<<< HEAD
+  max-width: initial;
+=======
+  max-width: 100%;
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
@@ -117,6 +134,10 @@
   -webkit-box-orient: vertical;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> yanzhou-li
 .eael-twitter-feed-item-style-three .eael-twitter-feed-item-inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -134,11 +155,20 @@
   margin-top: 5px;
 }
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
 .eael-twitter-feed.swiper-container .swiper-button-next,
 .eael-twitter-feed.swiper-container .swiper-button-prev {
   background-image: none;
   outline: none;
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> yanzhou-li
 
 .eael-twitter-feed-carousel.swiper-container-flip .swiper-slide:not(.swiper-slide-active) {
   opacity: 0 !important;
@@ -159,3 +189,8 @@
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li

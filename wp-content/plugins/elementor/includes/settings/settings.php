@@ -592,6 +592,10 @@ class Settings extends Settings_Page {
 
 		$clear_cache_callback = [ Plugin::$instance->files_manager, 'clear_cache' ];
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> yanzhou-li
 		// Clear CSS Meta after change css related methods.
 		$css_settings = [
 			'elementor_disable_color_schemes',
@@ -604,6 +608,16 @@ class Settings extends Settings_Page {
 			add_action( "add_option_{$option_name}", $clear_cache_callback );
 			add_action( "update_option_{$option_name}", $clear_cache_callback );
 		}
+<<<<<<< HEAD
+=======
+=======
+		// Clear CSS Meta after change print method.
+		add_action( 'add_option_elementor_css_print_method', $clear_cache_callback );
+		add_action( 'update_option_elementor_css_print_method', $clear_cache_callback );
+		add_action( 'add_option_elementor_optimized_dom_output', $clear_cache_callback );
+		add_action( 'update_option_elementor_optimized_dom_output', $clear_cache_callback );
+>>>>>>> origin/KyungYul-Noh
+>>>>>>> yanzhou-li
 
 		add_filter( 'custom_menu_order', '__return_true' );
 		add_filter( 'menu_order', [ $this, 'menu_order' ] );
