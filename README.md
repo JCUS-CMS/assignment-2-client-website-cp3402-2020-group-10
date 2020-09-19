@@ -55,9 +55,9 @@ The MASTER branch should not be touched in any unfinished situation.
 To make changes, please create a new branch. 
 
 After passing the inspection, merge with the MASTER branch.
-#
+# 
 
-#3. Create a new post/page
+# 3. Create a new post/page
 
 Go wordpress Dashboard
 
@@ -76,8 +76,8 @@ When you have done your edition
 Click Upload.
 
 
-#
-#4. Update the remote site
+# 
+# 4. Update the remote site
 
 We are using a plugin called all-in-one-wp migration.
 
