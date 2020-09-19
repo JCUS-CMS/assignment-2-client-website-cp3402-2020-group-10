@@ -55,10 +55,29 @@ The MASTER branch should not be touched in any unfinished situation.
 To make changes, please create a new branch. 
 
 After passing the inspection, merge with the MASTER branch.
+#
+
+#3. Create a new post/page
+
+Go wordpress Dashboard
+
+Click post/page
+
+Clik add new
+
+Edit your posts/pages
+
+Click publish
+
+Then you can edit your pages/posts style with elementor
+
+When you have done your edition
+
+Click Upload.
 
 
-
-3. Update the remote site
+#
+#4. Update the remote site
 
 We are using a plugin called all-in-one-wp migration.
 
