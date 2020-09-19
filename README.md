@@ -4,8 +4,8 @@ We are a website about medical volunteers in Malaysia.
 We created this website in September, if you want to download and edit, please follow the steps below.
 
 
-
-Environments
+# 
+# Environments
 
 The Client-Doctor website is worked on in three environments
 
@@ -16,8 +16,8 @@ The staging site: The environment used to test the theme on a remote web server 
 Local development environments: The virtual machine on your local device used to develop and test theme changes, we are using XAMPP as our local development environment.
 
 
-
-Deployment
+# 
+# Deployment
 
 XAMPP(Local)
 
@@ -26,8 +26,8 @@ Siteground?(Staging) https://yanzhoul.sgedu.site/ASS2/
 Siteground?(Production) https://yanzhoul.sgedu.site/Production/
 
 
-
-1. Setting up your local environment
+# 
+# 1. Setting up your local environment
 Download XAMPP from internet
 
 Install the XAMPP
@@ -45,7 +45,8 @@ Create a password <9wkdtvhyhgdc>
 Import the database from export folder.
 
 
-2. Branches
+# 
+# 2. Branches
 
 The master branch belongs to the last staging branch. 
 
