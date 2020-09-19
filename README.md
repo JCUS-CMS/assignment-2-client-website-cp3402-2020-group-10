@@ -36,11 +36,11 @@ Run Apache and Mysql modules
 
 Click Mysql Admin-Open your phpMyAdmin
 
-Create a database called <db6vtsm5ffsxmr>
+Create a database called  # db6vtsm5ffsxmr
 
-Create a user called <u7vacs2ym4znb>
+Create a user called  # u7vacs2ym4znb
 
-Create a password <9wkdtvhyhgdc>
+Create a password # 9wkdtvhyhgdc
 
 Import the database from export folder.
 
